@@ -14,5 +14,4 @@ main:
   - title: "获奖信息"
     url: /year-archive/
 
-nav_style: "right"  # 或者 "justify", "spaced"
-nav_spacing: "large"
+nav_style: "right"
