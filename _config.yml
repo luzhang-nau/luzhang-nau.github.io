@@ -14,7 +14,7 @@ repository               : "luzhang-nau/luzhang-nau.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "https://luzhang-nau.github.io/profile.png"
   name             : "张璐（Lu Zhang）"
   pronouns         :
   bio              : "博士，南京审计大学计算机学院副教授，硕士生导师。研究方向：网络与信息安全、大模型与智能审计"
