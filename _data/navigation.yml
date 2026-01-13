@@ -1,17 +1,15 @@
 main:
+  - title: "主页"
+    url: "/"                    # → about.md
   - title: "发表论文"
-    url: /publications/
-
+    url: "/publications/"       # → publications.md
   - title: "科研项目"
-    url: /talks/    
-
+    url: "/projects/"           # → projects.md
   - title: "指导学生"
-    url: /teaching/    
-    
+    url: "/students/"           # → students.md
   - title: "课程信息"
-    url: /portfolio/
-        
+    url: "/teaching/"           # → teaching.md
   - title: "获奖信息"
-    url: /year-archive/
+    url: "/awards/"             # → awards.md
 
 nav_style: "right"
