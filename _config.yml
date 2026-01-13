@@ -7,16 +7,15 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
+title                    : "张璐-个人学术主页"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+name                     : &name "张璐（Lu Zhang）"
+description              : &description "博士，南京审计大学计算机学院副教授，硕士生导师。研究方向：网络与信息安全、大模型与智能审计"  
+url                      : https://luzhang-nau.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "luzhang-nau/luzhang-nau.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,13 +23,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  name             : "张璐（Lu Zhang）"
+  pronouns         :
+  bio              : "博士，南京审计大学计算机学院副教授，硕士生导师。研究方向：网络与信息安全、大模型与智能审计"
+  location         : "南京"
+  employer         : "南京审计大学"
+  uri              : https://luzhang-nau.github.io
+  email            : "luzhang@nau.edu.cn" 
 
   # Academic websites
   academia         : # URL
