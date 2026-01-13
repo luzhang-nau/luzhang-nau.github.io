@@ -20,7 +20,7 @@ author:
   bio              : "博士，南京审计大学计算机学院副教授，硕士生导师。研究方向：网络与信息安全、大模型与智能审计"
   location         : "南京"
   employer         : "南京审计大学"
-  uri              : https://luzhang-nau.github.io
+  uri              : # https://luzhang-nau.github.io
   email            : "luzhang@nau.edu.cn" 
 
   # Academic websites
