@@ -32,11 +32,11 @@ redirect_from:
 <h2 class="section-title">更多信息</h2>
 
 <div class="more-info-links">
-  <a href="/publications/" class="info-link">发表论文</a>
-  <a href="/projects/" class="info-link">科研项目</a>
-  <a href="/students/" class="info-link">指导学生</a>
-  <a href="/teaching/" class="info-link">课程信息</a>
-  <a href="/awards/" class="info-link">获奖信息</a>
+  <a href="/publications/">发表论文</a>
+  <a href="/projects/">科研项目</a>
+  <a href="/students/">指导学生</a>
+  <a href="/teaching/">课程信息</a>
+  <a href="/awards/">获奖信息</a>
 </div>
 
 <h2 class="section-title">联系方式</h2>
@@ -54,6 +54,7 @@ redirect_from:
 body {
   text-align: justify;
   text-justify: inter-ideograph;
+  color: #333; /* 统一黑色字体 */
 }
 
 /* 段落两端对齐 */
@@ -62,83 +63,72 @@ p {
   text-justify: inter-ideograph;
   line-height: 1.8;
   margin-bottom: 1.2em;
+  color: #333;
 }
 
-/* 标题统一大小 */
 h1, .section-title {
-  color: #1a4b8c;
+  color: #333; /* 改为黑色 */
   font-size: 28px;
   font-weight: 600;
   margin: 35px 0 20px 0;
   padding-bottom: 10px;
-  border-bottom: 2px solid #e8edf2;
+  border-bottom: 1px solid #e0e0e0; /* 浅灰色分隔线 */
 }
 
 h2, h3, h4 {
-  color: #1a4b8c;
+  color: #333;
   font-size: 28px;
   font-weight: 600;
   margin: 35px 0 20px 0;
   padding-bottom: 10px;
-  border-bottom: 2px solid #e8edf2;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-/* 引用框样式 - 与课题组理念相似 */
 .callout-box {
-  background: linear-gradient(135deg, #f0f8ff 0%, #e6f7ff 100%);
-  border-left: 4px solid #3498db;
-  border-radius: 8px;
-  padding: 20px 25px;
+  background-color: #f8f9fa; /* 浅灰色背景 */
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid #2c3e50; /* 深灰色左边框 */
+  padding: 20px;
   margin: 25px 0;
-  position: relative;
-  overflow: hidden;
 }
 
 .callout-box p {
   margin: 0;
   font-size: 16px;
-  font-weight: 500;
-  color: #1a4b8c;
+  color: #333;
   line-height: 1.7;
   text-align: justify;
 }
 
-.callout-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%233498db" opacity="0.1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>');
-  background-size: contain;
+.callout-box a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-/* 更多信息链接行 */
+.callout-box a:hover {
+  text-decoration: underline;
+}
+
 .more-info-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   margin: 20px 0 30px 0;
 }
 
-.info-link {
-  display: inline-block;
-  background: #f8fafc;
-  color: #1a4b8c;
-  padding: 10px 20px;
-  border-radius: 6px;
+.more-info-links a {
+  color: #2c3e50;
   text-decoration: none;
   font-weight: 500;
-  border: 1px solid #e8edf2;
-  transition: all 0.3s ease;
+  font-size: 16px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
 }
 
-.info-link:hover {
-  background: #1a4b8c;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(26, 75, 140, 0.2);
+.more-info-links a:hover {
+  border-bottom: 1px solid #2c3e50;
   text-decoration: none;
 }
 
@@ -152,20 +142,33 @@ li {
   margin-bottom: 8px;
   line-height: 1.6;
   text-align: justify;
+  color: #333;
 }
 
-/* 研究方向列表特殊处理 */
 ul li strong {
-  color: #1a4b8c;
+  color: #333;
 }
 
 /* 引用样式 */
 blockquote {
-  border-left: 4px solid #e8edf2;
+  border-left: 4px solid #e0e0e0;
   padding-left: 20px;
   margin-left: 0;
   color: #666;
   font-style: italic;
+}
+
+li strong {
+  color: #333;
+}
+
+p:last-of-type {
+  color: #666;
+  font-size: 14px;
+  text-align: right;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
 }
 
 /* 响应式设计 */
@@ -175,28 +178,26 @@ blockquote {
   }
   
   .more-info-links {
-    gap: 10px;
+    gap: 15px;
   }
   
-  .info-link {
-    padding: 8px 15px;
-    font-size: 14px;
+  .more-info-links a {
+    font-size: 15px;
   }
   
   .callout-box {
-    padding: 15px 20px;
+    padding: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .more-info-links {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
   }
   
-  .info-link {
-    width: 100%;
-    text-align: center;
+  .more-info-links a {
+    display: block;
   }
 }
 </style>
