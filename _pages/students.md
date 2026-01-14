@@ -23,16 +23,18 @@ title: "指导学生"
 
 <style>
 /* ========== 学生页面专用样式 ========== */
-/* 只放宽表格相关部分 */
-.section-container,
-.students-table-section {
-  max-width: 1600px;  /* 放宽到1600px */
+/* 移除最大宽度限制，让内容延伸 */
+.section-container {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
   box-sizing: border-box;
+  width: 100%;
 }
 
+/* 概念卡片稍微居中，但不是固定宽度 */
 .concept-card {
+  max-width: 1400px;
+  margin: 40px auto;
   background: white;
   border: 1px solid #e8edf2;
   border-radius: 15px;
@@ -78,9 +80,11 @@ title: "指导学生"
   line-height: 1.7;
 }
 
-/* 表格样式 */
+/* 表格样式 - 去掉最大宽度，延伸到屏幕右边 */
 .students-table-section {
-  margin: 50px auto;  /* 修改为auto居中 */
+  margin: 50px auto;
+  padding: 0 40px;
+  width: 100%;
 }
 
 .table-title {
@@ -92,24 +96,23 @@ title: "指导学生"
   border-bottom: 2px solid #e8edf2;
 }
 
-/* 表格容器占满可用空间 */
+/* 移除滚动，让表格直接延伸 */
 .table-container {
   width: 100%;
-  overflow-x: auto;
+  overflow: visible; /* 改为可见，不滚动 */
   margin-bottom: 50px;
   border-radius: 6px;
   border: 1px solid #e8edf2;
-  -webkit-overflow-scrolling: touch; /* 移动端平滑滚动 */
 }
 
-/* 增加表格最小宽度 */
+/* 表格占满可用宽度 */
 .students-table {
-  min-width: 1200px;  /* 增加最小宽度 */
   width: 100%;
+  min-width: 100%; /* 确保至少占满容器 */
   border-collapse: collapse;
   background: white;
   font-size: 15px;
-  table-layout: fixed; 
+  table-layout: auto; /* 改为自动布局，让列根据内容扩展 */
 }
 
 .students-table thead {
@@ -124,6 +127,7 @@ title: "指导学生"
   color: #333 !important;
   font-size: 14px;
   border-bottom: 2px solid #e8edf2;
+  white-space: nowrap; /* 标题不换行 */
 }
 
 .students-table tbody tr {
@@ -145,12 +149,13 @@ title: "指导学生"
   line-height: 1.5;
   word-wrap: break-word; 
   overflow-wrap: break-word; 
+  min-width: 150px; /* 设置最小列宽，避免太窄 */
 }
 
-.status-in-study,
-.status-graduated {
-  color: #333;
-  font-weight: 500;
+/* 给特定列更多空间 */
+.students-table.graduate-table td:nth-child(3), /* 研究方向 */
+.students-table.graduate-table td:nth-child(4) { /* 成果与荣誉 */
+  min-width: 300px; /* 这两列需要更多空间 */
 }
 
 .name-bold {
@@ -162,21 +167,8 @@ title: "指导学生"
   border: none;
   height: 1px;
   background-color: #e8edf2;
-  margin: 60px auto;  /* 修改为auto居中 */
-  max-width: 1600px;  /* 与容器同宽 */
+  margin: 60px 40px; /* 左右留出边距 */
 }
-
-/* 调整研究生表格列宽 - 给"成果与荣誉"更多空间 */
-.students-table.graduate-table colgroup col:nth-child(1) { width: 8%; }   /* 入学年份 */
-.students-table.graduate-table colgroup col:nth-child(2) { width: 10%; }  /* 姓名 */
-.students-table.graduate-table colgroup col:nth-child(3) { width: 30%; }  /* 硕士论文（研究方向） */
-.students-table.graduate-table colgroup col:nth-child(4) { width: 52%; }  /* 成果与荣誉 */
-
-/* 调整本科生表格列宽 */
-.students-table.undergraduate-table colgroup col:nth-child(1) { width: 10%; }  /* 年份 */
-.students-table.undergraduate-table colgroup col:nth-child(2) { width: 35%; }  /* 姓名（团队） */
-.students-table.undergraduate-table colgroup col:nth-child(3) { width: 45%; }  /* 成果 */
-.students-table.undergraduate-table colgroup col:nth-child(4) { width: 10%; }  /* 备注 */
 
 .page__content,
 .main-content {
@@ -189,26 +181,51 @@ title: "指导学生"
 }
 
 /* ========== 响应式设计 ========== */
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .section-container,
   .students-table-section {
     padding: 0 30px;
   }
   
-  .students-table {
-    min-width: 1100px;  /* 中等屏幕稍小一点 */
+  .concept-card {
+    max-width: 100%;
+  }
+  
+  .table-divider {
+    margin: 60px 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-container,
+  .students-table-section {
+    padding: 0 20px;
+  }
+  
+  .table-divider {
+    margin: 60px 20px;
+  }
+  
+  /* 中等屏幕，适当缩小最小宽度 */
+  .students-table td {
+    min-width: 120px;
+  }
+  
+  .students-table.graduate-table td:nth-child(3),
+  .students-table.graduate-table td:nth-child(4) {
+    min-width: 250px;
   }
 }
 
 @media (max-width: 768px) {
   .section-container,
   .students-table-section {
-    padding: 0 20px;
-    max-width: 100%;  /* 小屏幕用满宽 */
+    padding: 0 15px;
   }
   
   .concept-card {
     padding: 25px 20px;
+    margin: 20px auto;
   }
   
   .concept-content p {
@@ -222,7 +239,6 @@ title: "指导学生"
   
   .students-table {
     font-size: 14px;
-    min-width: 1000px;  /* 移动端最小宽度 */
   }
   
   .students-table th,
@@ -231,55 +247,90 @@ title: "指导学生"
   }
   
   .table-divider {
-    margin: 40px auto;
+    margin: 40px 15px;
   }
   
-  /* 小屏幕调整列宽 */
-  .students-table.graduate-table colgroup col:nth-child(1) { width: 12%; }
-  .students-table.graduate-table colgroup col:nth-child(2) { width: 12%; }
-  .students-table.graduate-table colgroup col:nth-child(3) { width: 35%; }
-  .students-table.graduate-table colgroup col:nth-child(4) { width: 41%; }
+  /* 小屏幕需要允许换行 */
+  .students-table th {
+    white-space: normal; /* 小屏幕标题可以换行 */
+  }
+  
+  .students-table td {
+    min-width: 100px;
+  }
+  
+  .students-table.graduate-table td:nth-child(3),
+  .students-table.graduate-table td:nth-child(4) {
+    min-width: 200px;
+  }
 }
 
 @media (max-width: 480px) {
   .section-container,
   .students-table-section {
-    padding: 0 15px;
+    padding: 0 10px;
+  }
+  
+  .students-table {
+    font-size: 13px;
   }
   
   .students-table th,
   .students-table td {
     padding: 8px 10px !important;
-    font-size: 13px;
   }
   
-  .students-table {
-    min-width: 900px;  /* 超小屏幕最小宽度 */
+  .table-divider {
+    margin: 40px 10px;
+  }
+  
+  /* 超小屏幕进一步调整 */
+  .students-table td {
+    min-width: 80px;
+  }
+  
+  .students-table.graduate-table td:nth-child(3),
+  .students-table.graduate-table td:nth-child(4) {
+    min-width: 150px;
+  }
+  
+  /* 手机端强制换行 */
+  .students-table td {
+    word-break: break-word;
   }
 }
 
-/* 大屏幕下进一步放宽 */
+/* 大屏幕下进一步优化 */
 @media (min-width: 1600px) {
   .section-container,
   .students-table-section {
-    max-width: 1800px;  /* 更大屏幕进一步放宽 */
+    padding: 0 60px; /* 更大边距 */
   }
   
-  .students-table {
-    min-width: 1400px;  /* 增加表格最小宽度 */
+  .concept-card {
+    max-width: 1600px;
   }
   
-  .students-table.graduate-table colgroup col:nth-child(1) { width: 7%; }
-  .students-table.graduate-table colgroup col:nth-child(2) { width: 9%; }
-  .students-table.graduate-table colgroup col:nth-child(3) { width: 28%; }
-  .students-table.graduate-table colgroup col:nth-child(4) { width: 56%; }  /* 给成果更多空间 */
+  .table-divider {
+    margin: 60px 60px;
+  }
+  
+  /* 超大屏幕给更多空间 */
+  .students-table.graduate-table td:nth-child(3),
+  .students-table.graduate-table td:nth-child(4) {
+    min-width: 400px;
+  }
 }
 
 /* 超大屏幕 */
 @media (min-width: 2000px) {
   .section-container,
   .students-table-section {
-    max-width: 2000px;  /* 超大屏幕可进一步放宽 */
+    padding: 0 80px;
+  }
+  
+  .table-divider {
+    margin: 60px 80px;
   }
 }
 </style>
@@ -289,12 +340,6 @@ title: "指导学生"
   
   <div class="table-container">
     <table class="students-table graduate-table">
-      <colgroup>
-        <col style="width: 8%">   <!-- 入学年份 -->
-        <col style="width: 10%">  <!-- 姓名 -->
-        <col style="width: 30%">  <!-- 硕士论文（研究方向） -->
-        <col style="width: 52%">  <!-- 成果与荣誉 -->
-      </colgroup>
       <thead>
         <tr>
           <th>入学年份</th>
@@ -308,61 +353,61 @@ title: "指导学生"
           <td>2025</td>
           <td class="name-bold">陈梦</td>
           <td>多模态虚假新闻识别</td>
-          <td>一等奖学金<span class="status-in-study">（在读）</span></td>
+          <td>一等奖学金</td>
         </tr>
         <tr>
           <td>2025</td>
           <td class="name-bold">董闯豪</td>
           <td>财务欺诈识别</td>
-          <td><span class="status-in-study">在读</span></td>
+          <td></td>
         </tr>
         <tr>
           <td>2025</td>
           <td class="name-bold">姜伟栋</td>
           <td>谣言早期检测</td>
-          <td><span class="status-in-study">在读</span></td>
+          <td></td>
         </tr>
         <tr>
           <td>2024</td>
           <td class="name-bold">骆茜</td>
           <td>基于大模型的虚假评论识别</td>
-          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
+          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2024</td>
           <td class="name-bold">刘敏</td>
           <td>基于RAG的审计发现结论生成</td>
-          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
+          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
           <td class="name-bold">陈宇光</td>
           <td>基于传播预测的社交媒体虚假新闻早期识别研究（开题）</td>
-          <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
+          <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
           <td class="name-bold">尹天祺</td>
           <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究（开题）</td>
-          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
+          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
           <td class="name-bold">宋昌昊</td>
           <td>基于大模型的上市公司财务舞弊识别研究（开题）</td>
-          <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
+          <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2022</td>
           <td class="name-bold">魏晨阳</td>
           <td>基于异构信息网络的问答社区欺诈信息检测方法研究</td>
-          <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award<br><span class="status-graduated">毕业去向：九江国泰</span></td>
+          <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award</td>
         </tr>
         <tr>
           <td>2022</td>
           <td class="name-bold">康钟元</td>
           <td>融合先验知识的科技文献主题识别与演化趋势预测方法研究</td>
-          <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）<br><span class="status-graduated">毕业去向：中国石化</span></td>
+          <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）</td>
         </tr>
         <tr>
           <td>2021</td>
@@ -374,7 +419,7 @@ title: "指导学生"
           <td>2019</td>
           <td class="name-bold">许明铭</td>
           <td>基于异质数据融合学习的在线问答社区欺诈检测研究</td>
-          <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B<br>于南财培养，毕业去向：扬州市网信办</td>
+          <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B<br>于南财培养</td>
         </tr>
       </tbody>
     </table>
@@ -388,12 +433,6 @@ title: "指导学生"
   
   <div class="table-container">
     <table class="students-table undergraduate-table">
-      <colgroup>
-        <col style="width: 10%">  <!-- 年份 -->
-        <col style="width: 35%">  <!-- 姓名（团队） -->
-        <col style="width: 45%">  <!-- 成果 -->
-        <col style="width: 10%">  <!-- 备注 -->
-      </colgroup>
       <thead>
         <tr>
           <th>年份</th>
