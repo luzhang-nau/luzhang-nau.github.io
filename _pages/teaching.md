@@ -223,5 +223,6 @@ title: "课程信息"
   .section-title {
     font-size: 22px;
   }
+  
 }
 </style>
