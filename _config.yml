@@ -8,7 +8,7 @@ locale: "zh-CN"
 timezone: "Asia/Shanghai"
 
 # 主题
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: academicpages/academicpages.github.io
 
 # 作者信息
 author:
