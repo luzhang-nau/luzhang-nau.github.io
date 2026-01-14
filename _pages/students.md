@@ -103,7 +103,7 @@ title: "指导学生"
   line-height: 1.7;
 }
 
-/* 表格美化样式 */
+/* 表格样式 */
 .students-table-section {
   margin: 50px 0;
 }
@@ -112,149 +112,71 @@ title: "指导学生"
   color: #1a4b8c;
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 25px;
-  padding-bottom: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #e8edf2;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.table-title::before {
-  font-size: 1.2em;
 }
 
 .table-container {
   overflow-x: auto;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  border-radius: 8px;
+  border: 1px solid #e8edf2;
 }
 
-/* 研究生表格样式 */
-.graduate-table {
+.students-table {
   width: 100%;
   border-collapse: collapse;
   background: white;
   font-size: 15px;
 }
 
-.graduate-table thead {
-  background: linear-gradient(135deg, #1a4b8c 0%, #2c5aa0 100%);
-  color: white;
+.students-table thead {
+  background-color: #1a4b8c;
 }
 
-.graduate-table th {
+.students-table th {
   padding: 16px 12px;
   text-align: left;
   font-weight: 600;
-  border: none;
-  font-size: 16px;
+  color: white;
+  font-size: 15px;
 }
 
-.graduate-table tbody tr {
+.students-table tbody tr {
   border-bottom: 1px solid #f0f4f8;
-  transition: all 0.2s ease;
 }
 
-.graduate-table tbody tr:hover {
+.students-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.students-table tbody tr:hover {
   background-color: #f8fafc;
-  transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
-.graduate-table td {
+.students-table td {
   padding: 14px 12px;
   vertical-align: top;
-  color: #2c3e50;
+  color: #333;
   line-height: 1.5;
 }
 
-/* 本科生表格样式 */
-.undergraduate-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
-  font-size: 15px;
-}
-
-.undergraduate-table thead {
-  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
-  color: white;
-}
-
-.undergraduate-table th {
-  padding: 16px 12px;
-  text-align: left;
-  font-weight: 600;
-  border: none;
-  font-size: 16px;
-}
-
-.undergraduate-table tbody tr:nth-child(even) {
-  background-color: #f8fcf9;
-}
-
-.undergraduate-table tbody tr:hover {
-  background-color: #e8f5e9;
-  transform: translateY(-1px);
-  transition: all 0.2s ease;
-}
-
-.undergraduate-table td {
-  padding: 14px 12px;
-  vertical-align: top;
-  color: #2c3e50;
-  line-height: 1.5;
-}
-
-/* 表格单元格特殊样式 */
-.status-in-study {
-  color: #3498db;
-  font-weight: 500;
-  background: #e8f4fd;
-  padding: 4px 10px;
-  border-radius: 20px;
-  display: inline-block;
-  font-size: 14px;
-}
-
+.status-in-study,
 .status-graduated {
-  color: #27ae60;
-  font-weight: 500;
-  background: #e8f8ef;
-  padding: 4px 10px;
-  border-radius: 20px;
-  display: inline-block;
-  font-size: 14px;
-}
-
-.award-highlight {
-  color: #d35400;
+  color: #333;
   font-weight: 500;
 }
 
-.paper-highlight {
-  color: #8e44ad;
-  font-weight: 500;
-}
-
-.year-cell {
-  color: #1a4b8c;
+.name-bold {
   font-weight: 600;
-  min-width: 70px;
+  color: #333;
 }
 
-.name-cell {
-  font-weight: 500;
-  min-width: 100px;
-}
-
-/* 分隔线样式 */
 .table-divider {
   border: none;
-  height: 2px;
-  background: linear-gradient(to right, transparent, #3498db, transparent);
+  height: 1px;
+  background-color: #e8edf2;
   margin: 40px 0;
 }
 
@@ -275,31 +197,28 @@ title: "指导学生"
     font-size: 22px;
   }
   
-  .graduate-table,
-  .undergraduate-table {
+  .students-table {
     font-size: 14px;
   }
   
-  .graduate-table th,
-  .graduate-table td,
-  .undergraduate-table th,
-  .undergraduate-table td {
+  .students-table th,
+  .students-table td {
     padding: 10px 8px;
   }
 }
 </style>
 
 <div class="students-table-section">
-  <h2 class="table-title">🎓 指导研究生情况</h2>
+  <h2 class="table-title">指导研究生情况</h2>
   
   <div class="table-container">
-    <table class="graduate-table">
+    <table class="students-table">
       <colgroup>
-        <col class="year-column">
-        <col class="name-column">
-        <col>
-        <col>
-        <col class="status-column">
+        <col style="width: 10%">
+        <col style="width: 15%">
+        <col style="width: 30%">
+        <col style="width: 30%">
+        <col style="width: 15%">
       </colgroup>
       <thead>
         <tr>
@@ -312,73 +231,73 @@ title: "指导学生"
       </thead>
       <tbody>
         <tr>
-          <td class="year-cell">2025年</td>
-          <td class="name-cell">陈梦</td>
+          <td>2025年</td>
+          <td class="name-bold">陈梦</td>
           <td>多模态虚假新闻识别</td>
           <td>一等奖学金</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td class="year-cell">2025年</td>
-          <td class="name-cell">董闯豪</td>
+          <td>2025年</td>
+          <td class="name-bold">董闯豪</td>
           <td>财务欺诈识别</td>
           <td></td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td class="year-cell">2025年</td>
-          <td class="name-cell">姜伟栋</td>
+          <td>2025年</td>
+          <td class="name-bold">姜伟栋</td>
           <td>谣言早期检测</td>
           <td></td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td class="year-cell">2024年</td>
-          <td class="name-cell">骆茜</td>
+          <td>2024年</td>
+          <td class="name-bold">骆茜</td>
           <td>基于大模型的虚假评论识别</td>
-          <td><span class="award-highlight">2025中国大学生服务外包创新创业大赛，国家级三等奖</span></td>
+          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td class="year-cell">2024年</td>
-          <td class="name-cell">刘敏</td>
+          <td>2024年</td>
+          <td class="name-bold">刘敏</td>
           <td>基于RAG的审计发现结论生成</td>
-          <td><span class="award-highlight">2025中国大学生服务外包创新创业大赛，国家级三等奖</span></td>
+          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td class="year-cell">2023年</td>
-          <td class="name-cell">陈宇光</td>
+          <td>2023年</td>
+          <td class="name-bold">陈宇光</td>
           <td>基于传播预测的社交媒体虚假新闻早期识别研究（开题）</td>
-          <td><span class="paper-highlight">Early detection of rumors based on propagation prediction in social media，论文，SCI二区</span><br><span class="award-highlight">2025中国大学生服务外包创新创业大赛，国家级三等奖</span></td>
+          <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td class="year-cell">2023年</td>
-          <td class="name-cell">尹天祺</td>
+          <td>2023年</td>
+          <td class="name-bold">尹天祺</td>
           <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究（开题）</td>
-          <td><span class="award-highlight">2025中国大学生服务外包创新创业大赛，国家级三等奖</span></td>
+          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td class="year-cell">2023年</td>
-          <td class="name-cell">宋昌昊</td>
+          <td>2023年</td>
+          <td class="name-bold">宋昌昊</td>
           <td>基于大模型的上市公司财务舞弊识别研究（开题）</td>
-          <td><span class="award-highlight">2025江苏省研究生实践创新计划立项</span><br><span class="award-highlight">2025中国大学生服务外包创新创业大赛，国家级三等奖</span></td>
+          <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td class="year-cell">2022年</td>
-          <td class="name-cell">魏晨阳</td>
+          <td>2022年</td>
+          <td class="name-bold">魏晨阳</td>
           <td>基于异构信息网络的问答社区欺诈信息检测方法研究</td>
-          <td><span class="award-highlight">Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award</span></td>
+          <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award</td>
           <td><span class="status-graduated">毕业去向：九江国泰</span></td>
         </tr>
         <tr>
-          <td class="year-cell">2022年</td>
-          <td class="name-cell">康钟元</td>
+          <td>2022年</td>
+          <td class="name-bold">康钟元</td>
           <td>融合先验知识的科技文献主题识别与演化趋势预测方法研究</td>
-          <td><span class="paper-highlight">基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）</span></td>
+          <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）</td>
           <td><span class="status-graduated">毕业去向：中国石化</span></td>
         </tr>
       </tbody>
@@ -389,77 +308,77 @@ title: "指导学生"
 <hr class="table-divider" />
 
 <div class="students-table-section">
-  <h2 class="table-title">👨‍🎓 指导本科生情况</h2>
+  <h2 class="table-title">指导本科生情况</h2>
   
   <div class="table-container">
-    <table class="undergraduate-table">
+    <table class="students-table">
       <thead>
         <tr>
-          <th>年份</th>
-          <th>姓名（团队）</th>
-          <th>成果</th>
-          <th>备注</th>
+          <th style="width: 15%">年份</th>
+          <th style="width: 35%">姓名（团队）</th>
+          <th style="width: 35%">成果</th>
+          <th style="width: 15%">备注</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="year-cell">2025</td>
-          <td class="name-cell">陈稳、汪乔羿、钱珉宇、胡汪昊、苏星语</td>
-          <td><span class="award-highlight">大学生创新创业训练计划项目、国家级</span></td>
+          <td>2025</td>
+          <td class="name-bold">陈稳、汪乔羿、钱珉宇、胡汪昊、苏星语</td>
+          <td>大学生创新创业训练计划项目、国家级</td>
           <td></td>
         </tr>
         <tr>
-          <td class="year-cell">2025</td>
-          <td class="name-cell">张倓硕、张璟晗、沈子辰、陈信通、彭贵栓</td>
-          <td><span class="award-highlight">大学生创新创业训练计划项目、省级</span></td>
+          <td>2025</td>
+          <td class="name-bold">张倓硕、张璟晗、沈子辰、陈信通、彭贵栓</td>
+          <td>大学生创新创业训练计划项目、省级</td>
           <td></td>
         </tr>
         <tr>
-          <td class="year-cell">2025</td>
-          <td class="name-cell">唐文静、沈诗典、钱秋霖、朱纯瑜、陈笑悦</td>
-          <td><span class="award-highlight">中国大学生计算机设计大赛，江苏省三等奖</span></td>
+          <td>2025</td>
+          <td class="name-bold">唐文静、沈诗典、钱秋霖、朱纯瑜、陈笑悦</td>
+          <td>中国大学生计算机设计大赛，江苏省三等奖</td>
           <td></td>
         </tr>
         <tr>
-          <td class="year-cell">2023</td>
-          <td class="name-cell">吴菡玥、李诗音、葛煜琦、徐发、金海涛、苏容锦</td>
-          <td><span class="award-highlight">"挑战杯"中国大学生创业计划竞赛，国家铜奖</span></td>
+          <td>2023</td>
+          <td class="name-bold">吴菡玥、李诗音、葛煜琦、徐发、金海涛、苏容锦</td>
+          <td>"挑战杯"中国大学生创业计划竞赛，国家铜奖</td>
           <td></td>
         </tr>
         <tr>
-          <td class="year-cell">2022</td>
-          <td class="name-cell">徐发、李心怡、赵梦颖</td>
-          <td><span class="award-highlight">中国大学生计算机设计大赛，全国二等奖、江苏省特等奖</span></td>
+          <td>2022</td>
+          <td class="name-bold">徐发、李心怡、赵梦颖</td>
+          <td>中国大学生计算机设计大赛，全国二等奖、江苏省特等奖</td>
           <td></td>
         </tr>
         <tr>
-          <td class="year-cell">2019</td>
-          <td class="name-cell">华璇</td>
-          <td><span class="award-highlight">蓝桥杯，江苏省一等奖</span></td>
+          <td>2019</td>
+          <td class="name-bold">华璇</td>
+          <td>蓝桥杯，江苏省一等奖</td>
           <td>南财</td>
         </tr>
         <tr>
-          <td class="year-cell">2018</td>
-          <td class="name-cell">宛子涵</td>
-          <td><span class="award-highlight">蓝桥杯，全国三等奖</span></td>
+          <td>2018</td>
+          <td class="name-bold">宛子涵</td>
+          <td>蓝桥杯，全国三等奖</td>
           <td>南财</td>
         </tr>
         <tr>
-          <td class="year-cell">2017</td>
-          <td class="name-cell">沈童</td>
-          <td><span class="award-highlight">蓝桥杯，全国三等奖</span></td>
+          <td>2017</td>
+          <td class="name-bold">沈童</td>
+          <td>蓝桥杯，全国三等奖</td>
           <td>南财</td>
         </tr>
         <tr>
-          <td class="year-cell">2017</td>
-          <td class="name-cell">袁秦盟</td>
-          <td><span class="award-highlight">蓝桥杯，全国一等奖</span></td>
+          <td>2017</td>
+          <td class="name-bold">袁秦盟</td>
+          <td>蓝桥杯，全国一等奖</td>
           <td>南财</td>
         </tr>
         <tr>
-          <td class="year-cell">2017</td>
-          <td class="name-cell">沈童、赵子维、程雯菲</td>
-          <td><span class="award-highlight">中国大学生计算机设计大赛，全国三等奖</span></td>
+          <td>2017</td>
+          <td class="name-bold">沈童、赵子维、程雯菲</td>
+          <td>中国大学生计算机设计大赛，全国三等奖</td>
           <td>南财</td>
         </tr>
       </tbody>
