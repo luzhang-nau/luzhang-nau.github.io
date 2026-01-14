@@ -22,13 +22,12 @@ title: "指导学生"
 </div>
 
 <style>
-/* ========== 学生页面专用样式 ========== */
 .section-container {
   margin: 0 auto;
   padding: 0 20px; 
   box-sizing: border-box;
   width: 100%;
-  max-width: calc(100vw - 100px); /* 统一容器宽度 */
+  max-width: calc(100vw - 100px); 
 }
 
 .concept-card {
@@ -36,7 +35,7 @@ title: "指导学生"
   margin: 20px 0 30px;
   background: white;
   border: 1px solid #e8edf2;
-  border-radius: 15px;
+  border-radius: 6px;
   padding: 30px 40px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
@@ -83,7 +82,7 @@ title: "指导学生"
   margin: 0 auto;
   padding: 0 20px; 
   width: 100%;
-  max-width: calc(100vw - 100px); /* 和section-container同宽，保证对齐 */
+  max-width: calc(100vw - 100px); 
 }
 
 .table-title {
@@ -95,19 +94,20 @@ title: "指导学生"
   border-bottom: 2px solid #e8edf2;
 }
 
-/* 表格容器：统一宽度，两个表格共用 */
 .table-container {
   width: 100%;
-  max-width: calc(100vw - 100px); /* 最终宽度基准，两个表格都用这个 */
+  max-width: calc(100vw - 100px);
   margin: 0 auto 30px;
-  border-radius: 6px;
-  border: 1px solid #e8edf2;
+  border: none;        
+  border-radius: 0;   
+  box-shadow: none; 
+  background: transparent; 
+  padding: 0;  
 }
 
-/* ========== 核心修改：两个表格用完全相同的布局规则 ========== */
 .students-table {
   width: 100%;
-  table-layout: auto; /* 取消固定布局，和本科生表格一致 */
+  table-layout: auto; 
   border-collapse: collapse;
   background: white;
   font-size: 15px;
@@ -129,10 +129,10 @@ title: "指导学生"
   white-space: nowrap;
 }
 
-/* ========== 研究生表格：用最小宽度替代固定宽度，保留列宽比例但不限制总宽 ========== */
+/* 研究生表格列宽规则 */
 .students-table.graduate-table th:nth-child(1),
 .students-table.graduate-table td:nth-child(1) {
-  min-width: 90px; /* 改width为min-width，允许列宽自适应拓展 */
+  min-width: 90px;
 }
 .students-table.graduate-table th:nth-child(2),
 .students-table.graduate-table td:nth-child(2) {
@@ -140,25 +140,25 @@ title: "指导学生"
 }
 .students-table.graduate-table th:nth-child(3),
 .students-table.graduate-table td:nth-child(3) {
-  min-width: 320px; /* 保留你觉得完美的最小宽度，允许拓展 */
+  min-width: 300px;
 }
 .students-table.graduate-table th:nth-child(4),
 .students-table.graduate-table td:nth-child(4) {
-  min-width: 400px; /* 给成果列足够最小宽度，不再用calc限制 */
+  min-width: 420px;
 }
 
-/* ========== 本科生表格：保持原有最小宽度规则 ========== */
+/* 本科生表格列宽规则 */
 .students-table.undergraduate-table th:nth-child(1),
 .students-table.undergraduate-table td:nth-child(1) {
-  min-width: 90px; /* 和研究生表格第1列对齐 */
+  min-width: 90px;
 }
 .students-table.undergraduate-table th:nth-child(2),
 .students-table.undergraduate-table td:nth-child(2) {
-  min-width: 400px;
+  min-width: 350px;
 }
 .students-table.undergraduate-table th:nth-child(3),
 .students-table.undergraduate-table td:nth-child(3) {
-  min-width: 350px;
+  min-width: 400px;
 }
 .students-table.undergraduate-table td:nth-child(4) {
   min-width: 80px;
@@ -252,73 +252,73 @@ title: "指导学生"
       </thead>
       <tbody>
         <tr>
-          <td>2025</td>
+          <td>2025年</td>
           <td class="name-bold">陈梦</td>
           <td>多模态虚假新闻识别</td>
           <td>一等奖学金</td>
         </tr>
         <tr>
-          <td>2025</td>
+          <td>2025年</td>
           <td class="name-bold">董闯豪</td>
           <td>财务欺诈识别</td>
           <td></td>
         </tr>
         <tr>
-          <td>2025</td>
+          <td>2025年</td>
           <td class="name-bold">姜伟栋</td>
           <td>谣言早期检测</td>
           <td></td>
         </tr>
         <tr>
-          <td>2024</td>
+          <td>2024年</td>
           <td class="name-bold">骆茜</td>
           <td>基于大模型的虚假评论识别</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
-          <td>2024</td>
+          <td>2024年</td>
           <td class="name-bold">刘敏</td>
           <td>基于RAG的审计发现结论生成</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
-          <td>2023</td>
+          <td>2023年</td>
           <td class="name-bold">陈宇光</td>
           <td>基于传播预测的社交媒体虚假新闻早期识别研究（开题）</td>
           <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
-          <td>2023</td>
+          <td>2023年</td>
           <td class="name-bold">尹天祺</td>
           <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究（开题）</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
-          <td>2023</td>
+          <td>2023年</td>
           <td class="name-bold">宋昌昊</td>
           <td>基于大模型的上市公司财务舞弊识别研究（开题）</td>
           <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
-          <td>2022</td>
+          <td>2022年</td>
           <td class="name-bold">魏晨阳</td>
           <td>基于异构信息网络的问答社区欺诈信息检测方法研究</td>
           <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award</td>
         </tr>
         <tr>
-          <td>2022</td>
+          <td>2022年</td>
           <td class="name-bold">康钟元</td>
           <td>融合先验知识的科技文献主题识别与演化趋势预测方法研究</td>
           <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）</td>
         </tr>
         <tr>
-          <td>2021</td>
+          <td>2021年</td>
           <td class="name-bold">吴海波</td>
           <td>基于深度学习的审计定性依据和审计建议推荐方法</td>
           <td>Learning problem-to-suggestion semantic mapping for audit suggestions recommendation in government audit reports，论文，SCI一区，CCF B<br>与伍之昂教授联合培养</td>
         </tr>
         <tr>
-          <td>2019</td>
+          <td>2019年</td>
           <td class="name-bold">许明铭</td>
           <td>基于异质数据融合学习的在线问答社区欺诈检测研究</td>
           <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B<br>于南财培养</td>
