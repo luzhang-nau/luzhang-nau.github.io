@@ -9,49 +9,6 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-    
-    <!-- 安全地放宽显示区域 -->
-    <style>
-    /* 仅调整页面最大宽度，不影响内部布局 */
-    .page,
-    .page__inner-wrap,
-    .initial-content {
-      max-width: 1400px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-    
-    /* 仅调整主要内容的宽度 */
-    .page__content,
-    .main-content {
-      max-width: 1400px !important;
-    }
-    
-    /* 仅针对表格容器放宽 */
-    .table-container {
-      max-width: 100% !important;
-    }
-    
-    /* 修复导航栏字体大小 - 更保守的方式 */
-    .masthead__menu-item a {
-      font-size: 16px !important;
-    }
-    
-    /* 响应式调整 - 仅在需要时覆盖 */
-    @media (min-width: 1200px) {
-      .page,
-      .page__inner-wrap {
-        max-width: 1400px !important;
-      }
-    }
-    
-    @media (min-width: 1600px) {
-      .page,
-      .page__inner-wrap {
-        max-width: 1600px !important;
-      }
-    }
-    </style>
   </head>
 
   <body>
