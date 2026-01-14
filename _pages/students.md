@@ -31,7 +31,6 @@ title: "指导学生"
   width: 100%;
 }
 
-/* 概念卡片稍微居中，但不是固定宽度 */
 .concept-card {
   max-width: 1400px;
   margin: 40px auto;
@@ -80,7 +79,6 @@ title: "指导学生"
   line-height: 1.7;
 }
 
-/* 表格样式 - 去掉最大宽度，延伸到屏幕右边 */
 .students-table-section {
   margin: 50px auto;
   padding: 0 40px;
@@ -96,23 +94,21 @@ title: "指导学生"
   border-bottom: 2px solid #e8edf2;
 }
 
-/* 移除滚动，让表格直接延伸 */
 .table-container {
   width: 100%;
-  overflow: visible; /* 改为可见，不滚动 */
+  overflow: visible; 
   margin-bottom: 50px;
   border-radius: 6px;
   border: 1px solid #e8edf2;
 }
 
-/* 表格占满可用宽度 */
 .students-table {
   width: 100%;
-  min-width: 100%; /* 确保至少占满容器 */
+  min-width: 100%; 
   border-collapse: collapse;
   background: white;
   font-size: 15px;
-  table-layout: auto; /* 改为自动布局，让列根据内容扩展 */
+  table-layout: auto; 
 }
 
 .students-table thead {
@@ -127,7 +123,7 @@ title: "指导学生"
   color: #333 !important;
   font-size: 14px;
   border-bottom: 2px solid #e8edf2;
-  white-space: nowrap; /* 标题不换行 */
+  white-space: nowrap; 
 }
 
 .students-table tbody tr {
@@ -149,13 +145,12 @@ title: "指导学生"
   line-height: 1.5;
   word-wrap: break-word; 
   overflow-wrap: break-word; 
-  min-width: 150px; /* 设置最小列宽，避免太窄 */
+  min-width: 150px;
 }
 
-/* 给特定列更多空间 */
 .students-table.graduate-table td:nth-child(3), /* 研究方向 */
 .students-table.graduate-table td:nth-child(4) { /* 成果与荣誉 */
-  min-width: 300px; /* 这两列需要更多空间 */
+  min-width: 300px; 
 }
 
 .name-bold {
@@ -167,7 +162,7 @@ title: "指导学生"
   border: none;
   height: 1px;
   background-color: #e8edf2;
-  margin: 60px 40px; /* 左右留出边距 */
+  margin: 60px 40px; 
 }
 
 .page__content,
@@ -206,7 +201,6 @@ title: "指导学生"
     margin: 60px 20px;
   }
   
-  /* 中等屏幕，适当缩小最小宽度 */
   .students-table td {
     min-width: 120px;
   }
@@ -250,9 +244,8 @@ title: "指导学生"
     margin: 40px 15px;
   }
   
-  /* 小屏幕需要允许换行 */
   .students-table th {
-    white-space: normal; /* 小屏幕标题可以换行 */
+    white-space: normal; 
   }
   
   .students-table td {
@@ -300,7 +293,6 @@ title: "指导学生"
   }
 }
 
-/* 大屏幕下进一步优化 */
 @media (min-width: 1600px) {
   .section-container,
   .students-table-section {
@@ -315,14 +307,12 @@ title: "指导学生"
     margin: 60px 60px;
   }
   
-  /* 超大屏幕给更多空间 */
   .students-table.graduate-table td:nth-child(3),
   .students-table.graduate-table td:nth-child(4) {
     min-width: 400px;
   }
 }
 
-/* 超大屏幕 */
 @media (min-width: 2000px) {
   .section-container,
   .students-table-section {
