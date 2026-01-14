@@ -9,6 +9,90 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    
+    <!-- 添加全局宽屏样式 -->
+    <style>
+    /* 全局放宽显示区域 */
+    body {
+      max-width: 1400px !important;
+      margin: 0 auto !important;
+      padding: 0 40px !important;
+    }
+    
+    /* 主要内容容器 */
+    .page__content,
+    .main-content,
+    .initial-content,
+    .archive,
+    .single {
+      max-width: 1400px !important;
+      margin: 0 auto !important;
+    }
+    
+    /* 页面内层包装 */
+    .page__inner-wrap,
+    .page {
+      max-width: 1400px !important;
+      margin: 0 auto !important;
+      padding: 0 !important;
+    }
+    
+    /* 文章内容 */
+    article {
+      max-width: 1400px !important;
+      margin: 0 auto !important;
+    }
+    
+    /* 放宽表格 */
+    table,
+    .table-container {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    
+    /* 响应式调整 */
+    @media (max-width: 1200px) {
+      body {
+        padding: 0 30px !important;
+        max-width: 1200px !important;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding: 0 20px !important;
+        max-width: 100% !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      body {
+        padding: 0 15px !important;
+      }
+    }
+    
+    /* 超大屏幕 */
+    @media (min-width: 1600px) {
+      body {
+        max-width: 1600px !important;
+      }
+    }
+    
+    /* 修复导航栏字体大小不一致问题 */
+    .masthead__menu-item a,
+    .masthead__menu-item--lg a,
+    .masthead__menu-item.selected a {
+      font-size: 16px !important;
+      font-weight: 500 !important;
+    }
+    
+    /* 统一导航栏样式 */
+    nav.greedy-nav a,
+    .greedy-nav .visible-links a {
+      font-size: 16px !important;
+      font-weight: 500 !important;
+    }
+    </style>
   </head>
 
   <body>
