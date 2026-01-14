@@ -4,8 +4,6 @@ title: "指导学生"
 ---
 
 <div class="section-container">
-  <h2 class="section-title">课题组理念</h2>
-  
   <div class="concept-card">
     <div class="concept-content">
       <p>课题组提倡在高效的科研节奏与健康的生活状态之间达成平衡。我们相信，良好的科研产出源于专注与持续，而非无休止的消耗。因此，我们重视规律而充实的工作时间，也希望你能在投入科研时保持高效与自觉，共同营造勤奋踏实的团队氛围。</p>
@@ -24,31 +22,16 @@ title: "指导学生"
 </div>
 
 <style>
+/* 全局容器放宽 */
+body {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
 .section-container {
   margin: 40px 0;
-}
-
-.section-title {
-  color: #1a4b8c;
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #3498db;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  position: relative;
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100px;
-  height: 3px;
-  background: linear-gradient(to right, #3498db, #1a4b8c);
+  max-width: 100%;
 }
 
 .concept-card {
@@ -57,12 +40,6 @@ title: "指导学生"
   border-radius: 15px;
   padding: 35px 40px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-.concept-card:hover {
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-  transform: translateY(-3px);
 }
 
 .concept-content p {
@@ -112,7 +89,7 @@ title: "指导学生"
   color: #1a4b8c;
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding-bottom: 10px;
   border-bottom: 2px solid #e8edf2;
 }
@@ -120,7 +97,7 @@ title: "指导学生"
 .table-container {
   overflow-x: auto;
   margin-bottom: 40px;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid #e8edf2;
 }
 
@@ -132,15 +109,17 @@ title: "指导学生"
 }
 
 .students-table thead {
-  background-color: #1a4b8c;
+  background-color: #f8f9fa !important;
+  border-bottom: 2px solid #e8edf2;
 }
 
 .students-table th {
-  padding: 16px 12px;
+  padding: 12px 10px !important;
   text-align: left;
   font-weight: 600;
-  color: white;
-  font-size: 15px;
+  color: #333 !important;
+  font-size: 14px;
+  border-bottom: 2px solid #e8edf2;
 }
 
 .students-table tbody tr {
@@ -155,8 +134,9 @@ title: "指导学生"
   background-color: #f8fafc;
 }
 
+/* 表格单元格也更扁 */
 .students-table td {
-  padding: 14px 12px;
+  padding: 12px 10px !important;
   vertical-align: top;
   color: #333;
   line-height: 1.5;
@@ -180,9 +160,16 @@ title: "指导学生"
   margin: 40px 0;
 }
 
+.students-table colgroup col:nth-child(1) { width: 10%; }
+.students-table colgroup col:nth-child(2) { width: 12%; }
+.students-table colgroup col:nth-child(3) { width: 35%; }
+.students-table colgroup col:nth-child(4) { width: 33%; }
+.students-table colgroup col:nth-child(5) { width: 10%; }
+
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 26px;
+  body {
+    padding: 0 15px !important;
+    max-width: 100% !important;
   }
   
   .concept-card {
@@ -203,7 +190,14 @@ title: "指导学生"
   
   .students-table th,
   .students-table td {
-    padding: 10px 8px;
+    padding: 10px 8px !important;
+  }
+}
+
+/* 宽屏优化 */
+@media (min-width: 1400px) {
+  body {
+    max-width: 1400px !important;
   }
 }
 </style>
@@ -214,11 +208,11 @@ title: "指导学生"
   <div class="table-container">
     <table class="students-table">
       <colgroup>
+        <col style="width: 10%">
         <col style="width: 12%">
-        <col style="width: 13%">
-        <col style="width: 30%">
-        <col style="width: 30%">
-        <col style="width: 15%">
+        <col style="width: 35%">
+        <col style="width: 33%">
+        <col style="width: 10%">
       </colgroup>
       <thead>
         <tr>
@@ -231,74 +225,88 @@ title: "指导学生"
       </thead>
       <tbody>
         <tr>
-          <td>2025年</td>
+          <td>2025</td>
           <td class="name-bold">陈梦</td>
           <td>多模态虚假新闻识别</td>
           <td>一等奖学金</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td>2025年</td>
+          <td>2025</td>
           <td class="name-bold">董闯豪</td>
           <td>财务欺诈识别</td>
           <td></td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td>2025年</td>
+          <td>2025</td>
           <td class="name-bold">姜伟栋</td>
           <td>谣言早期检测</td>
           <td></td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td>2024年</td>
+          <td>2024</td>
           <td class="name-bold">骆茜</td>
           <td>基于大模型的虚假评论识别</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td>2024年</td>
+          <td>2024</td>
           <td class="name-bold">刘敏</td>
           <td>基于RAG的审计发现结论生成</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td>2023年</td>
+          <td>2023</td>
           <td class="name-bold">陈宇光</td>
           <td>基于传播预测的社交媒体虚假新闻早期识别研究（开题）</td>
           <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td>2023年</td>
+          <td>2023</td>
           <td class="name-bold">尹天祺</td>
           <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究（开题）</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td>2023年</td>
+          <td>2023</td>
           <td class="name-bold">宋昌昊</td>
           <td>基于大模型的上市公司财务舞弊识别研究（开题）</td>
           <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
-          <td>2022年</td>
+          <td>2022</td>
           <td class="name-bold">魏晨阳</td>
           <td>基于异构信息网络的问答社区欺诈信息检测方法研究</td>
           <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award</td>
           <td><span class="status-graduated">毕业去向：九江国泰</span></td>
         </tr>
         <tr>
-          <td>2022年</td>
+          <td>2022</td>
           <td class="name-bold">康钟元</td>
           <td>融合先验知识的科技文献主题识别与演化趋势预测方法研究</td>
           <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）</td>
           <td><span class="status-graduated">毕业去向：中国石化</span></td>
+        </tr>
+        <tr>
+          <td>2021</td>
+          <td class="name-bold">吴海波</td>
+          <td>基于深度学习的审计定性依据和审计建议推荐方法</td>
+          <td>Learning problem-to-suggestion semantic mapping for audit suggestions recommendation in government audit reports，论文，SCI一区，CCF B</td>
+          <td>与伍之昂教授联合培养</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td class="name-bold">许明铭</td>
+          <td>基于异质数据融合学习的在线问答社区欺诈检测研究</td>
+          <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B</td>
+          <td>于南财培养，毕业去向：扬州市网信办</td>
         </tr>
       </tbody>
     </table>
