@@ -54,18 +54,18 @@ title: "获奖信息"
 }
 
 .category-title {
-  color: #1a4b8c;
+  color: #333; 
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #e8edf2;
+  border-bottom: 2px solid #e0e0e0; 
 }
 
 .category-divider {
   border: none;
   height: 1px;
-  background-color: #e8edf2;
+  background-color: #e0e0e0; 
   margin: 40px 0;
 }
 
@@ -77,7 +77,7 @@ title: "获奖信息"
 
 .award-item {
   background: white;
-  border: 1px solid #e8edf2;
+  border: 1px solid #e0e0e0;
   border-radius: 6px;
   padding: 16px 20px;
   transition: all 0.2s ease;
@@ -85,9 +85,8 @@ title: "获奖信息"
 }
 
 .award-item:hover {
-  background-color: #f8fafc;
-  border-color: #d1e8ff;
-  transform: translateX(3px);
+  background-color: #f8f9fa; 
+  border-color: #d0d0d0; 
 }
 
 .award-text {
