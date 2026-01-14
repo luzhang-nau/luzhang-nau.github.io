@@ -146,7 +146,7 @@ title: "指导学生"
 }
 .students-table.graduate-table th:nth-child(2),
 .students-table.graduate-table td:nth-child(2) {
-  width: 110px; /* 姓名 */
+  width: 100px; /* 姓名 */
 }
 .students-table.graduate-table th:nth-child(3),
 .students-table.graduate-table td:nth-child(3) {
@@ -160,18 +160,18 @@ title: "指导学生"
 /* ========== 本科生表格列宽（适配对齐+不溢出） ========== */
 .students-table.undergraduate-table th:nth-child(1),
 .students-table.undergraduate-table td:nth-child(1) {
-  width: 90px; /* 和研究生表格第1列同宽，对齐 */
+  width: 10px; /* 和研究生表格第1列同宽，对齐 */
 }
 .students-table.undergraduate-table th:nth-child(2),
 .students-table.undergraduate-table td:nth-child(2) {
-  min-width: 400px; /* 姓名团队列最小宽度，避免拥挤 */
+  min-width: 300px; /* 姓名团队列最小宽度，避免拥挤 */
 }
 .students-table.undergraduate-table th:nth-child(3),
 .students-table.undergraduate-table td:nth-child(3) {
   min-width: 350px; /* 成果列最小宽度，容纳长文本 */
 }
 .students-table.undergraduate-table td:nth-child(4) {
-  min-width: 80px; /* 备注列最小宽度 */
+  min-width: 90px; /* 备注列最小宽度 */
 }
 
 /* 通用表格行样式 */
