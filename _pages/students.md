@@ -203,7 +203,7 @@ title: "指导学生"
   margin-bottom: 80px !important;
   padding-bottom: 40px !important;
   width: 100%;
-  max-width: calc(100vw - 180px); /* 全局容器也保留右侧180px留白 */
+  max-width: calc(100vw - 100px);
 }
 
 .students-table-section:last-of-type {
