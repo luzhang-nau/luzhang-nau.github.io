@@ -22,7 +22,7 @@ author:
   uri              : # https://luzhang-nau.github.io
   email            : "luzhang@nau.edu.cn" 
   googlescholar    : "https://scholar.google.com.hk/citations?user=8iHtFsIAAAAJ&hl=zh-CN"
-  orcid: "你的ORCID号"  # 例如：0000-0002-1825-0097
+  orcid            : "你的ORCID号"  # 例如：0000-0002-1825-0097
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
