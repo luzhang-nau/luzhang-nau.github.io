@@ -9,7 +9,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "luzhang-nau/luzhang-nau.github.io"
 
 # 主题
-theme: null
+remote_theme: academicpages/academicpages.github.io
 
 author:
   # Biographic information
