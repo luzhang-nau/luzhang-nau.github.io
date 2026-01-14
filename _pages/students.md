@@ -3,9 +3,9 @@ permalink: /students/
 title: "指导学生"
 ---
 
-## 课题组理念
-
-<div class="lab-concept">
+<div class="section-container">
+  <h2 class="section-title">课题组理念</h2>
+  
   <div class="concept-card">
     <div class="concept-content">
       <p>课题组提倡在高效的科研节奏与健康的生活状态之间达成平衡。我们相信，良好的科研产出源于专注与持续，而非无休止的消耗。因此，我们重视规律而充实的工作时间，也希望你能在投入科研时保持高效与自觉，共同营造勤奋踏实的团队氛围。</p>
@@ -16,58 +16,105 @@ title: "指导学生"
       
       <p>我们欢迎有自我驱动力、乐观积极、愿意并肩成长的同学加入。希望同学在读研期间能够保持主动、持续投入，但抱有"我只是想要个学历，别对我那么高要求，周围人都是这么混混的"想法的同学，还请相互放过。读研是一段需要真诚投入的旅程，彼此认同，方能同行。</p>
       
-      <p>期待与你一起，认真科研，认真生活。对课题组研究方向感兴趣并认可我们理念的同学，欢迎发送邮件与我联系。</p>
+      <div class="callout">
+        <p>期待与你一起，认真科研，认真生活。对课题组研究方向感兴趣并认可我们理念的同学，欢迎发送邮件与我联系。</p>
+      </div>
     </div>
   </div>
 </div>
 
 <style>
-.lab-concept {
-  margin: 30px 0;
+.section-container {
+  margin: 40px 0;
+}
+
+.section-title {
+  color: #1a4b8c;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #3498db;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, #3498db, #1a4b8c);
 }
 
 .concept-card {
-  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
-  border: 2px solid #e3f2fd;
-  border-left: 6px solid #3498db;
-  border-radius: 12px;
-  padding: 30px 35px;
-  margin: 20px 0;
-  box-shadow: 0 10px 20px rgba(50, 50, 93, 0.05), 0 6px 6px rgba(0, 0, 0, 0.03);
+  background: white;
+  border: 1px solid #e8edf2;
+  border-radius: 15px;
+  padding: 35px 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  line-height: 1.8;
-  font-size: 16px;
-  color: #2c3e50;
 }
 
 .concept-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(50, 50, 93, 0.1), 0 8px 8px rgba(0, 0, 0, 0.05);
-  border-left-color: #1a4b8c;
-  border-color: #d1e8ff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
 }
 
 .concept-content p {
   margin-bottom: 20px;
+  line-height: 1.8;
+  color: #333;
+  font-size: 16px;
   text-align: justify;
 }
 
-.concept-content p:last-child {
-  margin-bottom: 0;
-  padding-top: 10px;
-  border-top: 1px solid #e8edf2;
-  font-style: italic;
-  color: #1a4b8c;
+.callout {
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f7ff 100%);
+  border-left: 4px solid #3498db;
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
 }
 
-.concept-content p:first-child {
-  font-size: 18px;
+.callout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%233498db" opacity="0.1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>');
+  background-size: contain;
+}
+
+.callout p {
+  margin: 0;
+  font-size: 17px;
   font-weight: 500;
+  color: #1a4b8c;
+  font-style: normal;
+  line-height: 1.7;
 }
 
-.concept-card strong {
-  color: #1a4b8c;
-  font-weight: 600;
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+  
+  .concept-card {
+    padding: 25px 20px;
+  }
+  
+  .concept-content p {
+    font-size: 15px;
+  }
 }
 </style>
 
