@@ -22,19 +22,18 @@ title: "指导学生"
 </div>
 
 <style>
-/* ========== 全局容器：去掉宽度限制，撑满屏幕 ========== */
-.section-container,
-.students-table-section {
-  margin: 0;
-  padding: 0 20px; /* 仅保留左右小边距，避免内容贴边 */
+/* ========== 学生页面专用样式 ========== */
+.section-container {
+  margin: 0 auto;
+  padding: 0 0 0 20px; /* 左侧仅留20px，右侧靠整体宽度控制 */
   box-sizing: border-box;
-  width: 100vw; /* 强制撑满浏览器可视宽度 */
+  width: 100%;
+  max-width: calc(100vw - 180px); /* 关键：右侧固定180px留白 */
 }
 
-/* 概念卡片：去掉最大宽度限制，撑满屏幕 */
+/* 概念卡片：和页面容器对齐，右侧保留180px留白 */
 .concept-card {
-  max-width: none; /* 取消最大宽度限制 */
-  width: 100%;
+  max-width: 100%; /* 继承容器宽度，不超界 */
   margin: 20px 0 30px;
   background: white;
   border: 1px solid #e8edf2;
@@ -81,6 +80,13 @@ title: "指导学生"
   line-height: 1.7;
 }
 
+.students-table-section {
+  margin: 0 auto;
+  padding: 0 0 0 20px; /* 和卡片容器对齐 */
+  width: 100%;
+  max-width: calc(100vw - 180px); /* 右侧固定180px留白 */
+}
+
 .table-title {
   color: #333 !important;
   font-size: 28px;
@@ -90,16 +96,16 @@ title: "指导学生"
   border-bottom: 2px solid #e8edf2;
 }
 
-/* 表格容器：去掉最大宽度，撑满屏幕 */
+/* 表格容器：完全填满父容器，右侧自然保留180px留白 */
 .table-container {
   width: 100%;
-  max-width: none; /* 取消最大宽度限制 */
+  max-width: 100%; /* 不超父容器宽度 */
   margin: 0 0 30px;
   border-radius: 6px;
   border: 1px solid #e8edf2;
 }
 
-/* 表格：固定布局，列宽适配全屏 */
+/* 表格：固定布局，比例分配列宽，充分利用空间 */
 .students-table {
   width: 100%;
   table-layout: fixed;
@@ -125,39 +131,39 @@ title: "指导学生"
   text-overflow: ellipsis;
 }
 
-/* 研究生表格列宽：适配全屏，分配足够空间 */
+/* 研究生表格列宽：按比例分配，最大化利用可用宽度 */
 .students-table.graduate-table th:nth-child(1),
 .students-table.graduate-table td:nth-child(1) {
-   width: 90px;
+  width: 8%; /* 入学年份 */
 }
 .students-table.graduate-table th:nth-child(2),
 .students-table.graduate-table td:nth-child(2) {
-   width: 120px;
+  width: 10%; /* 姓名 */
 }
 .students-table.graduate-table th:nth-child(3),
 .students-table.graduate-table td:nth-child(3) {
-   width: 300px;
+  width: 32%; /* 硕士论文方向 */
 }
 .students-table.graduate-table th:nth-child(4),
 .students-table.graduate-table td:nth-child(4) {
-   width: 480px;
+  width: 50%; /* 成果与荣誉（占比最大，减少换行） */
 }
 
 /* 本科生表格列宽：按比例分配 */
 .students-table.undergraduate-table th:nth-child(1),
 .students-table.undergraduate-table td:nth-child(1) {
-   width: 90px;
+  width: 8%; /* 年份 */
 }
 .students-table.undergraduate-table th:nth-child(2),
 .students-table.undergraduate-table td:nth-child(2) {
-   width: 350px;
+  width: 35%; /* 姓名/团队 */
 }
 .students-table.undergraduate-table th:nth-child(3),
 .students-table.undergraduate-table td:nth-child(3) {
-    width: 400px;
+  width: 37%; /* 成果 */
 }
 .students-table.undergraduate-table td:nth-child(4) {
-   width: 90px;
+  width: 20%; /* 备注 */
 }
 
 .students-table tbody tr {
@@ -197,15 +203,15 @@ title: "指导学生"
 .main-content {
   margin-bottom: 80px !important;
   padding-bottom: 40px !important;
-  width: 100vw; /* 让页面内容撑满屏幕 */
-  max-width: none; /* 取消页面宽度限制 */
+  width: 100%;
+  max-width: calc(100vw - 180px); /* 全局容器也保留右侧180px留白 */
 }
 
 .students-table-section:last-of-type {
   margin-bottom: 60px;
 }
 
-/* 响应式适配：小屏幕按比例收缩 */
+/* ========== 响应式适配：小屏幕自动适配 ========== */
 @media (max-width: 1200px) {
   .students-table.graduate-table th:nth-child(4),
   .students-table.graduate-table td:nth-child(4) {
@@ -227,6 +233,23 @@ title: "指导学生"
   .students-table th,
   .students-table td {
     padding: 10px 12px !important;
+  }
+  /* 小屏幕下右侧留白自动减少，避免内容过窄 */
+  .section-container,
+  .students-table-section,
+  .page__content,
+  .main-content {
+    max-width: calc(100vw - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .students-table {
+    font-size: 13px;
+  }
+  .students-table th,
+  .students-table td {
+    padding: 8px 10px !important;
   }
 }
 </style>
