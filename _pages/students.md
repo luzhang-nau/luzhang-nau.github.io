@@ -22,16 +22,14 @@ title: "指导学生"
 </div>
 
 <style>
-
-body {
-  max-width: 1400px !important; /* 进一步放宽到1400px */
-  margin: 0 auto !important;
-  padding: 0 40px !important; /* 增加左右内边距 */
-}
-
-.section-container {
-  margin: 40px 0;
-  max-width: 100%;
+/* ========== 学生页面专用样式 ========== */
+/* 只放宽表格相关部分 */
+.section-container,
+.students-table-section {
+  max-width: 1600px;  /* 放宽到1600px */
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .concept-card {
@@ -82,7 +80,7 @@ body {
 
 /* 表格样式 */
 .students-table-section {
-  margin: 50px 0;
+  margin: 50px auto;  /* 修改为auto居中 */
 }
 
 .table-title {
@@ -94,14 +92,19 @@ body {
   border-bottom: 2px solid #e8edf2;
 }
 
+/* 表格容器占满可用空间 */
 .table-container {
+  width: 100%;
   overflow-x: auto;
   margin-bottom: 50px;
   border-radius: 6px;
   border: 1px solid #e8edf2;
+  -webkit-overflow-scrolling: touch; /* 移动端平滑滚动 */
 }
 
+/* 增加表格最小宽度 */
 .students-table {
+  min-width: 1200px;  /* 增加最小宽度 */
   width: 100%;
   border-collapse: collapse;
   background: white;
@@ -159,21 +162,21 @@ body {
   border: none;
   height: 1px;
   background-color: #e8edf2;
-  margin: 60px 0;
+  margin: 60px auto;  /* 修改为auto居中 */
+  max-width: 1600px;  /* 与容器同宽 */
 }
 
-/* 调整研究生表格列宽 - 去掉备注列，调整其他列 */
-.students-table.graduate-table colgroup col:nth-child(1) { width: 10%; }  /* 入学年份 */
-.students-table.graduate-table colgroup col:nth-child(2) { width: 12%; }  /* 姓名 */
+/* 调整研究生表格列宽 - 给"成果与荣誉"更多空间 */
+.students-table.graduate-table colgroup col:nth-child(1) { width: 8%; }   /* 入学年份 */
+.students-table.graduate-table colgroup col:nth-child(2) { width: 10%; }  /* 姓名 */
 .students-table.graduate-table colgroup col:nth-child(3) { width: 30%; }  /* 硕士论文（研究方向） */
-.students-table.graduate-table colgroup col:nth-child(4) { width: 48%; }  /* 成果与荣誉 */
+.students-table.graduate-table colgroup col:nth-child(4) { width: 52%; }  /* 成果与荣誉 */
 
 /* 调整本科生表格列宽 */
 .students-table.undergraduate-table colgroup col:nth-child(1) { width: 10%; }  /* 年份 */
 .students-table.undergraduate-table colgroup col:nth-child(2) { width: 35%; }  /* 姓名（团队） */
 .students-table.undergraduate-table colgroup col:nth-child(3) { width: 45%; }  /* 成果 */
 .students-table.undergraduate-table colgroup col:nth-child(4) { width: 10%; }  /* 备注 */
-
 
 .page__content,
 .main-content {
@@ -185,17 +188,23 @@ body {
   margin-bottom: 60px;
 }
 
+/* ========== 响应式设计 ========== */
 @media (max-width: 1024px) {
-  body {
-    padding: 0 30px !important;
-    max-width: 1200px !important;
+  .section-container,
+  .students-table-section {
+    padding: 0 30px;
+  }
+  
+  .students-table {
+    min-width: 1100px;  /* 中等屏幕稍小一点 */
   }
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 0 20px !important;
-    max-width: 100% !important;
+  .section-container,
+  .students-table-section {
+    padding: 0 20px;
+    max-width: 100%;  /* 小屏幕用满宽 */
   }
   
   .concept-card {
@@ -213,6 +222,7 @@ body {
   
   .students-table {
     font-size: 14px;
+    min-width: 1000px;  /* 移动端最小宽度 */
   }
   
   .students-table th,
@@ -221,19 +231,20 @@ body {
   }
   
   .table-divider {
-    margin: 40px 0;
+    margin: 40px auto;
   }
   
-
-  .students-table.graduate-table colgroup col:nth-child(1) { width: 15%; }
-  .students-table.graduate-table colgroup col:nth-child(2) { width: 15%; }
+  /* 小屏幕调整列宽 */
+  .students-table.graduate-table colgroup col:nth-child(1) { width: 12%; }
+  .students-table.graduate-table colgroup col:nth-child(2) { width: 12%; }
   .students-table.graduate-table colgroup col:nth-child(3) { width: 35%; }
-  .students-table.graduate-table colgroup col:nth-child(4) { width: 35%; }
+  .students-table.graduate-table colgroup col:nth-child(4) { width: 41%; }
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 0 15px !important;
+  .section-container,
+  .students-table-section {
+    padding: 0 15px;
   }
   
   .students-table th,
@@ -241,12 +252,34 @@ body {
     padding: 8px 10px !important;
     font-size: 13px;
   }
+  
+  .students-table {
+    min-width: 900px;  /* 超小屏幕最小宽度 */
+  }
 }
 
-
+/* 大屏幕下进一步放宽 */
 @media (min-width: 1600px) {
-  body {
-    max-width: 1600px !important;
+  .section-container,
+  .students-table-section {
+    max-width: 1800px;  /* 更大屏幕进一步放宽 */
+  }
+  
+  .students-table {
+    min-width: 1400px;  /* 增加表格最小宽度 */
+  }
+  
+  .students-table.graduate-table colgroup col:nth-child(1) { width: 7%; }
+  .students-table.graduate-table colgroup col:nth-child(2) { width: 9%; }
+  .students-table.graduate-table colgroup col:nth-child(3) { width: 28%; }
+  .students-table.graduate-table colgroup col:nth-child(4) { width: 56%; }  /* 给成果更多空间 */
+}
+
+/* 超大屏幕 */
+@media (min-width: 2000px) {
+  .section-container,
+  .students-table-section {
+    max-width: 2000px;  /* 超大屏幕可进一步放宽 */
   }
 }
 </style>
@@ -257,10 +290,10 @@ body {
   <div class="table-container">
     <table class="students-table graduate-table">
       <colgroup>
-        <col style="width: 10%">  <!-- 入学年份 -->
-        <col style="width: 12%">  <!-- 姓名 -->
-        <col style="width: 30%">  <!-- 硕士论文（研究方向）- 缩小 -->
-        <col style="width: 48%">  <!-- 成果与荣誉 - 放宽 -->
+        <col style="width: 8%">   <!-- 入学年份 -->
+        <col style="width: 10%">  <!-- 姓名 -->
+        <col style="width: 30%">  <!-- 硕士论文（研究方向） -->
+        <col style="width: 52%">  <!-- 成果与荣誉 -->
       </colgroup>
       <thead>
         <tr>
