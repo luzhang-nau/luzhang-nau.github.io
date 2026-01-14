@@ -1,6 +1,7 @@
 ---
 permalink: /awards/
 title: "获奖信息"
+layout: single
 ---
 
 <div class="awards-section">
