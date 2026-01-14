@@ -22,13 +22,13 @@ title: "指导学生"
 </div>
 
 <style>
-/* ========== 学生页面专用样式 ========== */
+
 .section-container {
   margin: 0 auto;
-  padding: 0 0 0 20px; /* 左侧仅留20px，右侧靠整体宽度控制 */
+  padding: 0 0 0 20px; 
   box-sizing: border-box;
   width: 100%;
-  max-width: calc(100vw - 180px); /* 关键：右侧固定180px留白 */
+  max-width: calc(100vw - 100px); 
 }
 
 /* 概念卡片：和页面容器对齐，右侧保留180px留白 */
@@ -82,9 +82,9 @@ title: "指导学生"
 
 .students-table-section {
   margin: 0 auto;
-  padding: 0 0 0 20px; /* 和卡片容器对齐 */
+  padding: 0 0 0 20px; 
   width: 100%;
-  max-width: calc(100vw - 180px); /* 右侧固定180px留白 */
+  max-width: calc(100vw - 100px); /* 右侧固定180px留白 */
 }
 
 .table-title {
@@ -96,16 +96,15 @@ title: "指导学生"
   border-bottom: 2px solid #e8edf2;
 }
 
-/* 表格容器：完全填满父容器，右侧自然保留180px留白 */
+
 .table-container {
   width: 100%;
-  max-width: 100%; /* 不超父容器宽度 */
+  max-width: 100%; 
   margin: 0 0 30px;
   border-radius: 6px;
   border: 1px solid #e8edf2;
 }
 
-/* 表格：固定布局，比例分配列宽，充分利用空间 */
 .students-table {
   width: 100%;
   table-layout: fixed;
