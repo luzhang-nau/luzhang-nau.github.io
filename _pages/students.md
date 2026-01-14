@@ -19,20 +19,96 @@ title: "指导学生"
 
 ## 指导研究生情况
 
-| 入学年份 | 姓名 | 硕士论文（研究方向） | 成果与荣誉 | 备注 |
-|:---------|:-----|:---------------------|:-----------|:-----|
-| 2025 | 陈梦 | 多模态虚假新闻识别 | 一等奖学金 | 在读 |
-| 2025 | 董闯豪 | 财务欺诈识别 | | 在读 |
-| 2025 | 姜伟栋 | 谣言早期检测 | | 在读 |
-| 2024 | 骆茜 | 基于大模型的虚假评论识别 | 2025中国大学生服务外包创新创业大赛，国家级三等奖 | 在读 |
-| 2024 | 刘敏 | 基于RAG的审计发现结论生成 | 2025中国大学生服务外包创新创业大赛，国家级三等奖 | 在读 |
-| 2023 | 陈宇光 | 基于传播预测的社交媒体虚假新闻早期识别研究（开题） | Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖 | 在读 |
-| 2023 | 尹天祺 | 考虑模态缺失的社交媒体多模态虚假新闻检测研究（开题） | 2025中国大学生服务外包创新创业大赛，国家级三等奖 | 在读 |
-| 2023 | 宋昌昊 | 基于大模型的上市公司财务舞弊识别研究（开题） | 2025年江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖 | 在读 |
-| 2022 | 魏晨阳 | 基于异构信息网络的问答社区欺诈信息检测方法研究 | Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award | 毕业去向：九江国泰 |
-| 2022 | 康钟元 | 融合先验知识的科技文献主题识别与演化趋势预测方法研究 | 基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核） | 毕业去向：中国石化 |
-| 2021 | 吴海波 | 基于深度学习的审计定性依据和审计建议推荐方法 | Learning problem-to-suggestion semantic mapping for auditsuggestions recommendation in government audit reports，论文，SCI一区，CCF B | 与伍之昂教授联合培养 |
-| 2019 | 许明铭 | 基于异质数据融合学习的在线问答社区欺诈检测研究 | Collusive spam detection from Chinese community questionanswering sites: A collective classification framework，论文，SCI一区，CCF B | 于南财培养，毕业去向：扬州市网信办 |
+<table>
+<colgroup>
+    <col style="width: 10%">
+    <col style="width: 15%">
+    <col style="width: 30%">
+    <col style="width: 30%">
+    <col style="width: 15%">
+</colgroup>
+<thead>
+<tr>
+    <th>入学年份</th>
+    <th>姓名</th>
+    <th>硕士论文（研究方向）</th>
+    <th>成果与荣誉</th>
+    <th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>2025年</td>
+    <td>陈梦</td>
+    <td>多模态虚假新闻识别</td>
+    <td>一等奖学金</td>
+    <td>在读</td>
+</tr>
+<tr>
+    <td>2025年</td>
+    <td>董闯豪</td>
+    <td>财务欺诈识别</td>
+    <td></td>
+    <td>在读</td>
+</tr>
+<tr>
+    <td>2025年</td>
+    <td>姜伟栋</td>
+    <td>谣言早期检测</td>
+    <td></td>
+    <td>在读</td>
+</tr>
+<tr>
+    <td>2024年</td>
+    <td>骆茜</td>
+    <td>基于大模型的虚假评论识别</td>
+    <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
+    <td>在读</td>
+</tr>
+<tr>
+    <td>2024年</td>
+    <td>刘敏</td>
+    <td>基于RAG的审计发现结论生成</td>
+    <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
+    <td>在读</td>
+</tr>
+<tr>
+    <td>2023年</td>
+    <td>陈宇光</td>
+    <td>基于传播预测的社交媒体虚假新闻早期识别研究（开题）</td>
+    <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
+    <td>在读</td>
+</tr>
+<tr>
+    <td>2023年</td>
+    <td>尹天祺</td>
+    <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究（开题）</td>
+    <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
+    <td>在读</td>
+</tr>
+<tr>
+    <td>2023年</td>
+    <td>宋昌昊</td>
+    <td>基于大模型的上市公司财务舞弊识别研究（开题）</td>
+    <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
+    <td>在读</td>
+</tr>
+<tr>
+    <td>2022年</td>
+    <td>魏晨阳</td>
+    <td>基于异构信息网络的问答社区欺诈信息检测方法研究</td>
+    <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award</td>
+    <td>毕业去向：九江国泰</td>
+</tr>
+<tr>
+    <td>2022年</td>
+    <td>康钟元</td>
+    <td>融合先验知识的科技文献主题识别与演化趋势预测方法研究</td>
+    <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）</td>
+    <td>毕业去向：中国石化</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
