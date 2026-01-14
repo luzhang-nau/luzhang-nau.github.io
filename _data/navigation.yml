@@ -9,6 +9,6 @@ main:
     url: "/teaching/"           # → teaching.md
   - title: "获奖信息"
     url: "/awards/"             # → awards.md
-
-nav_style: "center" 
+  - title: "学习资源"
+    url: "/resources/"          # → resources.md
 
