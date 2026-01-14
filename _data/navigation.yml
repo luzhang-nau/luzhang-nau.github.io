@@ -1,6 +1,5 @@
 main:
-  - title: "主页"
-    url: "/"                    # → about.md
+                                # "主页" → about.md
   - title: "发表论文"
     url: "/publications/"       # → publications.md
   - title: "科研项目"
