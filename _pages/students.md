@@ -23,11 +23,18 @@ title: "指导学生"
 
 <style>
 /* ========== 学生页面专用样式 ========== */
-/* 1. 取消卡片和页面的宽度限制，让表格能更宽 */
-.section-container,
+/* 修复：拆分section-container和concept-card样式，解决双卡片问题 */
+.section-container {
+  margin: 0 auto;
+  padding: 0 20px; /* 统一左右边距，保证表格对齐 */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc(100vw - 100px); /* 和表格容器同宽度，保证对齐 */
+}
+
 .concept-card {
-  max-width: none; /* 去掉最大宽度限制，充分利用屏幕 */
-  margin: 20px auto 30px;
+  max-width: 100%; /* 继承section-container宽度，不超界 */
+  margin: 20px 0 30px;
   background: white;
   border: 1px solid #e8edf2;
   border-radius: 15px;
@@ -75,8 +82,9 @@ title: "指导学生"
 
 .students-table-section {
   margin: 0 auto;
-  padding: 0 20px; /* 左右留20px基础边距，不贴屏 */
+  padding: 0 20px; /* 和section-container同边距，保证对齐 */
   width: 100%;
+  max-width: calc(100vw - 100px); /* 和表格容器同宽度，核心对齐逻辑 */
 }
 
 .table-title {
@@ -88,24 +96,34 @@ title: "指导学生"
   border-bottom: 2px solid #e8edf2;
 }
 
-/* 2. 表格容器：撑满屏幕（仅留右侧100px留白） */
+/* 表格容器：固定宽度，和section/table-section对齐 */
 .table-container {
   width: 100%;
-  max-width: calc(100vw - 100px); /* 右侧留100px留白，比之前更宽 */
+  max-width: calc(100vw - 100px); /* 右侧留100px留白，和你满意的研究生宽度匹配 */
   margin: 0 auto 30px;
   border-radius: 6px;
   border: 1px solid #e8edf2;
 }
 
-/* 3. 表格改为自动布局，让列宽随内容自适应 */
-.students-table {
+/* 研究生表格：固定布局+固定列宽（保持你觉得完美的宽度） */
+.students-table.graduate-table {
   width: 100%;
-  table-layout: auto; /* 关键：取消固定布局，列宽自动适配内容 */
+  table-layout: fixed; /* 固定布局，列宽不跑偏 */
   border-collapse: collapse;
   background: white;
   font-size: 15px;
 }
 
+/* 本科生表格：自动布局+和研究生表格同容器宽度（保证对齐） */
+.students-table.undergraduate-table {
+  width: 100%;
+  table-layout: auto; /* 自动布局，内容不溢出 */
+  border-collapse: collapse;
+  background: white;
+  font-size: 15px;
+}
+
+/* 通用表格表头样式 */
 .students-table thead {
   background-color: #f8f9fa !important;
   border-bottom: 2px solid #e8edf2;
@@ -121,41 +139,51 @@ title: "指导学生"
   white-space: nowrap;
 }
 
-/* 4. 调整本科生表格列宽（给内容多留空间） */
+/* ========== 核心：固定研究生表格列宽（你觉得完美的宽度） ========== */
+.students-table.graduate-table th:nth-child(1),
+.students-table.graduate-table td:nth-child(1) {
+  width: 90px; /* 入学年份 */
+}
+.students-table.graduate-table th:nth-child(2),
+.students-table.graduate-table td:nth-child(2) {
+  width: 110px; /* 姓名 */
+}
+.students-table.graduate-table th:nth-child(3),
+.students-table.graduate-table td:nth-child(3) {
+  width: 320px; /* 硕士论文方向（你觉得完美的宽度） */
+}
+.students-table.graduate-table th:nth-child(4),
+.students-table.graduate-table td:nth-child(4) {
+  width: calc(100% - 520px); /* 成果列：剩余宽度（90+110+320=520） */
+}
+
+/* ========== 本科生表格列宽（适配对齐+不溢出） ========== */
+.students-table.undergraduate-table th:nth-child(1),
+.students-table.undergraduate-table td:nth-child(1) {
+  width: 90px; /* 和研究生表格第1列同宽，对齐 */
+}
 .students-table.undergraduate-table th:nth-child(2),
 .students-table.undergraduate-table td:nth-child(2) {
-  min-width: 450px; /* 姓名团队列最小宽度设为450px，避免拥挤 */
+  min-width: 400px; /* 姓名团队列最小宽度，避免拥挤 */
 }
 .students-table.undergraduate-table th:nth-child(3),
 .students-table.undergraduate-table td:nth-child(3) {
-  min-width: 400px; /* 成果列最小宽度设为400px，容纳长文本 */
+  min-width: 350px; /* 成果列最小宽度，容纳长文本 */
 }
 .students-table.undergraduate-table td:nth-child(4) {
   min-width: 80px; /* 备注列最小宽度 */
 }
 
-/* 研究生表格列宽保持适度 */
-.students-table.graduate-table th:nth-child(3),
-.students-table.graduate-table td:nth-child(3) {
-  min-width: 350px;
-}
-.students-table.graduate-table th:nth-child(4),
-.students-table.graduate-table td:nth-child(4) {
-  min-width: 400px;
-}
-
+/* 通用表格行样式 */
 .students-table tbody tr {
   border-bottom: 1px solid #f0f4f8;
 }
-
 .students-table tbody tr:last-child {
   border-bottom: none;
 }
-
 .students-table tbody tr:hover {
   background-color: #f8fafc;
 }
-
 .students-table td {
   padding: 12px 15px !important;
   vertical-align: top;
@@ -181,27 +209,25 @@ title: "指导学生"
 .main-content {
   margin-bottom: 80px !important;
   padding-bottom: 40px !important;
-  max-width: none; /* 去掉页面宽度限制 */
+  max-width: none;
 }
 
 .students-table-section:last-of-type {
   margin-bottom: 60px;
 }
 
-/* ========== 响应式适配 ========== */
+/* ========== 响应式适配（不改变核心宽度） ========== */
 @media (max-width: 1400px) {
+  .section-container,
+  .students-table-section,
   .table-container {
-    max-width: calc(100vw - 80px); /* 中屏减少右侧留白 */
-  }
-  .students-table.undergraduate-table th:nth-child(2) {
-    min-width: 350px;
-  }
-  .students-table.undergraduate-table th:nth-child(3) {
-    min-width: 300px;
+    max-width: calc(100vw - 80px);
   }
 }
 
 @media (max-width: 1024px) {
+  .section-container,
+  .students-table-section,
   .table-container {
     max-width: calc(100vw - 40px);
   }
