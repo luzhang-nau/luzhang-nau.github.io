@@ -22,11 +22,11 @@ title: "指导学生"
 </div>
 
 <style>
-/* 全局容器放宽 */
+
 body {
-  max-width: 1200px !important;
+  max-width: 1400px !important; /* 进一步放宽到1400px */
   margin: 0 auto !important;
-  padding: 0 20px !important;
+  padding: 0 40px !important; /* 增加左右内边距 */
 }
 
 .section-container {
@@ -86,17 +86,17 @@ body {
 }
 
 .table-title {
-  color: #1a4b8c;
+  color: #333 !important;
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding-bottom: 10px;
   border-bottom: 2px solid #e8edf2;
 }
 
 .table-container {
   overflow-x: auto;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   border-radius: 6px;
   border: 1px solid #e8edf2;
 }
@@ -106,6 +106,7 @@ body {
   border-collapse: collapse;
   background: white;
   font-size: 15px;
+  table-layout: fixed; 
 }
 
 .students-table thead {
@@ -114,7 +115,7 @@ body {
 }
 
 .students-table th {
-  padding: 12px 10px !important;
+  padding: 12px 15px !important;
   text-align: left;
   font-weight: 600;
   color: #333 !important;
@@ -134,12 +135,13 @@ body {
   background-color: #f8fafc;
 }
 
-/* 表格单元格也更扁 */
 .students-table td {
-  padding: 12px 10px !important;
+  padding: 12px 15px !important;
   vertical-align: top;
   color: #333;
   line-height: 1.5;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
 }
 
 .status-in-study,
@@ -157,18 +159,42 @@ body {
   border: none;
   height: 1px;
   background-color: #e8edf2;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
-.students-table colgroup col:nth-child(1) { width: 10%; }
-.students-table colgroup col:nth-child(2) { width: 12%; }
-.students-table colgroup col:nth-child(3) { width: 35%; }
-.students-table colgroup col:nth-child(4) { width: 33%; }
-.students-table colgroup col:nth-child(5) { width: 10%; }
+/* 调整研究生表格列宽 - 去掉备注列，调整其他列 */
+.students-table.graduate-table colgroup col:nth-child(1) { width: 10%; }  /* 入学年份 */
+.students-table.graduate-table colgroup col:nth-child(2) { width: 12%; }  /* 姓名 */
+.students-table.graduate-table colgroup col:nth-child(3) { width: 30%; }  /* 硕士论文（研究方向） */
+.students-table.graduate-table colgroup col:nth-child(4) { width: 48%; }  /* 成果与荣誉 */
+
+/* 调整本科生表格列宽 */
+.students-table.undergraduate-table colgroup col:nth-child(1) { width: 10%; }  /* 年份 */
+.students-table.undergraduate-table colgroup col:nth-child(2) { width: 35%; }  /* 姓名（团队） */
+.students-table.undergraduate-table colgroup col:nth-child(3) { width: 45%; }  /* 成果 */
+.students-table.undergraduate-table colgroup col:nth-child(4) { width: 10%; }  /* 备注 */
+
+
+.page__content,
+.main-content {
+  margin-bottom: 80px !important;
+  padding-bottom: 40px !important;
+}
+
+.students-table-section:last-of-type {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 0 30px !important;
+    max-width: 1200px !important;
+  }
+}
 
 @media (max-width: 768px) {
   body {
-    padding: 0 15px !important;
+    padding: 0 20px !important;
     max-width: 100% !important;
   }
   
@@ -182,6 +208,7 @@ body {
   
   .table-title {
     font-size: 22px;
+    margin-bottom: 20px;
   }
   
   .students-table {
@@ -190,14 +217,36 @@ body {
   
   .students-table th,
   .students-table td {
-    padding: 10px 8px !important;
+    padding: 10px 12px !important;
+  }
+  
+  .table-divider {
+    margin: 40px 0;
+  }
+  
+
+  .students-table.graduate-table colgroup col:nth-child(1) { width: 15%; }
+  .students-table.graduate-table colgroup col:nth-child(2) { width: 15%; }
+  .students-table.graduate-table colgroup col:nth-child(3) { width: 35%; }
+  .students-table.graduate-table colgroup col:nth-child(4) { width: 35%; }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 15px !important;
+  }
+  
+  .students-table th,
+  .students-table td {
+    padding: 8px 10px !important;
+    font-size: 13px;
   }
 }
 
-/* 宽屏优化 */
-@media (min-width: 1400px) {
+
+@media (min-width: 1600px) {
   body {
-    max-width: 1400px !important;
+    max-width: 1600px !important;
   }
 }
 </style>
@@ -206,13 +255,12 @@ body {
   <h2 class="table-title">指导研究生情况</h2>
   
   <div class="table-container">
-    <table class="students-table">
+    <table class="students-table graduate-table">
       <colgroup>
-        <col style="width: 10%">
-        <col style="width: 12%">
-        <col style="width: 35%">
-        <col style="width: 33%">
-        <col style="width: 10%">
+        <col style="width: 10%">  <!-- 入学年份 -->
+        <col style="width: 12%">  <!-- 姓名 -->
+        <col style="width: 30%">  <!-- 硕士论文（研究方向）- 缩小 -->
+        <col style="width: 48%">  <!-- 成果与荣誉 - 放宽 -->
       </colgroup>
       <thead>
         <tr>
@@ -220,7 +268,6 @@ body {
           <th>姓名</th>
           <th>硕士论文（研究方向）</th>
           <th>成果与荣誉</th>
-          <th>备注</th>
         </tr>
       </thead>
       <tbody>
@@ -228,85 +275,73 @@ body {
           <td>2025</td>
           <td class="name-bold">陈梦</td>
           <td>多模态虚假新闻识别</td>
-          <td>一等奖学金</td>
-          <td><span class="status-in-study">在读</span></td>
+          <td>一等奖学金<span class="status-in-study">（在读）</span></td>
         </tr>
         <tr>
           <td>2025</td>
           <td class="name-bold">董闯豪</td>
           <td>财务欺诈识别</td>
-          <td></td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
           <td>2025</td>
           <td class="name-bold">姜伟栋</td>
           <td>谣言早期检测</td>
-          <td></td>
           <td><span class="status-in-study">在读</span></td>
         </tr>
         <tr>
           <td>2024</td>
           <td class="name-bold">骆茜</td>
           <td>基于大模型的虚假评论识别</td>
-          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
-          <td><span class="status-in-study">在读</span></td>
+          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
         </tr>
         <tr>
           <td>2024</td>
           <td class="name-bold">刘敏</td>
           <td>基于RAG的审计发现结论生成</td>
-          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
-          <td><span class="status-in-study">在读</span></td>
+          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
         </tr>
         <tr>
           <td>2023</td>
           <td class="name-bold">陈宇光</td>
           <td>基于传播预测的社交媒体虚假新闻早期识别研究（开题）</td>
-          <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
-          <td><span class="status-in-study">在读</span></td>
+          <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
         </tr>
         <tr>
           <td>2023</td>
           <td class="name-bold">尹天祺</td>
           <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究（开题）</td>
-          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
-          <td><span class="status-in-study">在读</span></td>
+          <td>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
         </tr>
         <tr>
           <td>2023</td>
           <td class="name-bold">宋昌昊</td>
           <td>基于大模型的上市公司财务舞弊识别研究（开题）</td>
-          <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
-          <td><span class="status-in-study">在读</span></td>
+          <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖<span class="status-in-study">（在读）</span></td>
         </tr>
         <tr>
           <td>2022</td>
           <td class="name-bold">魏晨阳</td>
           <td>基于异构信息网络的问答社区欺诈信息检测方法研究</td>
-          <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award</td>
-          <td><span class="status-graduated">毕业去向：九江国泰</span></td>
+          <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award<br><span class="status-graduated">毕业去向：九江国泰</span></td>
         </tr>
         <tr>
           <td>2022</td>
           <td class="name-bold">康钟元</td>
           <td>融合先验知识的科技文献主题识别与演化趋势预测方法研究</td>
-          <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）</td>
-          <td><span class="status-graduated">毕业去向：中国石化</span></td>
+          <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）<br><span class="status-graduated">毕业去向：中国石化</span></td>
         </tr>
         <tr>
           <td>2021</td>
           <td class="name-bold">吴海波</td>
           <td>基于深度学习的审计定性依据和审计建议推荐方法</td>
-          <td>Learning problem-to-suggestion semantic mapping for audit suggestions recommendation in government audit reports，论文，SCI一区，CCF B</td>
-          <td>与伍之昂教授联合培养</td>
+          <td>Learning problem-to-suggestion semantic mapping for audit suggestions recommendation in government audit reports，论文，SCI一区，CCF B<br>与伍之昂教授联合培养</td>
         </tr>
         <tr>
           <td>2019</td>
           <td class="name-bold">许明铭</td>
           <td>基于异质数据融合学习的在线问答社区欺诈检测研究</td>
-          <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B</td>
-          <td>于南财培养，毕业去向：扬州市网信办</td>
+          <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B<br>于南财培养，毕业去向：扬州市网信办</td>
         </tr>
       </tbody>
     </table>
@@ -319,13 +354,19 @@ body {
   <h2 class="table-title">指导本科生情况</h2>
   
   <div class="table-container">
-    <table class="students-table">
+    <table class="students-table undergraduate-table">
+      <colgroup>
+        <col style="width: 10%">  <!-- 年份 -->
+        <col style="width: 35%">  <!-- 姓名（团队） -->
+        <col style="width: 45%">  <!-- 成果 -->
+        <col style="width: 10%">  <!-- 备注 -->
+      </colgroup>
       <thead>
         <tr>
-          <th style="width: 15%">年份</th>
-          <th style="width: 35%">姓名（团队）</th>
-          <th style="width: 40%">成果</th>
-          <th style="width: 10%">备注</th>
+          <th>年份</th>
+          <th>姓名（团队）</th>
+          <th>成果</th>
+          <th>备注</th>
         </tr>
       </thead>
       <tbody>
@@ -393,3 +434,6 @@ body {
     </table>
   </div>
 </div>
+
+<!-- 添加额外的底部间距 -->
+<div style="height: 60px;"></div>
