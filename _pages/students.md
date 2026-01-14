@@ -316,67 +316,67 @@ title: "指导学生"
         <tr>
           <th style="width: 15%">年份</th>
           <th style="width: 35%">姓名（团队）</th>
-          <th style="width: 35%">成果</th>
-          <th style="width: 15%">备注</th>
+          <th style="width: 40%">成果</th>
+          <th style="width: 10%">备注</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>2025</td>
+          <td>2025年</td>
           <td class="name-bold">陈稳、汪乔羿、钱珉宇、胡汪昊、苏星语</td>
           <td>大学生创新创业训练计划项目、国家级</td>
           <td></td>
         </tr>
         <tr>
-          <td>2025</td>
+          <td>2025年</td>
           <td class="name-bold">张倓硕、张璟晗、沈子辰、陈信通、彭贵栓</td>
           <td>大学生创新创业训练计划项目、省级</td>
           <td></td>
         </tr>
         <tr>
-          <td>2025</td>
+          <td>2025年</td>
           <td class="name-bold">唐文静、沈诗典、钱秋霖、朱纯瑜、陈笑悦</td>
           <td>中国大学生计算机设计大赛，江苏省三等奖</td>
           <td></td>
         </tr>
         <tr>
-          <td>2023</td>
+          <td>2023年</td>
           <td class="name-bold">吴菡玥、李诗音、葛煜琦、徐发、金海涛、苏容锦</td>
           <td>"挑战杯"中国大学生创业计划竞赛，国家铜奖</td>
           <td></td>
         </tr>
         <tr>
-          <td>2022</td>
+          <td>2022年</td>
           <td class="name-bold">徐发、李心怡、赵梦颖</td>
           <td>中国大学生计算机设计大赛，全国二等奖、江苏省特等奖</td>
           <td></td>
         </tr>
         <tr>
-          <td>2019</td>
+          <td>2019年</td>
           <td class="name-bold">华璇</td>
           <td>蓝桥杯，江苏省一等奖</td>
           <td>南财</td>
         </tr>
         <tr>
-          <td>2018</td>
+          <td>2018年</td>
           <td class="name-bold">宛子涵</td>
           <td>蓝桥杯，全国三等奖</td>
           <td>南财</td>
         </tr>
         <tr>
-          <td>2017</td>
+          <td>2017年</td>
           <td class="name-bold">沈童</td>
           <td>蓝桥杯，全国三等奖</td>
           <td>南财</td>
         </tr>
         <tr>
-          <td>2017</td>
+          <td>2017年</td>
           <td class="name-bold">袁秦盟</td>
           <td>蓝桥杯，全国一等奖</td>
           <td>南财</td>
         </tr>
         <tr>
-          <td>2017</td>
+          <td>2017年</td>
           <td class="name-bold">沈童、赵子维、程雯菲</td>
           <td>中国大学生计算机设计大赛，全国三等奖</td>
           <td>南财</td>
