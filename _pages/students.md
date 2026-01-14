@@ -6,40 +6,20 @@ title: "指导学生"
 ## 课题组理念
 
 <div class="lab-concept">
-
-
-### 🎯 科研与生活的平衡
-<div class="concept-card">
-课题组提倡在高效的科研节奏与健康的生活状态之间达成平衡。我们相信，良好的科研产出源于专注与持续，而非无休止的消耗。因此，我们重视规律而充实的工作时间，也希望你能在投入科研时保持高效与自觉，共同营造勤奋踏实的团队氛围。
+  <div class="concept-card">
+    <div class="concept-content">
+      <p>课题组提倡在高效的科研节奏与健康的生活状态之间达成平衡。我们相信，良好的科研产出源于专注与持续，而非无休止的消耗。因此，我们重视规律而充实的工作时间，也希望你能在投入科研时保持高效与自觉，共同营造勤奋踏实的团队氛围。</p>
+      
+      <p>我们同样注重松弛平等的师生关系与团队文化。导师不会过度施压，但也绝不做所谓的"羊导"。我们相信，真正的充实感来自于对工作的投入与对生活的热爱。因此，我们期待你能在科研时间内保持高效与专注，而闲暇时则挥洒朝气、玩出精彩。课题组会不定期组织爬山、聚餐、轰趴、春秋游等休闲活动，希望同学们在学习工作之余，能够精彩地过好每一天，培养一两项爱好，假期出去走走看看，纵览祖国的大好河山与人文风貌（课题组亦会通过学科竞赛、学术会议等形式支持大家"游学"）。如果你愿意分享生活中的点滴，这里也会是一个愿意倾听的集体。</p>
+      
+      <p>在这样的环境中，我们见证了团队的持续成长，也收获了扎实的成果：历届研究生毕业时大多有北核以上的论文发表或授权发明专利，在校期间多人荣获一等奖学金、专项奖学金、学术会议最佳论文奖，立项省级科研项目等。这些成果属于每一个为工作倾注心力、也为生活蓄满能量的成员。</p>
+      
+      <p>我们欢迎有自我驱动力、乐观积极、愿意并肩成长的同学加入。希望同学在读研期间能够保持主动、持续投入，但抱有"我只是想要个学历，别对我那么高要求，周围人都是这么混混的"想法的同学，还请相互放过。读研是一段需要真诚投入的旅程，彼此认同，方能同行。</p>
+      
+      <p>期待与你一起，认真科研，认真生活。对课题组研究方向感兴趣并认可我们理念的同学，欢迎发送邮件与我联系。</p>
+    </div>
+  </div>
 </div>
-
-
-### 🤝 松弛平等的师生关系
-<div class="concept-card">
-我们同样注重松弛平等的师生关系与团队文化。导师不会过度施压，但也绝不做所谓的"羊导"。我们相信，真正的充实感来自于对工作的投入与对生活的热爱。因此，我们期待你能在科研时间内保持高效与专注，而闲暇时则挥洒朝气、玩出精彩。
-</div>
-
-
-### 🎉 丰富的团队活动
-<div class="concept-card">
-课题组会不定期组织爬山、聚餐、轰趴、春秋游等休闲活动，希望同学们在学习工作之余，能够精彩地过好每一天，培养一两项爱好，假期出去走走看看，纵览祖国的大好河山与人文风貌（课题组亦会通过学科竞赛、学术会议等形式支持大家"游学"）。如果你愿意分享生活中的点滴，这里也会是一个愿意倾听的集体。
-</div>
-
-
-### 📈 坚实的团队成果
-<div class="concept-card">
-在这样的环境中，我们见证了团队的持续成长，也收获了扎实的成果：历届研究生毕业时大多有北核以上的论文发表或授权发明专利，在校期间多人荣获一等奖学金、专项奖学金、学术会议最佳论文奖，立项省级科研项目等。这些成果属于每一个为工作倾注心力、也为生活蓄满能量的成员。
-</div>
-
-
-### 💫 我们的期待
-<div class="concept-card">
-我们欢迎有自我驱动力、乐观积极、愿意并肩成长的同学加入。希望同学在读研期间能够保持主动、持续投入，但抱有"我只是想要个学历，别对我那么高要求，周围人都是这么混混的"想法的同学，还请相互放过。读研是一段需要真诚投入的旅程，彼此认同，方能同行。
-</div>
-
-</div>
-
-期待与你一起，认真科研，认真生活。对课题组研究方向感兴趣并认可我们理念的同学，欢迎发送邮件与我联系。
 
 <style>
 .lab-concept {
@@ -48,33 +28,46 @@ title: "指导学生"
 
 .concept-card {
   background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
-  border-left: 4px solid #3498db;
-  border-radius: 0 8px 8px 0;
-  padding: 20px 25px;
-  margin: 15px 0 25px 0;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid #e3f2fd;
+  border-left: 6px solid #3498db;
+  border-radius: 12px;
+  padding: 30px 35px;
+  margin: 20px 0;
+  box-shadow: 0 10px 20px rgba(50, 50, 93, 0.05), 0 6px 6px rgba(0, 0, 0, 0.03);
   transition: all 0.3s ease;
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #2c3e50;
 }
 
 .concept-card:hover {
-  transform: translateX(5px);
-  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(50, 50, 93, 0.1), 0 8px 8px rgba(0, 0, 0, 0.05);
   border-left-color: #1a4b8c;
+  border-color: #d1e8ff;
 }
 
-.lab-concept h3 {
-  color: #2c3e50;
-  margin-top: 30px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid #e8edf2;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.concept-content p {
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
-.lab-concept h3::before {
-  font-size: 1.2em;
+.concept-content p:last-child {
+  margin-bottom: 0;
+  padding-top: 10px;
+  border-top: 1px solid #e8edf2;
+  font-style: italic;
+  color: #1a4b8c;
+}
+
+.concept-content p:first-child {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.concept-card strong {
+  color: #1a4b8c;
+  font-weight: 600;
 }
 </style>
 
