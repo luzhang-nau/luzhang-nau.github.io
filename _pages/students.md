@@ -23,14 +23,14 @@ title: "指导学生"
 
 <style>
 /* ========== 学生页面专用样式 ========== */
-.section-container {
+/*.section-container {
   margin: 0 auto;
   padding: 0 10px; 
   box-sizing: border-box;
   width: 100%;
 }
-
-/* 概念卡片：大幅扩大最大宽度 */
+*/
+.section-container,
 .concept-card {
   max-width: 1900px; 
   margin: 20px auto 30px;
