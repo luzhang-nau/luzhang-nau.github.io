@@ -90,17 +90,17 @@ title: "课程信息"
 }
 
 .section-title {
-  color: #1a4b8c;
+  color: #333; 
   font-size: 28px;
   font-weight: 600;
   padding-bottom: 10px;
-  border-bottom: 2px solid #e8edf2;
+  border-bottom: 2px solid #e0e0e0; 
 }
 
 .section-divider {
   border: none;
   height: 1px;
-  background-color: #e8edf2;
+  background-color: #e0e0e0; 
   margin: 40px 0;
 }
 
@@ -113,7 +113,7 @@ title: "课程信息"
 
 .course-card {
   background: white;
-  border: 1px solid #e8edf2;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 25px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
@@ -122,8 +122,8 @@ title: "课程信息"
 
 .course-card:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  transform: translateY(-3px);
-  border-color: #d1e8ff;
+  /* 去掉 transform: translateY(-3px); */
+  border-color: #d0d0d0; 
 }
 
 .course-header {
@@ -132,11 +132,11 @@ title: "课程信息"
   align-items: flex-start;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #f0f4f8;
+  border-bottom: 1px solid #f0f0f0; 
 }
 
 .course-title {
-  color: #2c3e50;
+  color: #333; 
   font-size: 20px;
   font-weight: 600;
   margin: 0;
@@ -144,7 +144,7 @@ title: "课程信息"
 }
 
 .course-badge {
-  background: #1a4b8c;
+  background: #666;
   color: white;
   padding: 5px 15px;
   border-radius: 15px;
@@ -166,7 +166,7 @@ title: "课程信息"
 }
 
 .info-label {
-  color: #333;
+  color: #333; 
   font-weight: 500;
   font-size: 15px;
   min-width: 80px;
@@ -174,7 +174,7 @@ title: "课程信息"
 }
 
 .info-value {
-  color: #333;
+  color: #333; 
   font-size: 15px;
   line-height: 1.5;
   flex: 1;
@@ -223,6 +223,5 @@ title: "课程信息"
   .section-title {
     font-size: 22px;
   }
-  
 }
 </style>
