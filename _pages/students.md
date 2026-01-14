@@ -140,11 +140,11 @@ title: "指导学生"
 }
 .students-table.graduate-table th:nth-child(3),
 .students-table.graduate-table td:nth-child(3) {
-  min-width: 300px;
+  min-width: 270px;
 }
 .students-table.graduate-table th:nth-child(4),
 .students-table.graduate-table td:nth-child(4) {
-  min-width: 420px;
+  min-width: 450px;
 }
 
 /* 本科生表格列宽规则 */
@@ -315,13 +315,13 @@ title: "指导学生"
           <td>2021年</td>
           <td class="name-bold">吴海波</td>
           <td>基于深度学习的审计定性依据和审计建议推荐方法</td>
-          <td>Learning problem-to-suggestion semantic mapping for audit suggestions recommendation in government audit reports，论文，SCI一区，CCF B<br>与伍之昂教授联合培养</td>
+          <td>Learning problem-to-suggestion semantic mapping for audit suggestions recommendation in government audit reports，论文，SCI一区，CCF B</td>
         </tr>
         <tr>
           <td>2019年</td>
           <td class="name-bold">许明铭</td>
           <td>基于异质数据融合学习的在线问答社区欺诈检测研究</td>
-          <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B<br>于南财培养</td>
+          <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B</td>
         </tr>
       </tbody>
     </table>
