@@ -23,16 +23,17 @@ title: "指导学生"
 
 <style>
 /* ========== 学生页面专用样式 ========== */
-/* 移除最大宽度限制，让内容延伸 */
+/* 使用固定宽度容器让两个表格对齐 */
 .section-container {
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
   width: 100%;
+  max-width: 1400px; /* 增加最大宽度限制，让两个表格对齐 */
 }
 
 .concept-card {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 40px auto;
   background: white;
   border: 1px solid #e8edf2;
@@ -83,6 +84,7 @@ title: "指导学生"
   margin: 50px auto;
   padding: 0 40px;
   width: 100%;
+  max-width: 1400px; /* 让表格容器宽度对齐 */
 }
 
 .table-title {
@@ -108,7 +110,7 @@ title: "指导学生"
   border-collapse: collapse;
   background: white;
   font-size: 15px;
-  table-layout: auto; 
+  table-layout: fixed; /* 使用固定布局，方便控制列宽 */
 }
 
 .students-table thead {
@@ -145,12 +147,6 @@ title: "指导学生"
   line-height: 1.5;
   word-wrap: break-word; 
   overflow-wrap: break-word; 
-  min-width: 150px;
-}
-
-.students-table.graduate-table td:nth-child(3), /* 研究方向 */
-.students-table.graduate-table td:nth-child(4) { /* 成果与荣誉 */
-  min-width: 300px; 
 }
 
 .name-bold {
@@ -158,11 +154,54 @@ title: "指导学生"
   color: #333;
 }
 
+/* 研究生表格列宽调整 - 压缩前三列 */
+.students-table.graduate-table th:nth-child(1),
+.students-table.graduate-table td:nth-child(1) { /* 入学年份 */
+  width: 10%; /* 压缩为原来的2/3左右 */
+}
+
+.students-table.graduate-table th:nth-child(2),
+.students-table.graduate-table td:nth-child(2) { /* 姓名 */
+  width: 10%; /* 压缩为原来的2/3左右 */
+}
+
+.students-table.graduate-table th:nth-child(3),
+.students-table.graduate-table td:nth-child(3) { /* 硕士论文（研究方向） */
+  width: 25%; /* 压缩为原来的2/3左右 */
+}
+
+.students-table.graduate-table th:nth-child(4),
+.students-table.graduate-table td:nth-child(4) { /* 成果与荣誉 */
+  width: 55%; /* 相应增加 */
+}
+
+/* 本科生表格列宽调整 - 与研究生表格对齐 */
+.students-table.undergraduate-table th:nth-child(1),
+.students-table.undergraduate-table td:nth-child(1) { /* 年份 */
+  width: 10%;
+}
+
+.students-table.undergraduate-table th:nth-child(2),
+.students-table.undergraduate-table td:nth-child(2) { /* 姓名（团队） */
+  width: 35%;
+}
+
+.students-table.undergraduate-table th:nth-child(3),
+.students-table.undergraduate-table td:nth-child(3) { /* 成果 */
+  width: 45%;
+}
+
+.students-table.undergraduate-table th:nth-child(4),
+.students-table.undergraduate-table td:nth-child(4) { /* 备注 */
+  width: 10%;
+}
+
 .table-divider {
   border: none;
   height: 1px;
   background-color: #e8edf2;
-  margin: 60px 40px; 
+  margin: 60px auto; 
+  max-width: 1400px; /* 与容器同宽 */
 }
 
 .page__content,
@@ -180,14 +219,12 @@ title: "指导学生"
   .section-container,
   .students-table-section {
     padding: 0 30px;
-  }
-  
-  .concept-card {
     max-width: 100%;
   }
   
   .table-divider {
     margin: 60px 30px;
+    max-width: 100%;
   }
 }
 
@@ -201,13 +238,25 @@ title: "指导学生"
     margin: 60px 20px;
   }
   
-  .students-table td {
-    min-width: 120px;
+  /* 中等屏幕调整列宽 */
+  .students-table.graduate-table th:nth-child(1),
+  .students-table.graduate-table td:nth-child(1) {
+    width: 12%;
   }
   
-  .students-table.graduate-table td:nth-child(3),
+  .students-table.graduate-table th:nth-child(2),
+  .students-table.graduate-table td:nth-child(2) {
+    width: 12%;
+  }
+  
+  .students-table.graduate-table th:nth-child(3),
+  .students-table.graduate-table td:nth-child(3) {
+    width: 30%;
+  }
+  
+  .students-table.graduate-table th:nth-child(4),
   .students-table.graduate-table td:nth-child(4) {
-    min-width: 250px;
+    width: 46%;
   }
 }
 
@@ -248,13 +297,25 @@ title: "指导学生"
     white-space: normal; 
   }
   
-  .students-table td {
-    min-width: 100px;
+  /* 小屏幕调整列宽 */
+  .students-table.graduate-table th:nth-child(1),
+  .students-table.graduate-table td:nth-child(1) {
+    width: 15%;
   }
   
-  .students-table.graduate-table td:nth-child(3),
+  .students-table.graduate-table th:nth-child(2),
+  .students-table.graduate-table td:nth-child(2) {
+    width: 15%;
+  }
+  
+  .students-table.graduate-table th:nth-child(3),
+  .students-table.graduate-table td:nth-child(3) {
+    width: 35%;
+  }
+  
+  .students-table.graduate-table th:nth-child(4),
   .students-table.graduate-table td:nth-child(4) {
-    min-width: 200px;
+    width: 35%;
   }
 }
 
@@ -277,16 +338,6 @@ title: "指导学生"
     margin: 40px 10px;
   }
   
-  /* 超小屏幕进一步调整 */
-  .students-table td {
-    min-width: 80px;
-  }
-  
-  .students-table.graduate-table td:nth-child(3),
-  .students-table.graduate-table td:nth-child(4) {
-    min-width: 150px;
-  }
-  
   /* 手机端强制换行 */
   .students-table td {
     word-break: break-word;
@@ -296,31 +347,13 @@ title: "指导学生"
 @media (min-width: 1600px) {
   .section-container,
   .students-table-section {
-    padding: 0 60px; /* 更大边距 */
-  }
-  
-  .concept-card {
+    padding: 0 60px;
     max-width: 1600px;
   }
   
   .table-divider {
-    margin: 60px 60px;
-  }
-  
-  .students-table.graduate-table td:nth-child(3),
-  .students-table.graduate-table td:nth-child(4) {
-    min-width: 400px;
-  }
-}
-
-@media (min-width: 2000px) {
-  .section-container,
-  .students-table-section {
-    padding: 0 80px;
-  }
-  
-  .table-divider {
-    margin: 60px 80px;
+    margin: 60px auto;
+    max-width: 1600px;
   }
 }
 </style>
