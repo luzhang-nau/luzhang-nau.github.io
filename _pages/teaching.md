@@ -3,7 +3,7 @@ permalink: /teaching/
 title: "课程信息"
 ---
 
----
+<hr style="border: 2px solid #666; margin: 2em 0;" />
 
 ## 本科生课程
 
@@ -15,7 +15,7 @@ title: "课程信息"
 - **授课对象：** 人工智能专业本科生、数据科学与大数据技术本科生  
 - **授课时间：** 秋学期  
 
----
+<hr style="border: 2px solid #666; margin: 2em 0;" />
 
 ## 研究生课程
 
@@ -23,5 +23,5 @@ title: "课程信息"
 - **授课对象：** 计算机技术专业硕士生  
 - **授课时间：** 春学期
 
----
+<hr style="border: 2px solid #666; margin: 2em 0;" />
 
