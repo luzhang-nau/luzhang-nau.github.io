@@ -23,17 +23,16 @@ title: "指导学生"
 
 <style>
 /* ========== 学生页面专用样式 ========== */
-/* 修复：拆分section-container和concept-card样式，解决双卡片问题 */
 .section-container {
   margin: 0 auto;
-  padding: 0 20px; /* 统一左右边距，保证表格对齐 */
+  padding: 0 20px; 
   box-sizing: border-box;
   width: 100%;
-  max-width: calc(100vw - 100px); /* 和表格容器同宽度，保证对齐 */
+  max-width: calc(100vw - 100px); /* 统一容器宽度 */
 }
 
 .concept-card {
-  max-width: 100%; /* 继承section-container宽度，不超界 */
+  max-width: 100%; 
   margin: 20px 0 30px;
   background: white;
   border: 1px solid #e8edf2;
@@ -82,9 +81,9 @@ title: "指导学生"
 
 .students-table-section {
   margin: 0 auto;
-  padding: 0 20px; /* 和section-container同边距，保证对齐 */
+  padding: 0 20px; 
   width: 100%;
-  max-width: calc(100vw - 100px); /* 和表格容器同宽度，核心对齐逻辑 */
+  max-width: calc(100vw - 100px); /* 和section-container同宽，保证对齐 */
 }
 
 .table-title {
@@ -96,34 +95,25 @@ title: "指导学生"
   border-bottom: 2px solid #e8edf2;
 }
 
-/* 表格容器：固定宽度，和section/table-section对齐 */
+/* 表格容器：统一宽度，两个表格共用 */
 .table-container {
   width: 100%;
-  max-width: calc(100vw - 100px); /* 右侧留100px留白，和你满意的研究生宽度匹配 */
+  max-width: calc(100vw - 100px); /* 最终宽度基准，两个表格都用这个 */
   margin: 0 auto 30px;
   border-radius: 6px;
   border: 1px solid #e8edf2;
 }
 
-/* 研究生表格：固定布局+固定列宽（保持你觉得完美的宽度） */
-.students-table.graduate-table {
+/* ========== 核心修改：两个表格用完全相同的布局规则 ========== */
+.students-table {
   width: 100%;
-  table-layout: fixed; /* 固定布局，列宽不跑偏 */
+  table-layout: auto; /* 取消固定布局，和本科生表格一致 */
   border-collapse: collapse;
   background: white;
   font-size: 15px;
 }
 
-/* 本科生表格：自动布局+和研究生表格同容器宽度（保证对齐） */
-.students-table.undergraduate-table {
-  width: 100%;
-  table-layout: auto; /* 自动布局，内容不溢出 */
-  border-collapse: collapse;
-  background: white;
-  font-size: 15px;
-}
-
-/* 通用表格表头样式 */
+/* 通用表头样式 */
 .students-table thead {
   background-color: #f8f9fa !important;
   border-bottom: 2px solid #e8edf2;
@@ -139,39 +129,39 @@ title: "指导学生"
   white-space: nowrap;
 }
 
-/* ========== 核心：固定研究生表格列宽（你觉得完美的宽度） ========== */
+/* ========== 研究生表格：用最小宽度替代固定宽度，保留列宽比例但不限制总宽 ========== */
 .students-table.graduate-table th:nth-child(1),
 .students-table.graduate-table td:nth-child(1) {
-  width: 90px; /* 入学年份 */
+  min-width: 90px; /* 改width为min-width，允许列宽自适应拓展 */
 }
 .students-table.graduate-table th:nth-child(2),
 .students-table.graduate-table td:nth-child(2) {
-  width: 100px; /* 姓名 */
+  min-width: 110px;
 }
 .students-table.graduate-table th:nth-child(3),
 .students-table.graduate-table td:nth-child(3) {
-  width: 320px; /* 硕士论文方向（你觉得完美的宽度） */
+  min-width: 320px; /* 保留你觉得完美的最小宽度，允许拓展 */
 }
 .students-table.graduate-table th:nth-child(4),
 .students-table.graduate-table td:nth-child(4) {
-  width: calc(100% - 520px); /* 成果列：剩余宽度（90+110+320=520） */
+  min-width: 400px; /* 给成果列足够最小宽度，不再用calc限制 */
 }
 
-/* ========== 本科生表格列宽（适配对齐+不溢出） ========== */
+/* ========== 本科生表格：保持原有最小宽度规则 ========== */
 .students-table.undergraduate-table th:nth-child(1),
 .students-table.undergraduate-table td:nth-child(1) {
-  width: 10px; /* 和研究生表格第1列同宽，对齐 */
+  min-width: 90px; /* 和研究生表格第1列对齐 */
 }
 .students-table.undergraduate-table th:nth-child(2),
 .students-table.undergraduate-table td:nth-child(2) {
-  min-width: 300px; /* 姓名团队列最小宽度，避免拥挤 */
+  min-width: 400px;
 }
 .students-table.undergraduate-table th:nth-child(3),
 .students-table.undergraduate-table td:nth-child(3) {
-  min-width: 350px; /* 成果列最小宽度，容纳长文本 */
+  min-width: 350px;
 }
 .students-table.undergraduate-table td:nth-child(4) {
-  min-width: 90px; /* 备注列最小宽度 */
+  min-width: 80px;
 }
 
 /* 通用表格行样式 */
@@ -216,7 +206,7 @@ title: "指导学生"
   margin-bottom: 60px;
 }
 
-/* ========== 响应式适配（不改变核心宽度） ========== */
+/* ========== 响应式适配 ========== */
 @media (max-width: 1400px) {
   .section-container,
   .students-table-section,
