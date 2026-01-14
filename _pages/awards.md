@@ -82,22 +82,12 @@ title: "获奖信息"
   padding: 16px 20px;
   transition: all 0.2s ease;
   position: relative;
-  padding-left: 45px;
 }
 
 .award-item:hover {
   background-color: #f8fafc;
   border-color: #d1e8ff;
   transform: translateX(3px);
-}
-
-.award-item::before {
-  content: '🏆';
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
 }
 
 .award-text {
@@ -119,7 +109,6 @@ title: "获奖信息"
   
   .award-item {
     padding: 14px 15px;
-    padding-left: 40px;
   }
   
   .award-text {
@@ -134,12 +123,6 @@ title: "获奖信息"
   
   .award-item {
     padding: 12px 15px;
-    padding-left: 35px;
-  }
-  
-  .award-item::before {
-    left: 10px;
-    font-size: 14px;
   }
   
   .award-text {
