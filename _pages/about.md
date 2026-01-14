@@ -54,7 +54,17 @@ redirect_from:
 body {
   text-align: justify;
   text-justify: inter-ideograph;
-  color: #333; /* 统一黑色字体 */
+  color: #333;
+}
+
+/* 放宽页面宽度 */
+.container,
+.page__inner-wrap,
+.page__content,
+.main-content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
 }
 
 /* 段落两端对齐 */
@@ -64,15 +74,16 @@ p {
   line-height: 1.8;
   margin-bottom: 1.2em;
   color: #333;
+  font-size: 16px; 
 }
 
 h1, .section-title {
-  color: #333; /* 改为黑色 */
+  color: #333;
   font-size: 28px;
   font-weight: 600;
   margin: 35px 0 20px 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0; /* 浅灰色分隔线 */
+  border-bottom: 1px solid #e0e0e0;
 }
 
 h2, h3, h4 {
@@ -84,12 +95,19 @@ h2, h3, h4 {
   border-bottom: 1px solid #e0e0e0;
 }
 
+/* 修复：去掉卡片前的横线 */
 .callout-box {
-  background-color: #f8f9fa; /* 浅灰色背景 */
+  background-color: #f8f9fa;
   border: 1px solid #e0e0e0;
-  border-left: 4px solid #2c3e50; /* 深灰色左边框 */
+  border-left: 4px solid #2c3e50;
   padding: 20px;
   margin: 25px 0;
+  position: relative;
+}
+
+.callout-box::before,
+.callout-box::after {
+  content: none !important;
 }
 
 .callout-box p {
@@ -121,7 +139,7 @@ h2, h3, h4 {
   color: #2c3e50;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 16px; 
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
@@ -143,6 +161,7 @@ li {
   line-height: 1.6;
   text-align: justify;
   color: #333;
+  font-size: 16px;
 }
 
 ul li strong {
@@ -156,6 +175,7 @@ blockquote {
   margin-left: 0;
   color: #666;
   font-style: italic;
+  font-size: 16px; 
 }
 
 li strong {
@@ -188,6 +208,10 @@ p:last-of-type {
   .callout-box {
     padding: 15px;
   }
+  
+  p, li, .more-info-links a {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -198,6 +222,16 @@ p:last-of-type {
   
   .more-info-links a {
     display: block;
+  }
+}
+
+/* 宽屏优化 */
+@media (min-width: 1400px) {
+  .container,
+  .page__inner-wrap,
+  .page__content,
+  .main-content {
+    max-width: 1400px !important;
   }
 }
 </style>
