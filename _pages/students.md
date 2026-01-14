@@ -22,22 +22,24 @@ title: "指导学生"
 </div>
 
 <style>
-/* ========== 学生页面专用样式 ========== */
-.section-container {
-  margin: 0 auto;
-  padding: 0 10px; /* 进一步缩小边距，最大化可用宽度 */
+/* ========== 全局容器：去掉宽度限制，撑满屏幕 ========== */
+.section-container,
+.students-table-section {
+  margin: 0;
+  padding: 0 20px; /* 仅保留左右小边距，避免内容贴边 */
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw; /* 强制撑满浏览器可视宽度 */
 }
 
-/* 概念卡片：大幅扩大最大宽度 */
+/* 概念卡片：去掉最大宽度限制，撑满屏幕 */
 .concept-card {
-  max-width: 1800px; /* 从1600px提升到1800px，更宽 */
-  margin: 20px auto 30px;
+  max-width: none; /* 取消最大宽度限制 */
+  width: 100%;
+  margin: 20px 0 30px;
   background: white;
   border: 1px solid #e8edf2;
   border-radius: 15px;
-  padding: 30px 40px; /* 恢复稍大的内边距，保持内容舒展 */
+  padding: 30px 40px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -79,12 +81,6 @@ title: "指导学生"
   line-height: 1.7;
 }
 
-.students-table-section {
-  margin: 0 auto;
-  padding: 0 10px; /* 与卡片保持一致的最小边距 */
-  width: 100%;
-}
-
 .table-title {
   color: #333 !important;
   font-size: 28px;
@@ -94,15 +90,16 @@ title: "指导学生"
   border-bottom: 2px solid #e8edf2;
 }
 
+/* 表格容器：去掉最大宽度，撑满屏幕 */
 .table-container {
   width: 100%;
-  max-width: 1880px; /* 表格比卡片宽80px，保持“宽一点”的视觉效果 */
-  margin: 0 auto 30px;
+  max-width: none; /* 取消最大宽度限制 */
+  margin: 0 0 30px;
   border-radius: 6px;
   border: 1px solid #e8edf2;
 }
 
-/* 表格：固定布局，优化列宽适配更宽容器 */
+/* 表格：固定布局，列宽适配全屏 */
 .students-table {
   width: 100%;
   table-layout: fixed;
@@ -128,39 +125,39 @@ title: "指导学生"
   text-overflow: ellipsis;
 }
 
-/* 研究生表格列宽：适配更宽容器，增加内容展示空间 */
+/* 研究生表格列宽：适配全屏，分配足够空间 */
 .students-table.graduate-table th:nth-child(1),
 .students-table.graduate-table td:nth-child(1) {
-  width: 90px; /* 入学年份：略宽一点 */
+   width: 90px;
 }
 .students-table.graduate-table th:nth-child(2),
 .students-table.graduate-table td:nth-child(2) {
-  width: 110px; /* 姓名：略宽一点 */
+   width: 120px;
 }
 .students-table.graduate-table th:nth-child(3),
 .students-table.graduate-table td:nth-child(3) {
-  width: 400px; /* 硕士论文：大幅加宽，减少换行 */
+   width: 300px;
 }
 .students-table.graduate-table th:nth-child(4),
 .students-table.graduate-table td:nth-child(4) {
-  width: calc(100% - 600px); /* 成果与荣誉：剩余宽度更充足 */
+   width: 480px;
 }
 
-/* 本科生表格列宽：适配更宽容器 */
+/* 本科生表格列宽：按比例分配 */
 .students-table.undergraduate-table th:nth-child(1),
 .students-table.undergraduate-table td:nth-child(1) {
-  width: 90px; /* 年份：略宽一点 */
+   width: 90px;
 }
 .students-table.undergraduate-table th:nth-child(2),
 .students-table.undergraduate-table td:nth-child(2) {
-  width: 350px; /* 姓名团队：大幅加宽，减少换行 */
+   width: 350px;
 }
 .students-table.undergraduate-table th:nth-child(3),
 .students-table.undergraduate-table td:nth-child(3) {
-  width: 350px; /* 成果：略宽一点 */
+    width: 400px;
 }
 .students-table.undergraduate-table td:nth-child(4) {
-  width: calc(100% - 890px); /* 备注：剩余宽度 */
+   width: 90px;
 }
 
 .students-table tbody tr {
@@ -193,96 +190,33 @@ title: "指导学生"
   border: none;
   height: 1px;
   background-color: #e8edf2;
-  margin: 30px 10px; 
+  margin: 30px 0;
 }
 
 .page__content,
 .main-content {
   margin-bottom: 80px !important;
   padding-bottom: 40px !important;
+  width: 100vw; /* 让页面内容撑满屏幕 */
+  max-width: none; /* 取消页面宽度限制 */
 }
 
 .students-table-section:last-of-type {
   margin-bottom: 60px;
 }
 
-/* ========== 响应式设计：适配不同宽度屏幕 ========== */
-/* 超大屏（2000px+）：最大化宽度 */
-@media (min-width: 2000px) {
-  .concept-card {
-    max-width: 1900px;
-  }
-  .table-container {
-    max-width: 2000px;
-  }
-}
-
-/* 大屏（1600px+）：保持宽幅 */
-@media (max-width: 1800px) {
-  .concept-card {
-    max-width: 1600px;
-  }
-  .table-container {
-    max-width: 1680px;
-  }
-}
-
-/* 中大屏（1400px+）：适度收缩 */
-@media (max-width: 1600px) {
-  .concept-card {
-    max-width: 1500px;
-  }
-  .table-container {
-    max-width: 1580px;
-  }
-  /* 适配列宽 */
-  .students-table.graduate-table th:nth-child(3),
-  .students-table.graduate-table td:nth-child(3) {
-    width: 350px;
-  }
-  .students-table.undergraduate-table th:nth-child(2),
-  .students-table.undergraduate-table td:nth-child(2) {
-    width: 450px;
-  }
-}
-
-/* 中屏（1024px+）：进一步收缩 */
-@media (max-width: 1400px) {
-  .concept-card {
-    max-width: 1300px;
-  }
-  .table-container {
-    max-width: 1380px;
+/* 响应式适配：小屏幕按比例收缩 */
+@media (max-width: 1200px) {
+  .students-table.graduate-table th:nth-child(4),
+  .students-table.graduate-table td:nth-child(4) {
+    width: 45%;
   }
   .students-table.graduate-table th:nth-child(3),
   .students-table.graduate-table td:nth-child(3) {
-    width: 300px;
-  }
-  .students-table.undergraduate-table th:nth-child(2),
-  .students-table.undergraduate-table td:nth-child(2) {
-    width: 400px;
+    width: 37%;
   }
 }
 
-/* 小屏（768px+）：适配常规屏幕 */
-@media (max-width: 1024px) {
-  .concept-card {
-    max-width: 100%;
-  }
-  .table-container {
-    max-width: 100%;
-  }
-  .students-table.graduate-table th:nth-child(3),
-  .students-table.graduate-table td:nth-child(3) {
-    width: 250px;
-  }
-  .students-table.undergraduate-table th:nth-child(2),
-  .students-table.undergraduate-table td:nth-child(2) {
-    width: 350px;
-  }
-}
-
-/* 手机屏：紧凑显示 */
 @media (max-width: 768px) {
   .concept-card {
     padding: 25px 20px;
@@ -293,36 +227,6 @@ title: "指导学生"
   .students-table th,
   .students-table td {
     padding: 10px 12px !important;
-  }
-  .students-table.graduate-table th:nth-child(3),
-  .students-table.graduate-table td:nth-child(3) {
-    width: 200px;
-  }
-  .students-table.undergraduate-table th:nth-child(2),
-  .students-table.undergraduate-table td:nth-child(2) {
-    width: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .students-table {
-    font-size: 13px;
-  }
-  .students-table th,
-  .students-table td {
-    padding: 8px 10px !important;
-  }
-  .students-table.graduate-table th:nth-child(1),
-  .students-table.graduate-table td:nth-child(1) {
-    width: 70px;
-  }
-  .students-table.graduate-table th:nth-child(3),
-  .students-table.graduate-table td:nth-child(3) {
-    width: 180px;
-  }
-  .students-table.undergraduate-table th:nth-child(2),
-  .students-table.undergraduate-table td:nth-child(2) {
-    width: 250px;
   }
 }
 </style>
