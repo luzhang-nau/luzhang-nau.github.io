@@ -1,5 +1,4 @@
 main:
-                                # "主页" → about.md
   - title: "发表论文"
     url: "/publications/"       # → publications.md
   - title: "科研项目"
@@ -11,4 +10,5 @@ main:
   - title: "获奖信息"
     url: "/awards/"             # → awards.md
 
-nav_style: "right"
+nav_style: "center" 
+
