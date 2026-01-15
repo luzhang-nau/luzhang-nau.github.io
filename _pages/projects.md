@@ -4,54 +4,48 @@ title: "科研项目"
 ---
 
 <style>
-/* 外层容器：固定1080px宽度，居中显示，不影响页面其他部分 */
 .projects-wrapper {
-  width: 1080px; /* 固定显示宽度为1080px */
-  margin: 0 auto; /* 水平居中，避免偏左/偏右 */
+  width: 1080px; 
+  margin: 0 auto; 
   padding: 0 10px;
-  box-sizing: border-box; /* 内边距计入宽度，总宽度仍为1080px */
+  box-sizing: border-box;
 }
 
-/* 项目列表：仅调整符号位置/间隔，其余样式不变 */
 .projects-container {
   font-family: "Microsoft Yahei", Arial, sans-serif;
-  font-size: 18px; /* 字体放大 */
+  font-size: 18px; 
   line-height: 2;
-  list-style: none; /* 取消默认列表样式 */
-  padding-left: 30px; /* 核心调整：和论文模块一致的符号起始位置 */
+  list-style: none;
+  padding-left: 30px; 
   margin: 0;
 }
 
-/* 放大列表符号（用li原生列表符号，不绝对定位，避免超界） */
 .projects-container li {
-  list-style-type: disc; /* 大号圆点符号 */
-  list-style-position: outside; /* 核心调整：改为outside，和论文模块一致（换行对齐文字） */
+  list-style-type: disc; 
+  list-style-position: outside;
   margin-bottom: 15px;
-  padding-left: 8px; /* 核心调整：和论文模块一致的符号与文字间隔 */
+  padding-left: 8px; 
 }
 /* 单独放大符号大小 */
 .projects-container li::marker {
-  font-size: 24px; /* 符号放大到参考图大小 */
+  font-size: 24px; 
   color: #333;
 }
 
-/* 项目名称样式：蓝色、加粗 */
 .project-name {
   color: #1a73e8;
   font-weight: 500;
 }
 
-/* 主持/参与标签 */
 .project-role {
   font-weight: 500;
   margin-left: 8px;
 }
 
-/* 项目信息行：自动换行+缩进对齐，保证内容完整 */
 .project-info {
   display: block;
-  padding-left: 35px; /* 缩进对齐，比符号位置更靠内 */
-  white-space: normal; /* 自动换行，适配1080px宽度 */
+  padding-left: 35px; 
+  white-space: normal; 
 }
 </style>
 
