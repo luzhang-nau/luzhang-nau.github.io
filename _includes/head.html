@@ -14,3 +14,75 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+
+<!-- 新增：强制修改导航栏样式（必生效） -->
+<style>
+/* 核心：限定导航总宽度为700px（最小宽度，避免折叠） */
+.masthead .greedy-nav {
+  width: 700px !important;
+  max-width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+}
+
+/* 可见导航容器：强制横向，不折叠 */
+.masthead .greedy-nav .visible-links {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 主导航：固定宽度，不参与均分 */
+.masthead .greedy-nav .visible-links li:first-child {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  margin-right: 10px !important;
+}
+
+/* 6个子导航项：强制均分宽度（精准定位第2-7项） */
+.masthead .greedy-nav .visible-links li:nth-child(2),
+.masthead .greedy-nav .visible-links li:nth-child(3),
+.masthead .greedy-nav .visible-links li:nth-child(4),
+.masthead .greedy-nav .visible-links li:nth-child(5),
+.masthead .greedy-nav .visible-links li:nth-child(6),
+.masthead .greedy-nav .visible-links li:nth-child(7) {
+  flex: 1 1 0% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 1px !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  font-size: 0.8rem !important; /* 最小字体，确保能显示 */
+}
+
+/* 子导航链接：撑满宽度 + 文字居中 */
+.masthead .greedy-nav .visible-links li:nth-child(2) a,
+.masthead .greedy-nav .visible-links li:nth-child(3) a,
+.masthead .greedy-nav .visible-links li:nth-child(4) a,
+.masthead .greedy-nav .visible-links li:nth-child(5) a,
+.masthead .greedy-nav .visible-links li:nth-child(6) a,
+.masthead .greedy-nav .visible-links li:nth-child(7) a {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0.5rem 0 !important;
+}
+
+/* 隐藏折叠按钮和下拉菜单 */
+.masthead .greedy-nav button,
+.masthead .greedy-nav .hidden-links {
+  display: none !important;
+}
+
+/* 主题切换按钮：固定位置（如果有） */
+.masthead .greedy-nav .visible-links li:has(#theme-toggle) {
+  flex: 0 0 auto !important;
+  margin-left: 10px !important;
+}
+</style>
