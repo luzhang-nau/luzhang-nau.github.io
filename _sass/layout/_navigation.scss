@@ -444,50 +444,41 @@
 }
 
 /* ==========================================================================
-   Main导航栏子项均分宽度（发表论文/科研项目等）
-   不影响左侧主导航，仅针对6个子导航项
+   Main导航6个子项均分宽度
    ========================================================================== */
-.greedy-nav .visible-links {
-  width: 100%; // 让可见导航容器占满宽度
-  display: flex !important; // 替换原有table布局为弹性布局
-  justify-content: space-around; // 兜底保障均分
-
-  li {
-    display: flex !important; // 覆盖原有table-cell
-    flex: 1 !important; // 核心：每个导航项均分宽度
-    text-align: center; // 文字居中
-    vertical-align: middle;
-    padding: 0;
-    margin: 0 !important; // 取消原有左右margin，避免宽度不均
-
-    a {
-      display: block !important;
-      width: 100% !important; // 链接撑满整个导航项
-      margin: 0 !important; // 取消原有左右margin
-      padding: 0.5rem 0 !important; // 仅保留上下内边距
-      text-align: center; // 文字居中
-    }
-
-    &:has(#theme-toggle) {
-      flex: 0 !important;
-      width: auto !important;
-      margin: 0 1rem !important;
-    }
-  }
-
-  li:first-child {
-    flex: 0 !important; // 主导航不占均分宽度
-    width: auto !important;
-    margin-right: 1rem !important; // 和子导航保持小间距
-    text-wrap: nowrap;
-  }
+body .greedy-nav .visible-links {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-@include breakpoint($small) {
-  .greedy-nav .visible-links li {
-    font-size: 0.8rem; // 小屏幕文字缩小
-    a {
-      padding: 0.5rem 0.2rem !important; // 减少内边距
-    }
-  }
+body .greedy-nav .visible-links li:first-child {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  margin-right: 20px !important;
+}
+
+body .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) {
+  flex: 1 1 0% !important; 
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) a {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0.5rem 0 !important;
+}
+
+body .greedy-nav .visible-links li:has(#theme-toggle) {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  margin-left: 20px !important;
 }
