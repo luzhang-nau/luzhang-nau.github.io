@@ -448,13 +448,12 @@
    ========================================================================== */
 .masthead .greedy-nav {
   position: relative;
-  width: 480px !important; 
+  width: 600px !important; 
   max-width: 100%;
   display: flex !important;
   align-items: center !important;
 }
 
-/* 可见导航容器：强制横向，不折叠 */
 .masthead .greedy-nav .visible-links {
   width: 100% !important;
   display: flex !important;
