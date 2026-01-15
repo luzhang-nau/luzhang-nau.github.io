@@ -1,67 +1,16 @@
-<style>
-/* 极简方案：固定每个导航项宽度，不依赖flex */
-/* 1. 导航容器：匹配内容宽度，居中 */
-.masthead .greedy-nav {
-  width: 1080px !important; /* 和指导学生内容宽度一致 */
-  max-width: 95% !important;
-  margin: 0 auto !important;
-  overflow: hidden !important;
-  padding: 10px 0 !important;
-}
+{% include base_path %}
 
-/* 2. 可见导航容器：横向排列 */
-.masthead .greedy-nav .visible-links {
-  display: block !important;
-  width: 100% !important;
-  overflow: hidden !important;
-}
+<meta charset="utf-8">
 
-/* 3. 主导航标题：单独一行 */
-.masthead .greedy-nav .visible-links li:first-child {
-  float: none !important;
-  display: block !important;
-  width: 100% !important;
-  margin: 0 0 10px 0 !important;
-  padding: 5px 0 !important;
-}
+{% include seo.html %}
 
-/* 4. 6个子导航项：每个占16.66%宽度（100%/6） */
-.masthead .greedy-nav .visible-links li:nth-child(2),
-.masthead .greedy-nav .visible-links li:nth-child(3),
-.masthead .greedy-nav .visible-links li:nth-child(4),
-.masthead .greedy-nav .visible-links li:nth-child(5),
-.masthead .greedy-nav .visible-links li:nth-child(6),
-.masthead .greedy-nav .visible-links li:nth-child(7) {
-  float: left !important; /* 横向排列 */
-  width: 16.66% !important; /* 6个项均分100% */
-  text-align: center !important; /* 文字居中 */
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
-}
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
-/* 5. 导航链接：撑满宽度，统一样式 */
-.masthead .greedy-nav .visible-links li:nth-child(2) a,
-.masthead .greedy-nav .visible-links li:nth-child(3) a,
-.masthead .greedy-nav .visible-links li:nth-child(4) a,
-.masthead .greedy-nav .visible-links li:nth-child(5) a,
-.masthead .greedy-nav .visible-links li:nth-child(6) a,
-.masthead .greedy-nav .visible-links li:nth-child(7) a {
-  display: block !important;
-  width: 100% !important;
-  padding: 8px 0 !important;
-  margin: 0 !important;
-  text-decoration: none !important;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* 6. 隐藏折叠按钮和多余元素 */
-.masthead .greedy-nav button,
-.masthead .greedy-nav .hidden-links {
-  display: none !important;
-}
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
 
-/* 7. 主题切换按钮：隐藏（避免干扰布局） */
-.masthead .greedy-nav .visible-links li:has(#theme-toggle) {
-  display: none !important;
-}
-</style>
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
