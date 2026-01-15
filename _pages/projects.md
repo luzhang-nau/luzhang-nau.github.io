@@ -4,55 +4,78 @@ title: "科研项目"
 ---
 
 <style>
+/* 外层容器：固定1080px宽度，居中显示，取消右侧限制 */
 .projects-wrapper {
-  width: 1080px;
-  margin: 0 auto; 
-  padding: 0 10px;
-  box-sizing: border-box; 
-}
-
-
-.projects-container {
+  width: 1080px; /* 按要求改为1080px固定宽度 */
+  margin: 0 auto; /* 水平居中 */
+  padding: 0 10px; /* 保留左右小内边距，避免内容贴边 */
+  box-sizing: border-box; /* 内边距计入宽度，总宽度仍为1080px */
   font-family: "Microsoft Yahei", Arial, sans-serif;
-  font-size: 18px; 
-  line-height: 2;
-  list-style: none; 
-  padding-left: 30px; 
-  margin: 0;
-}
-
-
-.projects-container li {
-  list-style-type: disc; 
-  list-style-position: inside; 
-  margin-bottom: 15px;
-  padding-left: 5px; 
-}
-
-.projects-container li::marker {
-  font-size: 24px; 
+  font-size: 18px;
+  line-height: 1.9;
   color: #333;
 }
 
+/* 科研项目列表：保留和论文页面一致的符号/间距样式 */
+.projects-list {
+  list-style: disc outside;
+  padding-left: 30px; /* ·符号起始位置不变 */
+  margin: 20px 0 0;
+}
+
+.projects-list li {
+  margin-bottom: 25px; /* 行间距不变 */
+  padding-left: 8px;   /* ·符号与文字间隔不变 */
+  text-align: left;
+  white-space: normal; /* 取消文字换行限制，右侧不做约束 */
+}
+
+/* ·符号样式：大小保持和论文页面一致 */
+.projects-list li::marker {
+  font-size: 20px;
+  color: #333;
+}
+
+/* 项目名称样式：轻微加粗突出 */
 .project-name {
-  color: #1a73e8;
-  font-weight: 500;
+  font-weight: 600;
+  color: #2d3748;
 }
 
+/* 主持/参与标识样式：统一格式 */
 .project-role {
+  margin: 0 8px;
+  color: #d90000; /* 标红突出主持/参与身份 */
   font-weight: 500;
-  margin-left: 8px;
 }
 
+/* 项目信息样式：默认字体 */
 .project-info {
-  display: block;
-  padding-left: 35px; 
-  white-space: normal; 
+  color: #333;
+}
+
+/* 响应式适配：小屏幕自动适配宽度，取消固定1080px */
+@media (max-width: 1080px) {
+  .projects-wrapper {
+    width: calc(100vw - 40px); /* 小屏幕占满可用宽度，仅留左右20px边距 */
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .projects-list {
+    padding-left: 25px;
+  }
+  .projects-list li {
+    margin-bottom: 20px;
+    padding-left: 8px;
+  }
+  .projects-list li::marker {
+    font-size: 18px;
+  }
 }
 </style>
 
 <div class="projects-wrapper">
-  <ul class="projects-container">
+  <ul class="projects-list">
     <li>
       <span class="project-name">大模型范式下融合多源异质数据的财务舞弊识别研究</span><span class="project-role">（主持）</span>
       <span class="project-info">招商银行股份有限公司南京分行-南京审计大学统计金融联合实验室招标课题，2025JLSF302，2025/11-2027/10，在研。</span>
