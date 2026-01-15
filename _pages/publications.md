@@ -10,7 +10,7 @@ title: "发表论文"
   padding: 0;
   box-sizing: border-box;
   font-family: "Microsoft Yahei", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   color: #333;
 }
