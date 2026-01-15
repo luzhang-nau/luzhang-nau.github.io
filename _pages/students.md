@@ -4,24 +4,22 @@ title: "指导学生"
 ---
 
 <style>
-/* 统一容器宽度：和表格保持一致 */
 .section-container,
 .students-table-section,
 .table-container {
   margin: 0 auto;
-  padding: 0 20px; 
+  padding: 0 !important; 
   box-sizing: border-box;
-  width: 100%;
-  max-width: calc(100vw - 150px); 
+  width: 900px;
 }
 
 .concept-card {
-  max-width: 100%; 
+  width: 100%; 
   margin: 20px 0 30px;
   background: white;
   border: 1px solid #e8edf2;
   border-radius: 6px;
-  padding: 30px 40px;
+  padding: 30px 40px; 
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -73,7 +71,7 @@ title: "指导学生"
 }
 
 .students-table {
-  width: 100%;
+  width: 100%; /* 撑满外层900px宽度 */
   table-layout: auto; 
   border-collapse: collapse;
   background: white;
@@ -159,7 +157,8 @@ title: "指导学生"
   border: none;
   height: 1px;
   background-color: #e8edf2;
-  margin: 30px 20px;
+  margin: 30px auto; /* 居中显示，和容器对齐 */
+  width: 900px; /* 分隔线宽度和容器一致 */
 }
 
 .page__content,
@@ -173,24 +172,14 @@ title: "指导学生"
   margin-bottom: 60px;
 }
 
-/* ========== 响应式适配 ========== */
-@media (max-width: 1400px) {
+/* ========== 响应式适配（保留） ========== */
+@media (max-width: 920px) {
   .section-container,
   .students-table-section,
-  .table-container {
-    max-width: calc(100vw - 80px);
+  .table-container,
+  .table-divider {
+    width: calc(100vw - 40px); /* 小屏幕自适应 */
   }
-}
-
-@media (max-width: 1024px) {
-  .section-container,
-  .students-table-section,
-  .table-container {
-    max-width: calc(100vw - 40px);
-  }
-}
-
-@media (max-width: 768px) {
   .concept-card {
     padding: 25px 20px;
   }
@@ -395,4 +384,4 @@ title: "指导学生"
 </div>
 
 <!-- 添加额外的底部间距 -->
-<div style="height: 60px;"></div>
+<div style="height: 60px; width: 900px; margin: 0 auto;"></div>
