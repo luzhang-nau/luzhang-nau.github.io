@@ -444,9 +444,16 @@
 }
 
 /* ==========================================================================
-   精准匹配：导航栏（.masthead内）6个子项均分宽度
+   强制横向均分导航
    ========================================================================== */
-/* 定位到masthead内的greedy-nav导航 */
+.masthead .greedy-nav {
+  position: relative;
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 可见导航容器：强制横向显示，不折叠 */
 .masthead .greedy-nav .visible-links {
   width: 100% !important;
   display: flex !important;
@@ -454,23 +461,25 @@
   justify-content: flex-start !important;
   padding: 0 !important;
   margin: 0 !important;
+  flex-wrap: nowrap !important; /* 禁止换行 */
 }
 
-/* 主导航项：不参与均分，固定宽度 */
+/* 主导航项：固定宽度，不参与均分 */
 .masthead .greedy-nav .visible-links li:first-child {
   flex: 0 0 auto !important;
   width: auto !important;
   margin-right: 20px !important;
 }
 
-/* 6个子导航项（发表论文/科研项目等）：强制均分宽度 */
+/* 6个子导航项：强制横向均分，不折叠 */
 .masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) {
-  flex: 1 1 0% !important; /* 核心：6个项完全均分 */
+  flex: 1 1 0% !important; /* 均分宽度 */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   margin: 0 !important;
   padding: 0 !important;
+  white-space: nowrap !important; /* 禁止文字换行 */
 }
 
 /* 子导航链接：撑满宽度+文字居中 */
@@ -481,9 +490,12 @@
   padding: 0.5rem 0 !important;
 }
 
-/* 主题切换按钮：不参与均分 */
-.masthead .greedy-nav .visible-links li:has(#theme-toggle) {
-  flex: 0 0 auto !important;
-  width: auto !important;
-  margin-left: 20px !important;
+/* 隐藏下拉菜单按钮（不需要折叠了） */
+.masthead .greedy-nav button {
+  display: none !important;
+}
+
+/* 隐藏下拉菜单容器 */
+.masthead .greedy-nav .hidden-links {
+  display: none !important;
 }
