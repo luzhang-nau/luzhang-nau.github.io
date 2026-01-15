@@ -14,3 +14,65 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+
+<!-- 修复版：恢复导航显示 + 6个子项均分宽度 -->
+<style>
+/* 恢复导航容器默认宽度，不强制缩小 */
+.masthead .greedy-nav {
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+  width: auto !important; /* 取消固定宽度，恢复默认 */
+  max-width: 100% !important;
+}
+
+/* 可见导航容器：弹性布局，允许换行（避免空白） */
+.masthead .greedy-nav .visible-links {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-wrap: wrap !important; /* 允许换行，避免空白 */
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important; /* 取消100%宽度 */
+}
+
+/* 主导航：保留原有样式 */
+.masthead .greedy-nav .visible-links li:first-child {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  margin-right: 15px !important;
+}
+
+/* 6个子导航项：均分可用宽度（不强制总宽度） */
+.masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) {
+  flex: 1 1 calc(100% / 6) !important; /* 核心：按6等分计算宽度 */
+  min-width: 80px !important; /* 最小宽度，避免挤没 */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 2px !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  font-size: 0.9rem !important; /* 恢复正常字体 */
+}
+
+/* 子导航链接：文字居中，保留点击区域 */
+.masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) a {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0.5rem 0.2rem !important;
+}
+
+/* 恢复折叠按钮（避免导航消失） */
+.masthead .greedy-nav button {
+  display: block !important;
+}
+
+/* 主题切换按钮：保留原有位置 */
+.masthead .greedy-nav .visible-links li:has(#theme-toggle) {
+  flex: 0 0 auto !important;
+  margin-left: 10px !important;
+}
+</style>
