@@ -4,48 +4,53 @@ title: "科研项目"
 ---
 
 <style>
+/* 外层容器：固定1080px宽度，居中显示 */
 .projects-wrapper {
-  width: 1080px; 
-  margin: 0 auto; 
+  width: 1080px;
+  margin: 0 auto;
   padding: 0 10px;
   box-sizing: border-box;
 }
 
+/* 项目列表：和发表论文模块对齐符号样式 */
 .projects-container {
   font-family: "Microsoft Yahei", Arial, sans-serif;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 2;
   list-style: none;
-  padding-left: 30px; 
+  padding-left: 25px; /* 与发表论文模块一致的符号起始位置 */
   margin: 0;
 }
 
+/* 符号样式：与发表论文模块完全一致 */
 .projects-container li {
-  list-style-type: disc; 
+  list-style-type: disc;
   list-style-position: outside;
   margin-bottom: 15px;
-  padding-left: 8px; 
+  padding-left: 8px; /* 与发表论文模块一致的符号-文字间隔 */
 }
-/* 单独放大符号大小 */
 .projects-container li::marker {
-  font-size: 24px; 
+  font-size: 20px; /* 与发表论文模块一致的符号大小 */
   color: #333;
 }
 
+/* 项目名称样式：保留原有蓝色 */
 .project-name {
   color: #1a73e8;
   font-weight: 500;
 }
 
+/* 主持/参与标签 */
 .project-role {
   font-weight: 500;
   margin-left: 8px;
 }
 
+/* 项目信息行：对齐发表论文模块的换行缩进 */
 .project-info {
   display: block;
-  padding-left: 35px; 
-  white-space: normal; 
+  padding-left: 0; /* 取消额外缩进，与发表论文模块一致 */
+  white-space: normal;
 }
 </style>
 
