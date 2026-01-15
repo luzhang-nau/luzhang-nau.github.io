@@ -20,14 +20,13 @@ redirect_from:
 
 .section-title {
   color: #333 !important;
-  font-size: 22px;
+  font-size: 32px; 
   font-weight: 600;
   margin: 30px 0 15px;
   padding-bottom: 8px;
   border-bottom: 2px solid #e8edf2;
 }
 
-/* 适配移动端 */
 @media (max-width: 920px) {
   .profile-container {
     width: calc(100vw - 40px);
