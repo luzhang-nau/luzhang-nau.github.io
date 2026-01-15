@@ -1,62 +1,16 @@
-<!-- 微调版：6项同一行均分 + 匹配内容宽度 -->
-<style>
-/* 1. 导航容器：匹配内容宽度（和指导学生页面一致，设为1080px） */
-.masthead .greedy-nav {
-  display: flex !important;
-  align-items: center !important;
-  position: relative !important;
-  width: 1080px !important; /* 核心：和内容区宽度一致 */
-  max-width: 95% !important; /* 小屏幕适配 */
-  margin: 0 auto !important; /* 导航栏居中，和内容区对齐 */
-}
+{% include base_path %}
 
-/* 2. 可见导航容器：强制一行，不换行 */
-.masthead .greedy-nav .visible-links {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  flex-wrap: nowrap !important; /* 关键：禁止换行，强制6项在同一行 */
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important; /* 占满导航容器宽度 */
-}
+<meta charset="utf-8">
 
-/* 3. 主导航：保留原有样式 */
-.masthead .greedy-nav .visible-links li:first-child {
-  flex: 0 0 auto !important;
-  width: auto !important;
-  margin-right: 15px !important;
-}
+{% include seo.html %}
 
-/* 4. 6个子导航项：均分1080px宽度（核心逻辑保留） */
-.masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) {
-  flex: 1 1 calc(100% / 6) !important; /* 按6等分计算宽度 */
-  min-width: 80px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin: 0 2px !important;
-  padding: 0 !important;
-  white-space: nowrap !important;
-  font-size: 0.9rem !important;
-}
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
-/* 5. 子导航链接：文字居中 */
-.masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) a {
-  width: 100% !important;
-  text-align: center !important;
-  margin: 0 !important;
-  padding: 0.5rem 0.2rem !important;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* 6. 隐藏折叠按钮（强制一行后不需要折叠） */
-.masthead .greedy-nav button {
-  display: none !important;
-}
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
 
-/* 7. 主题切换按钮：保留原有位置 */
-.masthead .greedy-nav .visible-links li:has(#theme-toggle) {
-  flex: 0 0 auto !important;
-  margin-left: 10px !important;
-}
-</style>
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
