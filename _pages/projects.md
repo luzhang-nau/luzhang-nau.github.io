@@ -6,9 +6,9 @@ title: "科研项目"
 <style>
 /* 外层容器：固定1080px宽度，居中显示，取消右侧限制 */
 .projects-wrapper {
-  width: 1080px; /* 按要求改为1080px固定宽度 */
+  width: 1080px; /* 固定显示宽度为1080px */
   margin: 0 auto; /* 水平居中 */
-  padding: 0 10px; /* 保留左右小内边距，避免内容贴边 */
+  padding: 0 10px;
   box-sizing: border-box; /* 内边距计入宽度，总宽度仍为1080px */
   font-family: "Microsoft Yahei", Arial, sans-serif;
   font-size: 18px;
@@ -27,7 +27,9 @@ title: "科研项目"
   margin-bottom: 25px; /* 行间距不变 */
   padding-left: 8px;   /* ·符号与文字间隔不变 */
   text-align: left;
-  white-space: normal; /* 取消文字换行限制，右侧不做约束 */
+  display: block; /* 强制列表项为块级元素，确保换行 */
+  word-wrap: break-word; /* 强制长文字换行，避免溢出 */
+  word-break: break-all; /* 兼容中英文换行 */
 }
 
 /* ·符号样式：大小保持和论文页面一致 */
@@ -36,10 +38,11 @@ title: "科研项目"
   color: #333;
 }
 
-/* 项目名称样式：轻微加粗突出 */
+/* 项目名称样式：恢复蓝色+加粗突出 */
 .project-name {
   font-weight: 600;
-  color: #2d3748;
+  color: #1a73e8; /* 恢复蓝色（谷歌默认链接蓝） */
+  display: inline-block; /* 确保名称后可正常换行 */
 }
 
 /* 主持/参与标识样式：统一格式 */
@@ -49,9 +52,11 @@ title: "科研项目"
   font-weight: 500;
 }
 
-/* 项目信息样式：默认字体 */
+/* 项目信息样式：默认字体，强制换行 */
 .project-info {
   color: #333;
+  display: block; /* 强制项目信息单独换行 */
+  margin-top: 5px; /* 与上一行保持小间距，视觉更清晰 */
 }
 
 /* 响应式适配：小屏幕自动适配宽度，取消固定1080px */
