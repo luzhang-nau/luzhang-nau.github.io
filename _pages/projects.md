@@ -4,55 +4,50 @@ title: "科研项目"
 ---
 
 <style>
-/* 核心修正：页面容器不修改全局body，仅调整项目容器，避免影响整体布局 */
 .projects-wrapper {
-  max-width: 100%; /* 自适应页面宽度，不超界 */
-  padding: 0 10px; /* 保留内边距，不贴边 */
-  box-sizing: border-box; /* 内边距计入宽度，避免超界 */
+  width: 1080px;
+  margin: 0 auto; 
+  padding: 0 10px;
+  box-sizing: border-box; 
 }
 
-/* 项目列表：放大字体，调整行高 */
+
 .projects-container {
   font-family: "Microsoft Yahei", Arial, sans-serif;
-  font-size: 18px; /* 字体放大 */
+  font-size: 18px; 
   line-height: 2;
-  list-style: none; /* 取消默认列表样式 */
-  padding-left: 30px; /* 预留符号位置，避免超左边界 */
+  list-style: none; 
+  padding-left: 30px; 
   margin: 0;
 }
 
-/* 放大列表符号（用li原生列表符号，不绝对定位，避免超界） */
+
 .projects-container li {
-  list-style-type: disc; /* 大号圆点符号 */
-  list-style-position: inside; /* 符号在容器内，不超界 */
+  list-style-type: disc; 
+  list-style-position: inside; 
   margin-bottom: 15px;
-  padding-left: 5px; /* 符号和文字间距 */
+  padding-left: 5px; 
 }
-/* 单独放大符号大小 */
+
 .projects-container li::marker {
-  font-size: 24px; /* 符号放大到参考图大小 */
+  font-size: 24px; 
   color: #333;
 }
 
-/* 项目名称样式：蓝色、加粗 */
 .project-name {
   color: #1a73e8;
   font-weight: 500;
 }
 
-/* 主持/参与标签 */
 .project-role {
   font-weight: 500;
   margin-left: 8px;
 }
 
-/* 项目信息行：确保单行显示，不超界 */
 .project-info {
   display: block;
-  padding-left: 25px; /* 仅缩进，不超界 */
-  white-space: nowrap; /* 强制单行 */
-  overflow: hidden; /* 极端情况不超界（可删，根据需求） */
-  text-overflow: ellipsis; /* 极端情况显示省略号（可删） */
+  padding-left: 35px; 
+  white-space: normal; 
 }
 </style>
 
