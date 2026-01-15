@@ -444,16 +444,17 @@
 }
 
 /* ==========================================================================
-   强制横向均分导航
+  缩小导航总宽度 + 6个子项均分 + 禁止折叠
    ========================================================================== */
 .masthead .greedy-nav {
   position: relative;
-  width: 100%;
+  width: 800px !important; 
+  max-width: 100%;
   display: flex !important;
   align-items: center !important;
 }
 
-/* 可见导航容器：强制横向显示，不折叠 */
+/* 可见导航容器：强制横向，不折叠 */
 .masthead .greedy-nav .visible-links {
   width: 100% !important;
   display: flex !important;
@@ -461,28 +462,25 @@
   justify-content: flex-start !important;
   padding: 0 !important;
   margin: 0 !important;
-  flex-wrap: nowrap !important; /* 禁止换行 */
+  flex-wrap: nowrap !important; 
 }
 
-/* 主导航项：固定宽度，不参与均分 */
 .masthead .greedy-nav .visible-links li:first-child {
   flex: 0 0 auto !important;
   width: auto !important;
-  margin-right: 20px !important;
+  margin-right: 15px !important; 
 }
 
-/* 6个子导航项：强制横向均分，不折叠 */
 .masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) {
-  flex: 1 1 0% !important; /* 均分宽度 */
+  flex: 1 1 0% !important; 
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  margin: 0 !important;
+  margin: 0 2px !important; 
   padding: 0 !important;
-  white-space: nowrap !important; /* 禁止文字换行 */
+  white-space: nowrap !important; 
 }
 
-/* 子导航链接：撑满宽度+文字居中 */
 .masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) a {
   width: 100% !important;
   text-align: center !important;
@@ -490,12 +488,13 @@
   padding: 0.5rem 0 !important;
 }
 
-/* 隐藏下拉菜单按钮（不需要折叠了） */
-.masthead .greedy-nav button {
-  display: none !important;
+.masthead .greedy-nav .visible-links li:has(#theme-toggle) {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  margin-left: 15px !important;
 }
 
-/* 隐藏下拉菜单容器 */
+.masthead .greedy-nav button,
 .masthead .greedy-nav .hidden-links {
   display: none !important;
 }
