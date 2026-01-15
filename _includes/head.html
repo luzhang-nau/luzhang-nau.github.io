@@ -14,3 +14,18 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+
+<!-- 新增：略微放宽每个导航项 -->
+<style>
+/* 给每个子导航项增加左右内边距（放宽点击区域） */
+.masthead__menu-item a {
+  padding-left: 15px !important;  /* 左边加15px宽度 */
+  padding-right: 15px !important; /* 右边加15px宽度 */
+  white-space: nowrap;            /* 防止文字换行 */
+}
+
+/* 可选：增加导航项之间的间距（更宽松） */
+.masthead__menu-item {
+  margin-right: 5px !important; /* 每个项右边加5px间距 */
+}
+</style>
