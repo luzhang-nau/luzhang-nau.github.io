@@ -4,65 +4,59 @@ title: "科研项目"
 ---
 
 <style>
-/* 外层容器：固定1080px宽度，居中显示，取消右侧限制 */
 .projects-wrapper {
-  width: 1080px; /* 固定显示宽度为1080px */
-  margin: 0 auto; /* 水平居中 */
+  width: 1080px; 
+  margin: 0 auto; 
   padding: 0 10px;
-  box-sizing: border-box; /* 内边距计入宽度，总宽度仍为1080px */
+  box-sizing: border-box; 
   font-family: "Microsoft Yahei", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.9;
   color: #333;
 }
 
-/* 科研项目列表：保留和论文页面一致的符号/间距样式 */
 .projects-list {
   list-style: disc outside;
-  padding-left: 30px; /* ·符号起始位置不变 */
+  padding-left: 30px; 
   margin: 20px 0 0;
 }
 
 .projects-list li {
-  margin-bottom: 25px; /* 行间距不变 */
-  padding-left: 8px;   /* ·符号与文字间隔不变 */
+  margin-bottom: 25px; 
+  padding-left: 8px;   
   text-align: left;
-  display: block; /* 强制列表项为块级元素，确保换行 */
-  word-wrap: break-word; /* 强制长文字换行，避免溢出 */
-  word-break: break-all; /* 兼容中英文换行 */
+  display: block; 
+  word-wrap: break-word;
+  word-break: break-all; 
 }
 
-/* ·符号样式：大小保持和论文页面一致 */
 .projects-list li::marker {
   font-size: 20px;
   color: #333;
 }
 
-/* 项目名称样式：恢复蓝色+加粗突出 */
 .project-name {
   font-weight: 600;
-  color: #1a73e8; /* 恢复蓝色（谷歌默认链接蓝） */
-  display: inline-block; /* 确保名称后可正常换行 */
+  color: #1a73e8;
+  display: inline-block; 
 }
 
-/* 主持/参与标识样式：统一格式 */
 .project-role {
   margin: 0 8px;
-  color: #d90000; /* 标红突出主持/参与身份 */
+  color: #d90000; 
   font-weight: 500;
 }
 
-/* 项目信息样式：默认字体，强制换行 */
+
 .project-info {
   color: #333;
-  display: block; /* 强制项目信息单独换行 */
-  margin-top: 5px; /* 与上一行保持小间距，视觉更清晰 */
+  display: block; 
+  margin-top: 4px; 
 }
 
-/* 响应式适配：小屏幕自动适配宽度，取消固定1080px */
 @media (max-width: 1080px) {
   .projects-wrapper {
-    width: calc(100vw - 40px); /* 小屏幕占满可用宽度，仅留左右20px边距 */
+    width: calc(100vw - 40px); 
     font-size: 16px;
     line-height: 1.8;
   }
