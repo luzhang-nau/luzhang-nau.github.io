@@ -1,54 +1,51 @@
-<!-- 最终版：6个导航项同一行均分宽度 -->
+<!-- 最终适配：导航栏独立一行 + 6项均分宽度 -->
 <style>
-/* 导航容器：设置足够的最小宽度，强制一行显示 */
-.masthead .greedy-nav {
-  display: flex !important;
-  align-items: center !important;
-  position: relative !important;
-  min-width: 700px !important; /* 足够宽，容纳6个项 */
+/* 导航栏容器：独立一行，不与头像重叠 */
+.masthead {
+  display: block !important;
   width: 100% !important;
 }
 
-/* 可见导航容器：强制一行，不换行 */
+/* 主导航标题：单独一行 */
+.masthead .greedy-nav .visible-links li:first-child {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 10px 0 !important;
+  padding: 0 !important;
+}
+
+/* 6个子导航项：在新行均分宽度 */
 .masthead .greedy-nav .visible-links {
   display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  flex-wrap: nowrap !important; /* 禁止换行 */
+  flex-wrap: nowrap !important;
+  justify-content: space-around !important;
+  width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
-  width: 100% !important;
+  border-top: 1px solid #eee !important; /* 分隔线，区分标题和导航 */
+  padding-top: 10px !important;
 }
 
-/* 主导航：固定宽度 */
-.masthead .greedy-nav .visible-links li:first-child {
-  flex: 0 0 auto !important;
-  width: auto !important;
-  margin-right: 20px !important;
-}
-
-/* 6个子导航项：同一行均分宽度 */
+/* 子导航项：均分宽度，不重叠 */
 .masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) {
-  flex: 1 1 0% !important; /* 严格均分 */
+  flex: 1 1 0% !important;
   min-width: 80px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  text-align: center !important;
   margin: 0 5px !important;
   padding: 0 !important;
-  white-space: nowrap !important;
-  font-size: 0.95rem !important;
 }
 
-/* 子导航链接：文字居中 */
+/* 子导航链接：正常显示 */
 .masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) a {
+  display: block !important;
   width: 100% !important;
-  text-align: center !important;
   padding: 0.5rem 0 !important;
+  color: #333 !important; /* 恢复文字颜色 */
 }
 
-/* 隐藏折叠按钮（强制一行显示） */
-.masthead .greedy-nav button {
+/* 隐藏多余元素，避免干扰 */
+.masthead .greedy-nav button,
+.masthead .greedy-nav .hidden-links {
   display: none !important;
 }
 </style>
