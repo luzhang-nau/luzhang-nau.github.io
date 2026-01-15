@@ -27,7 +27,7 @@ title: "指导学生"
   padding: 0 20px; 
   box-sizing: border-box;
   width: 100%;
-  max-width: calc(100vw - 120px); 
+  max-width: calc(100vw - 150px); 
 }
 
 .concept-card {
@@ -82,7 +82,7 @@ title: "指导学生"
   margin: 0 auto;
   padding: 0 20px; 
   width: 100%;
-  max-width: calc(100vw - 120px); 
+  max-width: calc(100vw - 150px); 
 }
 
 .table-title {
@@ -96,7 +96,7 @@ title: "指导学生"
 
 .table-container {
   width: 100%;
-  max-width: calc(100vw - 120px);
+  max-width: calc(100vw - 150px);
   margin: 0 auto 30px;
   border: none;        
   border-radius: 0;   
