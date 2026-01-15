@@ -7,45 +7,105 @@ redirect_from:
   - /about.html
 ---
 
-张璐，男，博士，南京审计大学计算机学院（智能审计学院）副教授，硕士生导师，CCF高级会员，江苏高校"青蓝工程"优秀青年骨干教师培养对象，校润泽学者。分别于2005年和2012年在东南大学计算机科学与工程学院取得学士和博士学位（硕博连读，导师罗军舟教授）。博士毕业后，曾在华为技术有限公司从事技术预研工作，2014年进入南京财经大学从事教学科研工作，2021年加入南京审计大学。目前担任管理科学与工程学会人工智能技术与管理应用分会专业委员，江苏省计算机学会云计算专委会委员。近年来，主持包括国家自然科学基金、国家重点研发计划子课题在内的多项研究课题，以第一作者或通讯作者身份在领域权威期刊和国际会议上发表论文30余篇，包括ESWA、INS、TST等SCI一区期刊及计算机学报、软件学报等国内一流刊物，担任多个国际期刊审稿人和会议程序委员。主持制定粮食行业信息化标准1项、获发明专利授权10余项并成功转化2项。指导学生团队获得挑战杯、蓝桥杯、计算机设计大赛、服务外包创新创业大赛等A+/A类赛事国家级奖项多次。
+<style>
+/* 新增：统一宽度为900px，居中显示，和其他页面保持一致 */
+.profile-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", Arial, sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
 
-我所在的信息系统安全与审计课题组（ISSA，[简介](https://课题组网站地址)）由一批有经验、有活力、有朝气的老师和同学组成。欢迎对网络与信息安全、舞弊审计、智能审计、大模型检索增强等方向理论与应用研究感兴趣的同学报考我的硕士研究生！也欢迎有兴趣开展科研训练，有志于发表科研成果的本科生加入。（请发送个人简历、成绩单、项目经历等到我的邮箱）
+/* 保留原有样式，仅适配容器 */
+.section-title {
+  color: #333 !important;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 30px 0 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e8edf2;
+}
 
+.more-info-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 10px 0 20px;
+}
 
+.info-link {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #f8f9fa;
+  border: 1px solid #e8edf2;
+  border-radius: 6px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
 
-<h2 class="section-title">研究方向</h2>
+.info-link:hover {
+  background: #e6f7ff;
+  border-color: #3498db;
+  color: #1a4b8c;
+}
 
-- **网络与信息安全**：主要关注网络虚假信息识别与治理、AIGC伪造检测、加密流量分析、联邦学习与隐私计算等方向。
-- **大模型与智能审计**：主要关注基于大模型的上市公司财务舞弊审计，以及利用大模型提示学习、检索增强等技术解决审计中的疑点发现、报告撰写等问题。
+/* 适配移动端 */
+@media (max-width: 920px) {
+  .profile-container {
+    width: calc(100vw - 40px);
+  }
+}
+</style>
 
-<h2 class="section-title">最新动态</h2>
+<div class="profile-container">
+  <p>张璐，男，博士，南京审计大学计算机学院（智能审计学院）副教授，硕士生导师，CCF高级会员，江苏高校"青蓝工程"优秀青年骨干教师培养对象，校润泽学者。分别于2005年和2012年在东南大学计算机科学与工程学院取得学士和博士学位（硕博连读，导师罗军舟教授）。博士毕业后，曾在华为技术有限公司从事技术预研工作，2014年进入南京财经大学从事教学科研工作，2021年加入南京审计大学。目前担任管理科学与工程学会人工智能技术与管理应用分会专业委员，江苏省计算机学会云计算专委会委员。近年来，主持包括国家自然科学基金、国家重点研发计划子课题在内的多项研究课题，以第一作者或通讯作者身份在领域权威期刊和国际会议上发表论文30余篇，包括ESWA、INS、TST等SCI一区期刊及计算机学报、软件学报等国内一流刊物，担任多个国际期刊审稿人和会议程序委员。主持制定粮食行业信息化标准1项、获发明专利授权10余项并成功转化2项。指导学生团队获得挑战杯、蓝桥杯、计算机设计大赛、服务外包创新创业大赛等A+/A类赛事国家级奖项多次。</p>
 
-> （这里先留空，稍后可以添加最新动态）
+  <p>我所在的信息系统安全与审计课题组（ISSA，<a href="https://课题组网站地址">简介</a>）由一批有经验、有活力、有朝气的老师和同学组成。欢迎对网络与信息安全、舞弊审计、智能审计、大模型检索增强等方向理论与应用研究感兴趣的同学报考我的硕士研究生！也欢迎有兴趣开展科研训练，有志于发表科研成果的本科生加入。（请发送个人简历、成绩单、项目经历等到我的邮箱）</p>
 
+  <h2 class="section-title">研究方向</h2>
 
-<h2 class="section-title">学术兼职与学术服务</h2>
+  <ul>
+    <li><strong>网络与信息安全</strong>：主要关注网络虚假信息识别与治理、AIGC伪造检测、加密流量分析、联邦学习与隐私计算等方向。</li>
+    <li><strong>大模型与智能审计</strong>：主要关注基于大模型的上市公司财务舞弊审计，以及利用大模型提示学习、检索增强等技术解决审计中的疑点发现、报告撰写等问题。</li>
+  </ul>
 
-- 管理科学与工程学会人工智能技术与管理应用分会专业委员
-- 江苏省计算机学会云计算专委会委员
-- 南京安防协会网络安全与信息技术应用创新专委会委员
-- 常态担任CSCWD，CBD 等国际会议程序委员
+  <h2 class="section-title">最新动态</h2>
 
-<h2 class="section-title">更多信息</h2>
+  <blockquote>（这里先留空，稍后可以添加最新动态）</blockquote>
 
-<div class="more-info-links">
-  <a href="/publications/" class="info-link">发表论文</a>
-  <a href="/projects/" class="info-link">科研项目</a>
-  <a href="/students/" class="info-link">指导学生</a>
-  <a href="/teaching/" class="info-link">课程信息</a>
-  <a href="/awards/" class="info-link">获奖信息</a>
+  <h2 class="section-title">学术兼职与学术服务</h2>
+
+  <ul>
+    <li>管理科学与工程学会人工智能技术与管理应用分会专业委员</li>
+    <li>江苏省计算机学会云计算专委会委员</li>
+    <li>南京安防协会网络安全与信息技术应用创新专委会委员</li>
+    <li>常态担任CSCWD，CBD 等国际会议程序委员</li>
+  </ul>
+
+  <h2 class="section-title">更多信息</h2>
+
+  <div class="more-info-links">
+    <a href="/publications/" class="info-link">发表论文</a>
+    <a href="/projects/" class="info-link">科研项目</a>
+    <a href="/students/" class="info-link">指导学生</a>
+    <a href="/teaching/" class="info-link">课程信息</a>
+    <a href="/awards/" class="info-link">获奖信息</a>
+  </div>
+
+  <h2 class="section-title">联系方式</h2>
+
+  <ul>
+    <li><strong>地址：</strong> 江苏省南京市浦口区雨山西路86号 211815</li>
+    <li><strong>办公室：</strong> 南京审计大学浦口校区 致明楼220室</li>
+    <li><strong>E-mail:</strong> luzhang@nau.edu.cn</li>
+  </ul>
+
+  <hr>
+
+  <p style="font-size: 14px; color: #666; margin-top: 20px;">*更新时间：2026年1月15日*</p>
 </div>
-
-<h2 class="section-title">联系方式</h2>
-
-- **地址：** 江苏省南京市浦口区雨山西路86号 211815
-- **办公室：** 南京审计大学浦口校区 致明楼220室
-- **E-mail:** luzhang@nau.edu.cn
-
----
-
-*更新时间：2026年1月15日*
