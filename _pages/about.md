@@ -20,7 +20,7 @@ redirect_from:
 
 .section-title {
   color: #333 !important;
-  font-size: 32px; 
+  font-size: 28px; 
   font-weight: 600;
   margin: 30px 0 15px;
   padding-bottom: 8px;
