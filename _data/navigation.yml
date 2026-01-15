@@ -12,3 +12,6 @@ main:
   - title: "学习资源"
     url: "/resources/"          # → resources.md
 
+# 禁止导航项折叠
+navigation:
+  greedy: false 
