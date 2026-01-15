@@ -444,25 +444,28 @@
 }
 
 /* ==========================================================================
-   Main导航6个子项均分宽度
+   精准匹配：导航栏（.masthead内）6个子项均分宽度
    ========================================================================== */
-body .greedy-nav .visible-links {
+/* 定位到masthead内的greedy-nav导航 */
+.masthead .greedy-nav .visible-links {
   width: 100% !important;
   display: flex !important;
-  justify-content: flex-start !important;
   align-items: center !important;
+  justify-content: flex-start !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
-body .greedy-nav .visible-links li:first-child {
+/* 主导航项：不参与均分，固定宽度 */
+.masthead .greedy-nav .visible-links li:first-child {
   flex: 0 0 auto !important;
   width: auto !important;
   margin-right: 20px !important;
 }
 
-body .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) {
-  flex: 1 1 0% !important; 
+/* 6个子导航项（发表论文/科研项目等）：强制均分宽度 */
+.masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) {
+  flex: 1 1 0% !important; /* 核心：6个项完全均分 */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -470,14 +473,16 @@ body .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) {
   padding: 0 !important;
 }
 
-body .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) a {
+/* 子导航链接：撑满宽度+文字居中 */
+.masthead .greedy-nav .visible-links li:not(:first-child):not(:has(#theme-toggle)) a {
   width: 100% !important;
   text-align: center !important;
   margin: 0 !important;
   padding: 0.5rem 0 !important;
 }
 
-body .greedy-nav .visible-links li:has(#theme-toggle) {
+/* 主题切换按钮：不参与均分 */
+.masthead .greedy-nav .visible-links li:has(#theme-toggle) {
   flex: 0 0 auto !important;
   width: auto !important;
   margin-left: 20px !important;
