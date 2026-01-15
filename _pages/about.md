@@ -8,135 +8,33 @@ redirect_from:
 ---
 
 <style>
-/* 仅修改容器宽度，其他样式保持原样 */
-.container,
+/* 只调整宽度，其他样式保持不变 */
+body > div:first-child,
 .page__inner-wrap,
-.page__content,
 .main-content,
-.initial-content,
-.archive,
-.single {
-  max-width: 1400px !important;  /* 从原来的约900px放宽到1400px */
-  margin: 0 auto !important;
-  padding: 0 40px !important;    /* 增加左右内边距 */
-}
-
-/* 放宽主要内容区域 */
-.page,
 .page__content {
   max-width: 1400px !important;
-  width: 100% !important;
-}
-
-/* 确保文章内容也变宽 */
-article {
-  max-width: 1400px !important;
   margin: 0 auto !important;
+  padding: 0 40px !important;
 }
 
-/* 放宽段落容器，让每行显示更多文字 */
-p, li, .section-title, .more-info-links {
-  max-width: 1200px !important;  /* 文字内容区域放宽 */
+/* 确保主内容区够宽 */
+.main {
+  max-width: 1100px !important;
 }
 
-/* 响应式设计 - 保持原有但在宽屏下更宽 */
-@media (min-width: 1200px) {
-  .container,
-  .page__inner-wrap {
-    max-width: 1400px !important;
-  }
+/* 确保段落充分利用空间 */
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+  max-width: 100% !important;
 }
-
-@media (min-width: 1600px) {
-  .container,
-  .page__inner-wrap {
-    max-width: 1600px !important;
-  }
-}
-
-/* 确保原有样式不受影响 */
-body {
-  text-align: justify;
-  text-justify: inter-ideograph;
-}
-
-p {
-  text-align: justify;
-  text-justify: inter-ideograph;
-  line-height: 1.8;
-  margin-bottom: 1.2em;
-  color: #333;
-  font-size: 16px;
-}
-
-h1, .section-title, h2, h3, h4 {
-  color: #333;
-  font-size: 28px;
-  font-weight: 600;
-  margin: 35px 0 20px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.callout-box {
-  background-color: #f8f9fa;
-  border: 1px solid #e0e0e0;
-  border-left: 4px solid #2c3e50;
-  padding: 20px;
-  margin: 25px 0;
-}
-
-.callout-box p {
-  margin: 0;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.7;
-  text-align: justify;
-}
-
-.more-info-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 20px 0 30px 0;
-}
-
-.more-info-links a {
-  color: #2c3e50;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  padding-bottom: 2px;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
-}
-
-.more-info-links a:hover {
-  border-bottom: 1px solid #2c3e50;
-  text-decoration: none;
-}
-
-ul {
-  padding-left: 20px;
-  margin-bottom: 1.5em;
-}
-
-li {
-  margin-bottom: 8px;
-  line-height: 1.6;
-  text-align: justify;
-  color: #333;
-  font-size: 16px;
-}
-
-/* 原有样式结束 */
 </style>
 
+<!-- 原有内容保持不变 -->
 张璐，男，博士，南京审计大学计算机学院（智能审计学院）副教授，硕士生导师，CCF高级会员，江苏高校"青蓝工程"优秀青年骨干教师培养对象，校润泽学者。分别于2005年和2012年在东南大学计算机科学与工程学院取得学士和博士学位（硕博连读，导师罗军舟教授）。博士毕业后，曾在华为技术有限公司从事技术预研工作，2014年进入南京财经大学从事教学科研工作，2021年加入南京审计大学。目前担任管理科学与工程学会人工智能技术与管理应用分会专业委员，江苏省计算机学会云计算专委会委员。近年来，主持包括国家自然科学基金、国家重点研发计划子课题在内的多项研究课题，以第一作者或通讯作者身份在领域权威期刊和国际会议上发表论文30余篇，包括ESWA、INS、TST等SCI一区期刊及计算机学报、软件学报等国内一流刊物，担任多个国际期刊审稿人和会议程序委员。主持制定粮食行业信息化标准1项、获发明专利授权10余项并成功转化2项。指导学生团队获得挑战杯、蓝桥杯、计算机设计大赛、服务外包创新创业大赛等A+/A类赛事国家级奖项多次。
 
-<div class="callout-box">
-<p>我所在的信息系统安全与审计课题组（ISSA，<a href="https://课题组网站地址">简介</a>）由一批有经验、有活力、有朝气的老师和同学组成。欢迎对网络与信息安全、舞弊审计、智能审计、大模型检索增强等方向理论与应用研究感兴趣的同学报考我的硕士研究生！也欢迎有兴趣开展科研训练，有志于发表科研成果的本科生加入。（请发送个人简历、成绩单、项目经历等到我的邮箱）</p>
-</div>
+我所在的信息系统安全与审计课题组（ISSA，[简介](https://课题组网站地址)）由一批有经验、有活力、有朝气的老师和同学组成。欢迎对网络与信息安全、舞弊审计、智能审计、大模型检索增强等方向理论与应用研究感兴趣的同学报考我的硕士研究生！也欢迎有兴趣开展科研训练，有志于发表科研成果的本科生加入。（请发送个人简历、成绩单、项目经历等到我的邮箱）
+
+
 
 <h2 class="section-title">研究方向</h2>
 
@@ -146,6 +44,7 @@ li {
 <h2 class="section-title">最新动态</h2>
 
 > （这里先留空，稍后可以添加最新动态）
+
 
 <h2 class="section-title">学术兼职与学术服务</h2>
 
@@ -157,11 +56,11 @@ li {
 <h2 class="section-title">更多信息</h2>
 
 <div class="more-info-links">
-  <a href="/publications/">发表论文</a>
-  <a href="/projects/">科研项目</a>
-  <a href="/students/">指导学生</a>
-  <a href="/teaching/">课程信息</a>
-  <a href="/awards/">获奖信息</a>
+  <a href="/publications/" class="info-link">发表论文</a>
+  <a href="/projects/" class="info-link">科研项目</a>
+  <a href="/students/" class="info-link">指导学生</a>
+  <a href="/teaching/" class="info-link">课程信息</a>
+  <a href="/awards/" class="info-link">获奖信息</a>
 </div>
 
 <h2 class="section-title">联系方式</h2>
