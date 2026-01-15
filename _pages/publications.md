@@ -16,16 +16,15 @@ title: "发表论文"
 }
 
 .papers-list {
-  list-style: none;
-  padding-left: 25px;
+  list-style: disc outside;
+  padding-left: 30px;
   margin: 20px 0 0;
 }
 
 .papers-list li {
-  list-style-type: disc;
-  list-style-position: inside;
-  margin-bottom: 22px;
-  padding-left: 8px;
+  margin-bottom: 25px;
+  padding-left: 8px; /* 正文和符号间的小间距，视觉更舒适 */
+  text-align: left;
 }
 
 .papers-list li::marker {
