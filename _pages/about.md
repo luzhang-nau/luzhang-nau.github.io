@@ -8,7 +8,6 @@ redirect_from:
 ---
 
 <style>
-/* 新增：统一宽度为900px，居中显示，和其他页面保持一致 */
 .profile-container {
   width: 900px;
   margin: 0 auto;
@@ -19,7 +18,6 @@ redirect_from:
   line-height: 1.8;
 }
 
-/* 保留原有样式，仅适配容器 */
 .section-title {
   color: #333 !important;
   font-size: 22px;
@@ -27,31 +25,6 @@ redirect_from:
   margin: 30px 0 15px;
   padding-bottom: 8px;
   border-bottom: 2px solid #e8edf2;
-}
-
-.more-info-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 10px 0 20px;
-}
-
-.info-link {
-  display: inline-block;
-  padding: 8px 18px;
-  background: #f8f9fa;
-  border: 1px solid #e8edf2;
-  border-radius: 6px;
-  color: #333;
-  text-decoration: none;
-  font-size: 15px;
-  transition: all 0.3s ease;
-}
-
-.info-link:hover {
-  background: #e6f7ff;
-  border-color: #3498db;
-  color: #1a4b8c;
 }
 
 /* 适配移动端 */
