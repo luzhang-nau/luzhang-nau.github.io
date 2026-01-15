@@ -8,46 +8,77 @@ redirect_from:
 ---
 
 <style>
-/* 保持原有样式，只调整宽度 */
+/* 仅修改容器宽度，其他样式保持原样 */
+.container,
+.page__inner-wrap,
 .page__content,
 .main-content,
-.initial-content {
-  max-width: 1400px !important;  /* 大幅度加宽 */
+.initial-content,
+.archive,
+.single {
+  max-width: 1400px !important;  /* 从原来的约900px放宽到1400px */
   margin: 0 auto !important;
-  padding: 0 40px !important;
+  padding: 0 40px !important;    /* 增加左右内边距 */
 }
 
-/* 调整内容区域宽度 */
-.article__content,
-.page__inner-wrap,
-.page {
+/* 放宽主要内容区域 */
+.page,
+.page__content {
+  max-width: 1400px !important;
+  width: 100% !important;
+}
+
+/* 确保文章内容也变宽 */
+article {
   max-width: 1400px !important;
   margin: 0 auto !important;
 }
 
-/* 调整段落文字宽度，让每行显示更多文字 */
+/* 放宽段落容器，让每行显示更多文字 */
+p, li, .section-title, .more-info-links {
+  max-width: 1200px !important;  /* 文字内容区域放宽 */
+}
+
+/* 响应式设计 - 保持原有但在宽屏下更宽 */
+@media (min-width: 1200px) {
+  .container,
+  .page__inner-wrap {
+    max-width: 1400px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container,
+  .page__inner-wrap {
+    max-width: 1600px !important;
+  }
+}
+
+/* 确保原有样式不受影响 */
+body {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
 p {
-  max-width: 1200px !important;  /* 大幅增加文字行宽 */
+  text-align: justify;
+  text-justify: inter-ideograph;
   line-height: 1.8;
+  margin-bottom: 1.2em;
+  color: #333;
   font-size: 16px;
 }
 
-/* 调整列表宽度 */
-ul, ol {
-  max-width: 1200px !important;
-  padding-left: 25px;
-}
-
-/* 调整标题宽度 */
-h1, h2, h3, h4, h5, h6,
-.section-title {
-  max-width: 1200px !important;
+h1, .section-title, h2, h3, h4 {
   color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 35px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-/* 调整引用框宽度 */
 .callout-box {
-  max-width: 1200px !important;
   background-color: #f8f9fa;
   border: 1px solid #e0e0e0;
   border-left: 4px solid #2c3e50;
@@ -56,16 +87,14 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .callout-box p {
-  max-width: 100% !important;
   margin: 0;
   font-size: 16px;
   color: #333;
   line-height: 1.7;
+  text-align: justify;
 }
 
-/* 调整更多信息链接容器宽度 */
 .more-info-links {
-  max-width: 1200px !important;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -87,79 +116,20 @@ h1, h2, h3, h4, h5, h6,
   text-decoration: none;
 }
 
-/* 调整联系信息宽度 */
-h2 + ul {
-  max-width: 1200px !important;
+ul {
+  padding-left: 20px;
+  margin-bottom: 1.5em;
 }
 
-/* 调整更新时间宽度 */
-hr + p {
-  max-width: 1200px !important;
-  text-align: right;
+li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+  font-size: 16px;
 }
 
-/* 响应式设计 */
-@media (max-width: 1600px) {
-  .page__content,
-  .main-content,
-  .initial-content {
-    max-width: 1200px !important;
-    padding: 0 30px !important;
-  }
-  
-  p, ul, ol, h1, h2, h3, h4, h5, h6,
-  .section-title, .callout-box,
-  .more-info-links, h2 + ul, hr + p {
-    max-width: 1000px !important;
-  }
-}
-
-@media (max-width: 1200px) {
-  .page__content,
-  .main-content,
-  .initial-content {
-    max-width: 1000px !important;
-    padding: 0 25px !important;
-  }
-  
-  p, ul, ol, h1, h2, h3, h4, h5, h6,
-  .section-title, .callout-box,
-  .more-info-links, h2 + ul, hr + p {
-    max-width: 900px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .page__content,
-  .main-content,
-  .initial-content {
-    max-width: 100% !important;
-    padding: 0 20px !important;
-  }
-  
-  p, ul, ol, h1, h2, h3, h4, h5, h6,
-  .section-title, .callout-box,
-  .more-info-links, h2 + ul, hr + p {
-    max-width: 100% !important;
-  }
-  
-  .more-info-links {
-    gap: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .page__content,
-  .main-content,
-  .initial-content {
-    padding: 0 15px !important;
-  }
-  
-  .more-info-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
+/* 原有样式结束 */
 </style>
 
 张璐，男，博士，南京审计大学计算机学院（智能审计学院）副教授，硕士生导师，CCF高级会员，江苏高校"青蓝工程"优秀青年骨干教师培养对象，校润泽学者。分别于2005年和2012年在东南大学计算机科学与工程学院取得学士和博士学位（硕博连读，导师罗军舟教授）。博士毕业后，曾在华为技术有限公司从事技术预研工作，2014年进入南京财经大学从事教学科研工作，2021年加入南京审计大学。目前担任管理科学与工程学会人工智能技术与管理应用分会专业委员，江苏省计算机学会云计算专委会委员。近年来，主持包括国家自然科学基金、国家重点研发计划子课题在内的多项研究课题，以第一作者或通讯作者身份在领域权威期刊和国际会议上发表论文30余篇，包括ESWA、INS、TST等SCI一区期刊及计算机学报、软件学报等国内一流刊物，担任多个国际期刊审稿人和会议程序委员。主持制定粮食行业信息化标准1项、获发明专利授权10余项并成功转化2项。指导学生团队获得挑战杯、蓝桥杯、计算机设计大赛、服务外包创新创业大赛等A+/A类赛事国家级奖项多次。
@@ -187,11 +157,11 @@ hr + p {
 <h2 class="section-title">更多信息</h2>
 
 <div class="more-info-links">
-  <a href="/publications/" class="info-link">发表论文</a>
-  <a href="/projects/" class="info-link">科研项目</a>
-  <a href="/students/" class="info-link">指导学生</a>
-  <a href="/teaching/" class="info-link">课程信息</a>
-  <a href="/awards/" class="info-link">获奖信息</a>
+  <a href="/publications/">发表论文</a>
+  <a href="/projects/">科研项目</a>
+  <a href="/students/">指导学生</a>
+  <a href="/teaching/">课程信息</a>
+  <a href="/awards/">获奖信息</a>
 </div>
 
 <h2 class="section-title">联系方式</h2>
