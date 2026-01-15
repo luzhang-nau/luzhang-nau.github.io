@@ -132,15 +132,15 @@ title: "指导学生"
 /* 研究生表格列宽规则 */
 .students-table.graduate-table th:nth-child(1),
 .students-table.graduate-table td:nth-child(1) {
-  min-width: 85px;
+  min-width: 80px;
 }
 .students-table.graduate-table th:nth-child(2),
 .students-table.graduate-table td:nth-child(2) {
-  min-width: 90px;
+  min-width: 80px;
 }
 .students-table.graduate-table th:nth-child(3),
 .students-table.graduate-table td:nth-child(3) {
-  min-width: 260px;
+  min-width: 240px;
 }
 .students-table.graduate-table th:nth-child(4),
 .students-table.graduate-table td:nth-child(4) {
@@ -150,7 +150,7 @@ title: "指导学生"
 /* 本科生表格列宽规则 */
 .students-table.undergraduate-table th:nth-child(1),
 .students-table.undergraduate-table td:nth-child(1) {
-  min-width: 85px;
+  min-width: 80px;
 }
 .students-table.undergraduate-table th:nth-child(2),
 .students-table.undergraduate-table td:nth-child(2) {
@@ -158,10 +158,10 @@ title: "指导学生"
 }
 .students-table.undergraduate-table th:nth-child(3),
 .students-table.undergraduate-table td:nth-child(3) {
-  min-width: 380px;
+  min-width: 370px;
 }
 .students-table.undergraduate-table td:nth-child(4) {
-  min-width: 90px;
+  min-width: 80px;
 }
 
 /* 通用表格行样式 */
