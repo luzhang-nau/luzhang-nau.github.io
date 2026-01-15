@@ -27,7 +27,7 @@ title: "指导学生"
   padding: 0 20px; 
   box-sizing: border-box;
   width: 100%;
-  max-width: calc(100vw - 100px); 
+  max-width: calc(100vw - 120px); 
 }
 
 .concept-card {
@@ -82,7 +82,7 @@ title: "指导学生"
   margin: 0 auto;
   padding: 0 20px; 
   width: 100%;
-  max-width: calc(100vw - 100px); 
+  max-width: calc(100vw - 120px); 
 }
 
 .table-title {
@@ -96,7 +96,7 @@ title: "指导学生"
 
 .table-container {
   width: 100%;
-  max-width: calc(100vw - 100px);
+  max-width: calc(100vw - 120px);
   margin: 0 auto 30px;
   border: none;        
   border-radius: 0;   
@@ -132,15 +132,15 @@ title: "指导学生"
 /* 研究生表格列宽规则 */
 .students-table.graduate-table th:nth-child(1),
 .students-table.graduate-table td:nth-child(1) {
-  min-width: 90px;
+  min-width: 85px;
 }
 .students-table.graduate-table th:nth-child(2),
 .students-table.graduate-table td:nth-child(2) {
-  min-width: 110px;
+  min-width: 90px;
 }
 .students-table.graduate-table th:nth-child(3),
 .students-table.graduate-table td:nth-child(3) {
-  min-width: 270px;
+  min-width: 260px;
 }
 .students-table.graduate-table th:nth-child(4),
 .students-table.graduate-table td:nth-child(4) {
@@ -150,18 +150,18 @@ title: "指导学生"
 /* 本科生表格列宽规则 */
 .students-table.undergraduate-table th:nth-child(1),
 .students-table.undergraduate-table td:nth-child(1) {
-  min-width: 90px;
+  min-width: 85px;
 }
 .students-table.undergraduate-table th:nth-child(2),
 .students-table.undergraduate-table td:nth-child(2) {
-  min-width: 350px;
+  min-width: 320px;
 }
 .students-table.undergraduate-table th:nth-child(3),
 .students-table.undergraduate-table td:nth-child(3) {
-  min-width: 400px;
+  min-width: 380px;
 }
 .students-table.undergraduate-table td:nth-child(4) {
-  min-width: 80px;
+  min-width: 90px;
 }
 
 /* 通用表格行样式 */
