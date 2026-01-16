@@ -7,8 +7,6 @@ title: "科研项目"
 .projects-wrapper {
   width: 1000px;
   margin: 0 auto;
-  padding: 0 10px;
-  box-sizing: border-box;
 }
   
 </style>
