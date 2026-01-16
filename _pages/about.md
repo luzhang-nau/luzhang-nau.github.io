@@ -86,5 +86,6 @@ redirect_from:
 
   <hr>
 
-  <p style="font-size: 14px; color: #666; margin-top: 20px;">*更新时间：2026年1月15日*</p>
+*更新时间：2026年1月15日*
+
 </div>
