@@ -4,7 +4,7 @@ title: "课程信息"
 ---
 
 <!-- 顶部粗线 -->
-<hr style="border: none; border-top: 1.5px solid #333; margin: 20px 0 5px 0;">
+<hr style="border: none; border-top: 1.5px solid #333; margin: 5px 0 5px 0;">
 
 ## 本科生课程
 
@@ -15,7 +15,7 @@ title: "课程信息"
 授课时间：春学期
 
 <!-- 课程之间的细分隔线 -->
-<hr style="border: none; border-top: 1px solid #e0e0e0; margin: 10px 0;">
+<hr style="border: none; border-top: 1px solid #e0e0e0; margin: 10px 0 10px 0;">
 
 课程名称：Python高级编程
 
@@ -35,4 +35,4 @@ title: "课程信息"
 授课时间：春学期
 
 <!-- 底部粗线 -->
-<hr style="border: none; border-top: 1.5px solid #333; margin: 5px 0 20px 0;">
+<hr style="border: none; border-top: 1.5px solid #333; margin: 5px 0 5px 0;">
