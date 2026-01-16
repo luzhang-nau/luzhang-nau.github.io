@@ -3,7 +3,7 @@ permalink: /teaching/
 title: "课程信息"
 ---
 
-<hr>
+<hr style="border: none; border-top: 1.5px solid #333; margin: 10px 0;">
 
 ## 本科生课程
 
@@ -23,4 +23,5 @@ title: "课程信息"
 <p>课程名称：高级数据库技术</p>
 <p>授课对象：计算机技术专业硕士生</p>
 <p>授课时间：春学期</p>
-<hr>
+
+<hr style="border: none; border-top: 1.5px solid #333; margin: 0px 0 20px 0;">
