@@ -13,7 +13,7 @@ title: "代表性论文"
 3. <span style="color: red">(TST'26, JCR Q1)</span> <span style="color: blue">ACSD: An Attributed Heterogeneous Information Network based Spammer Detection Model for Community Question Answering</span> <br />
    **Lu Zhang**, Changjian Fang, Haiting Zhu, Gaofeng He, Yang Wang, Mingwei Tang, Zhan Bu. <span class="paper-source">Tsinghua Science and Technology</span>, 2026.
 
-4. <span style="color: red">（CJC'25，CCF T1）</span> <span style="color: blue">基于异步个性化联邦学习的DDoS攻击检测与缓解</span> <br />
+4. <span style="color: red">(CJC'25，CCF T1)</span> <span style="color: blue">基于异步个性化联邦学习的DDoS攻击检测与缓解</span> <br />
    朱海婷, 魏明岗, 刘丰宁, 何高峰, **张璐***. <span class="paper-source">计算机学报</span>, 2025, 48(04): 808-827.（通讯作者）
 
 5. <span style="color: red">(IOTJ'25, JCR Q1)</span> <span style="color: blue">Multidevice Collaborative Authentication for Internet of Things</span> <br />
@@ -40,7 +40,7 @@ title: "代表性论文"
 12. <span style="color: red">(TCC'20, JCR Q1)</span> <span style="color: blue">Efficiently Translating Complex SQL Query to MapReduce Jobflow on Cloud</span> <br />
     Zhiang Wu, Aibo Song, Jie Cao, Junzhou Luo, **Lu Zhang**. <span class="paper-source">IEEE Transactions on Cloud Computing</span>, 2020, 8(2): 508-517.
 
-13. <span style="color: red">（CJC'19, CCF T1）</span> <span style="color: blue">关联规则推荐的高效分布式计算框架</span> <br />
+13. <span style="color: red">(CJC'19, CCF T1)</span> <span style="color: blue">关联规则推荐的高效分布式计算框架</span> <br />
     李昌盛, 伍之昂, **张璐**, 曹杰. <span class="paper-source">计算机学报</span>, 2019, 42(6): 1218-1231.
 
 14. <span style="color: red">(JOCS'18, JCR Q1)</span> <span style="color: blue">A Pattern-Based Topic Detection and Analysis System on Chinese Tweets</span> <br />
@@ -52,14 +52,14 @@ title: "代表性论文"
 16. <span style="color: red">(ICDM'15, CCF B)</span> <span style="color: blue">Spammers Detection from Product Reviews: A Hybrid Model</span> <br />
     Zhiang Wu, Youquan Wang, Yaqiong Wang, Junjie Wu, Jie Cao, **Lu Zhang**. <span class="paper-source">The 2015 IEEE International Conference on Data Mining (ICDM)</span>, Atlantic City, USA, 2015: 1039-1044.
 
-17. <span style="color: red">（CJC'14, CCF T1）</span> <span style="color: blue">洋葱路由追踪技术中时间特征的建模与分析</span> <br />
+17. <span style="color: red">(CJC'14, CCF T1)</span> <span style="color: blue">洋葱路由追踪技术中时间特征的建模与分析</span> <br />
     何高峰, 杨明, 罗军舟, **张璐**, 马媛媛. <span class="paper-source">计算机学报</span>, 2014, 37(2): 356-372.
 
-18. <span style="color: red">（JOS'13, CCF T1）</span> <span style="color: blue">Tor匿名通信流量在线识别方法</span> <br />
+18. <span style="color: red">(JOS'13, CCF T1)</span> <span style="color: blue">Tor匿名通信流量在线识别方法</span> <br />
     何高峰, 杨明, 罗军舟, **张璐**. <span class="paper-source">软件学报</span>, 2013, 24(3): 540-556.
 
-19. <span style="color: red">（JOS'11, CCF T1）</span> <span style="color: blue">基于时隙质心流水印的匿名通信追踪技术</span> <br />
+19. <span style="color: red">(JOS'11, CCF T1)</span> <span style="color: blue">基于时隙质心流水印的匿名通信追踪技术</span> <br />
     **张璐**, 罗军舟, 杨明, 何高峰. <span class="paper-source">软件学报</span>, 2011, 22(10): 2358-2371.
 
-20. <span style="color: red">（JCRD 11, CCF T1）</span> <span style="color: blue">包间隔流关联技术中的同步问题研究</span> <br />
+20. <span style="color: red">(JCRD 11, CCF T1)</span> <span style="color: blue">包间隔流关联技术中的同步问题研究</span> <br />
     **张璐**, 罗军舟, 杨明, 何高峰. [J]. <span class="paper-source">计算机研究与发展</span>, 2011, 48(9): 1643-1651.
