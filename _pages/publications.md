@@ -38,7 +38,7 @@ title: "发表论文"
 6. <span style="color: red">(INS'24, JCR Q1, CCF B)</span> <a href="https://doi.org/10.1016/j.ins.2024.120379" target="_blank" class="paper-link">Collusive Spam Detection from Chinese Community Question Answering Sites: A Collective Classification Framework</a> <br />
    **Lu Zhang**, Mingming Xu, Zhan Bu, Gaofeng He, Haiting Zhu, Changjian Fang. <span class="paper-source">Information Sciences</span>, 2024.
 
-7. <span style="color: red">(CBD'24)</span> <a href="https://doi.org/10.1109/CBD65573.2024.00016" target="_blank" class="paper-link">Enhancing GNN-based CQA spam detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection</a> <br />
+7. <span style="color: red">(CBD'24)</span> <a href="https://doi.org/10.1109/CBD65573.2024.00016" target="_blank" class="paper-link">Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection</a> <br />
    Chenyang Wei, Xi Luo, **Lu Zhang**<sup>✉</sup>, Gaofeng He, Haiting Zhu. <span class="paper-source">The 2024 Twelfth International Conference on Advanced Cloud and Big Data (CBD)</span>, 2024. （通讯作者） <span style="color: red">(Best Student Paper Award)</span>
 
 8. <span style="color: red">(TIE'24, JCR Q1)</span> <a href="https://doi.org/10.1109/TIE.2023.3269463" target="_blank" class="paper-link">Electrical Fault Diagnosis From Text Data: A Supervised Sentence Embedding Combined With Imbalanced Classification</a> <br />
