@@ -239,67 +239,67 @@ title: "培养风格"
         </tr>
         <tr>
           <td>2025</td>
-          <td class="name-bold">董闯豪</td>
+          <td>董闯豪</td>
           <td>财务欺诈识别</td>
           <td></td>
         </tr>
         <tr>
           <td>2025</td>
-          <td class="name-bold">姜伟栋</td>
+          <td>姜伟栋</td>
           <td>谣言早期检测</td>
           <td></td>
         </tr>
         <tr>
           <td>2024</td>
-          <td class="name-bold">骆茜</td>
+          <td>骆茜</td>
           <td>基于大模型的虚假评论识别</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2024</td>
-          <td class="name-bold">刘敏</td>
+          <td>刘敏</td>
           <td>基于RAG的审计发现结论生成</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
-          <td class="name-bold">陈宇光</td>
+          <td>陈宇光</td>
           <td>基于传播预测的社交媒体虚假新闻早期识别研究（开题）</td>
           <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
-          <td class="name-bold">尹天祺</td>
+          <td>尹天祺</td>
           <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究（开题）</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
-          <td class="name-bold">宋昌昊</td>
+          <td>宋昌昊</td>
           <td>基于大模型的上市公司财务舞弊识别研究（开题）</td>
           <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2022</td>
-          <td class="name-bold">魏晨阳</td>
+          <td>魏晨阳</td>
           <td>基于异构信息网络的问答社区欺诈信息检测方法研究</td>
           <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award</td>
         </tr>
         <tr>
           <td>2022</td>
-          <td class="name-bold">康钟元</td>
+          <td>康钟元</td>
           <td>融合先验知识的科技文献主题识别与演化趋势预测方法研究</td>
           <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）</td>
         </tr>
         <tr>
           <td>2021</td>
-          <td class="name-bold">吴海波</td>
+          <td>吴海波</td>
           <td>基于深度学习的审计定性依据和审计建议推荐方法</td>
           <td>Learning problem-to-suggestion semantic mapping for audit suggestions recommendation in government audit reports，论文，SCI一区，CCF B</td>
         </tr>
         <tr>
           <td>2019</td>
-          <td class="name-bold">许明铭</td>
+          <td>许明铭</td>
           <td>基于异质数据融合学习的在线问答社区欺诈检测研究</td>
           <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B</td>
         </tr>
@@ -326,61 +326,61 @@ title: "培养风格"
       <tbody>
         <tr>
           <td>2025</td>
-          <td class="name-bold">陈稳、汪乔羿、钱珉宇、胡汪昊、苏星语</td>
+          <td>陈稳、汪乔羿、钱珉宇、胡汪昊、苏星语</td>
           <td>大学生创新创业训练计划项目、国家级</td>
           <td></td>
         </tr>
         <tr>
           <td>2025</td>
-          <td class="name-bold">张倓硕、张璟晗、沈子辰、陈信通、彭贵栓</td>
+          <td>张倓硕、张璟晗、沈子辰、陈信通、彭贵栓</td>
           <td>大学生创新创业训练计划项目、省级</td>
           <td></td>
         </tr>
         <tr>
           <td>2025</td>
-          <td class="name-bold">唐文静、沈诗典、钱秋霖、朱纯瑜、陈笑悦</td>
+          <td>唐文静、沈诗典、钱秋霖、朱纯瑜、陈笑悦</td>
           <td>中国大学生计算机设计大赛，江苏省三等奖</td>
           <td></td>
         </tr>
         <tr>
           <td>2023</td>
-          <td class="name-bold">吴菡玥、李诗音、葛煜琦、徐发、金海涛、苏容锦</td>
+          <td>吴菡玥、李诗音、葛煜琦、徐发、金海涛、苏容锦</td>
           <td>"挑战杯"中国大学生创业计划竞赛，国家铜奖</td>
           <td></td>
         </tr>
         <tr>
           <td>2022</td>
-          <td class="name-bold">徐发、李心怡、赵梦颖</td>
+          <td>徐发、李心怡、赵梦颖</td>
           <td>中国大学生计算机设计大赛，全国二等奖、江苏省特等奖</td>
           <td></td>
         </tr>
         <tr>
           <td>2019</td>
-          <td class="name-bold">华璇</td>
+          <td>华璇</td>
           <td>蓝桥杯，江苏省一等奖</td>
           <td>南财</td>
         </tr>
         <tr>
           <td>2018</td>
-          <td class="name-bold">宛子涵</td>
+          <td>宛子涵</td>
           <td>蓝桥杯，全国三等奖</td>
           <td>南财</td>
         </tr>
         <tr>
           <td>2017</td>
-          <td class="name-bold">沈童</td>
+          <td>沈童</td>
           <td>蓝桥杯，全国三等奖</td>
           <td>南财</td>
         </tr>
         <tr>
           <td>2017</td>
-          <td class="name-bold">袁秦盟</td>
+          <td>袁秦盟</td>
           <td>蓝桥杯，全国一等奖</td>
           <td>南财</td>
         </tr>
         <tr>
           <td>2017</td>
-          <td class="name-bold">沈童、赵子维、程雯菲</td>
+          <td>沈童、赵子维、程雯菲</td>
           <td>中国大学生计算机设计大赛，全国三等奖</td>
           <td>南财</td>
         </tr>
