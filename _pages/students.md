@@ -89,7 +89,7 @@ title: "培养风格"
   text-align: left;
   font-weight: 600;
   color: #333 !important;
-  font-size: 14px;
+  /*font-size: 14px;*/
   border-bottom: 1px solid #999999;
   border-right: 1px solid #999999;
   border-left: 1px solid #999999;
