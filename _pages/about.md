@@ -55,7 +55,7 @@ redirect_from:
 
   <h2 class="section-title">最新动态</h2>
 
-  <blockquote>（这里先留空，稍后可以添加最新动态）</blockquote>
+  <blockquote>添加最新动态，<span style="color: red; background-color: yellow; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">NEW!</span></blockquote>
 
   <h2 class="section-title">学术兼职与学术服务</h2>
 
