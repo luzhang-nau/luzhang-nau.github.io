@@ -80,8 +80,8 @@ title: "培养风格"
 
 /* 通用表头样式 */
 .students-table thead {
-  background-color: #ff3333 !important;
-  border-bottom: 2px solid #ff3333;
+  background-color: #e8edf2 !important;
+  border-bottom: 2px solid #e8edf2;
 }
 
 .students-table th {
@@ -90,7 +90,7 @@ title: "培养风格"
   font-weight: 600;
   color: #333 !important;
   font-size: 14px;
-  border-bottom: 2px solid #ff3333;
+  border-bottom: 2px solid #e8edf2;
   white-space: nowrap;
 }
 
@@ -131,7 +131,7 @@ title: "培养风格"
 
 /* 通用表格行样式 */
 .students-table tbody tr {
-  border-bottom: 1px solid #ff3333;
+  border-bottom: 1px solid #e8edf2;
 }
 .students-table tbody tr:last-child {
   border-bottom: none;
