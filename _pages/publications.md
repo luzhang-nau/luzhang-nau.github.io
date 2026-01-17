@@ -2,7 +2,23 @@
 permalink: /publications/
 title: "发表论文"
 ---
-完整列表：<a href="   https://scholar.google.com.hk/citations?hl=zh-CN&user=8iHtFsIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a>(英文论文)，<a href="   https://au.cnki.net/author/personalInfo/000065937620?platform=kns-author" target="_blank">CNKI</a>(中文论文和专利)
+
+<style>
+    /* 1. 设置链接的基础样式 */
+    .paper-link {
+        color: blue;
+        text-decoration: none; /* 默认无下划线 */
+    }
+
+    /* 2. 设置鼠标悬停时的样式 (:hover) */
+    .paper-link:hover {
+        text-decoration: underline; /* 悬停时出现下划线 */
+        cursor: pointer;
+    }
+</style>
+
+
+完整列表：<a href="   https://scholar.google.com.hk/citations?hl=zh-CN&user=8iHtFsIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="paper-link">Google Scholar</a>(英文论文)，<a href="   https://au.cnki.net/author/personalInfo/000065937620?platform=kns-author" target="_blank">CNKI</a>(中文论文和专利)
 
 1. <span style="color: red">(INS'26, JCR Q1, CCF B)</span> <a href="https://doi.org/10.1016/j.ins.2025.122947" target="_blank" style="color: blue; text-decoration: none;">Learning Problem-to-Suggestion Semantic Mapping for Audit Suggestions Recommendation in Government Audit Reports</a> <br />
    **Lu Zhang**, Haibo Wu, Min Liu, Haiting Zhu, Gaofeng He. <span class="paper-source">Information Sciences</span>, 2026.
