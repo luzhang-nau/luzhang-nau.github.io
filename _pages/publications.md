@@ -6,13 +6,13 @@ title: "发表论文"
 <style>
     /* 1. 设置链接的基础样式 */
     .paper-link {
-        color: blue;
-        text-decoration: none; /* 默认无下划线 */
+        color: blue !important;
+        text-decoration: none !important; /* 默认无下划线 */
     }
 
     /* 2. 设置鼠标悬停时的样式 (:hover) */
     .paper-link:hover {
-        text-decoration: underline; /* 悬停时出现下划线 */
+        text-decoration: underline !important; /* 悬停时出现下划线 */
         cursor: pointer;
     }
 </style>
