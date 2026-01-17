@@ -17,7 +17,7 @@ title: "课程信息"
 <p>授课对象：人工智能专业本科生、数据科学与大数据技术本科生</p>
 <p>授课时间：秋学期</p>
 
-<hr style="border: none; border-top: 1.0px solid #ccc; margin:">
+<hr style="border: none; border-top: 1.0px solid #eee; margin:">
 
 ## 研究生课程
 
