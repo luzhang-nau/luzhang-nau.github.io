@@ -233,7 +233,7 @@ title: "培养风格"
       <tbody>
         <tr>
           <td>2025</td>
-          <td class="name-bold">陈梦</td>
+          <td>陈梦</td>
           <td>多模态虚假新闻识别</td>
           <td>一等奖学金</td>
         </tr>
