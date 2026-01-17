@@ -131,7 +131,7 @@ title: "培养风格"
 
 /* 通用表格行样式 */
 .students-table tbody tr {
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 1px solid #999999;
 }
 .students-table tbody tr:last-child {
   border-bottom: none;
