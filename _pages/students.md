@@ -265,7 +265,7 @@ title: "指导学生"
           <td>2023</td>
           <td>陈宇光</td>
           <td>基于传播预测的社交媒体虚假新闻早期识别研究（开题）</td>
-          <td>Early detection of rumors based on propagation prediction in social media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
+          <td>Early Detection of Rumors based on Propagation Prediction in Social Media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
@@ -295,13 +295,13 @@ title: "指导学生"
           <td>2021</td>
           <td>吴海波</td>
           <td>基于深度学习的审计定性依据和审计建议推荐方法</td>
-          <td>Learning problem-to-suggestion semantic mapping for audit suggestions recommendation in government audit reports，论文，SCI一区，CCF B</td>
+          <td>Learning Problem-to-Suggestion Semantic Mapping for Audit Suggestions Recommendation in Government Audit Reports，论文，SCI一区，CCF B</td>
         </tr>
         <tr>
           <td>2019</td>
           <td>许明铭</td>
           <td>基于异质数据融合学习的在线问答社区欺诈检测研究</td>
-          <td>Collusive spam detection from Chinese community question answering sites: A collective classification framework，论文，SCI一区，CCF B</td>
+          <td>Collusive Spam Detection from Chinese Community Question Answering Sites: A Collective Classification Framework，论文，SCI一区，CCF B</td>
         </tr>
       </tbody>
     </table>
