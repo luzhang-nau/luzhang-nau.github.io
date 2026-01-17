@@ -1,6 +1,6 @@
 ---
 permalink: /students/
-title: "培养风格"
+title: "指导学生"
 ---
 
 <style>
