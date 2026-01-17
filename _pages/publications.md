@@ -2,6 +2,7 @@
 permalink: /publications/
 title: "代表性论文"
 ---
+完整列表：Google Scholar(英文论文)，CNKI(中文论文)
 
 1. <span style="color: red">(INS'26, JCR Q1, CCF B)</span> <span style="color: blue">Learning problem-to-suggestion semantic mapping for audit suggestions recommendation in government audit reports</span> <br />
    **Lu Zhang**, Haibo Wu, Min Liu, Haiting Zhu, Gaofeng He. <span class="paper-source">Information Sciences</span>, 2026, 733: 122947.
