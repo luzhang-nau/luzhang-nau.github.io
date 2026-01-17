@@ -308,7 +308,7 @@ title: "培养风格"
   </div>
 </div>
 
-<hr class="table-divider" />
+
 
 <div class="students-table-section">
   <h2 class="table-title">指导本科生情况</h2>
