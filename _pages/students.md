@@ -146,6 +146,7 @@ title: "培养风格"
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  border-bottom: 1px solid #999999;
 }
 
 .name-bold {
