@@ -1,6 +1,6 @@
 ---
 permalink: /publications/
-title: "发表论文"
+title: "代表性论文"
 ---
 
 <style>
