@@ -80,8 +80,8 @@ title: "培养风格"
 
 /* 通用表头样式 */
 .students-table thead {
-  background-color: #f8f9fa !important;
-  border-bottom: 2px solid #e8edf2;
+  background-color: #e2e6ea !important;
+  border-bottom: 2px solid #adb5bd;
 }
 
 .students-table th {
