@@ -7,7 +7,7 @@ title: "代表性论文"
    **Lu Zhang**, Haibo Wu, Min Liu, Haiting Zhu, Gaofeng He. <span class="paper-source">Information Sciences</span>, 2026, 733: 122947.
 
 2. <span style="color: red">(CAIS'26, JCR Q2)</span> <span style="color: blue">Early detection of rumors based on propagation prediction in social media</span> <br />
-   **Lu Zhang**, Yuguang chen, Xi Luo, Haiting Zhu, Gaofeng He. <span class="paper-source">Complex & Intelligent Systems</span>, 2026, 12(1): 23.
+   **Lu Zhang**, Yuguang Chen, Xi Luo, Haiting Zhu, Gaofeng He. <span class="paper-source">Complex & Intelligent Systems</span>, 2026, 12(1): 23.
 
 3. <span style="color: red">(TST'26, JCR Q1)</span> <span style="color: blue">ACSD: An Attributed Heterogeneous Information Network based Spammer Detection Model for Community Question Answering</span> <br />
    **Lu Zhang**, Changjian Fang, Haiting Zhu, Gaofeng He, Yang Wang, Mingwei Tang, Zhan Bu. <span class="paper-source">Tsinghua Science and Technology</span>, 2026.
