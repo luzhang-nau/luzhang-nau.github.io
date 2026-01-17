@@ -81,7 +81,7 @@ title: "培养风格"
 /* 通用表头样式 */
 .students-table thead {
   background-color: #f0f0f0 !important;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 2px solid #ff3333;
 }
 
 .students-table th {
@@ -90,7 +90,7 @@ title: "培养风格"
   font-weight: 600;
   color: #333 !important;
   font-size: 14px;
-  border-bottom: 2px solid #e8edf2;
+  border-bottom: 2px solid #ff3333;
   white-space: nowrap;
 }
 
