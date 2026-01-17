@@ -1,6 +1,6 @@
 ---
 permalink: /publications/
-title: "代表性论文"
+title: "发表论文"
 ---
 完整列表：<a href="   https://scholar.google.com.hk/citations?hl=zh-CN&user=8iHtFsIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a>(英文论文)，<a href="   https://au.cnki.net/author/personalInfo/000065937620?platform=kns-author" target="_blank">CNKI</a>(中文论文和专利)
 
