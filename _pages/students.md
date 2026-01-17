@@ -148,6 +148,7 @@ title: "培养风格"
   overflow-wrap: break-word;
   border-bottom: 1px solid #999999;
   border-right: 1px solid #999999; 
+  border-left: 1px solid #999999;
 }
 
 .name-bold {
