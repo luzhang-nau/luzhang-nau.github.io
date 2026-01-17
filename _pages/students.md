@@ -122,11 +122,11 @@ title: "培养风格"
 }
 .students-table.undergraduate-table th:nth-child(2),
 .students-table.undergraduate-table td:nth-child(2) {
-  min-width: 300px;
+  min-width: 280px;
 }
 .students-table.undergraduate-table th:nth-child(3),
 .students-table.undergraduate-table td:nth-child(3) {
-  min-width: 390px;
+  min-width: 410px;
 }
 .students-table.undergraduate-table td:nth-child(4) {
   min-width: 80px;
