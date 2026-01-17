@@ -14,7 +14,7 @@ title: "代表性论文"
    **Lu Zhang**, Changjian Fang, Haiting Zhu, Gaofeng He, Yang Wang, Mingwei Tang, Zhan Bu. <span class="paper-source">Tsinghua Science and Technology</span>, 2026.
 
 4. <span style="color: red">(CJC'25，CCF T1)</span> <span style="color: blue">基于异步个性化联邦学习的DDoS攻击检测与缓解</span> <br />
-   朱海婷, 魏明岗, 刘丰宁, 何高峰, **张璐***. <span class="paper-source">计算机学报</span>, 2025, 48(04): 808-827.（通讯作者）
+   朱海婷, 魏明岗, 刘丰宁, 何高峰, **张璐**&#9993. <span class="paper-source">计算机学报</span>, 2025, 48(04): 808-827.（通讯作者）
 
 5. <span style="color: red">(IOTJ'25, JCR Q1)</span> <span style="color: blue">Multidevice Collaborative Authentication for Internet of Things</span> <br />
    Gaofeng He, Tianyi He, Renhong Chen, Bingfeng Xu, Haiting Zhu, **Lu Zhang**, Naixuan Guo. <span class="paper-source">IEEE Internet of Things Journal</span>, 2025, 12(14): 27753-27768.
