@@ -136,9 +136,9 @@ title: "培养风格"
 .students-table tbody tr:last-child {
   border-bottom: none;
 }
-.students-table tbody tr:hover {
-  background-color: #f8fafc;
-}
+/*.students-table tbody tr:hover {*/
+/*  background-color: #f8fafc;*/
+/*}*/
 .students-table td {
   padding: 12px 15px !important;
   vertical-align: top;
