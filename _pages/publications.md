@@ -17,7 +17,7 @@ title: "代表性论文"
     }
 </style>
 
-
+<div style="height: 10px;"></div>
 完整列表：<a href="   https://scholar.google.com.hk/citations?hl=zh-CN&user=8iHtFsIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" >Google Scholar</a>(英文论文)，<a href="   https://au.cnki.net/author/personalInfo/000065937620?platform=kns-author" target="_blank">CNKI</a>(中文论文和专利)
 
 1. <span style="color: red">(INS'26, JCR Q1, CCF B)</span> <a href="https://doi.org/10.1016/j.ins.2025.122947" target="_blank" class="paper-link">Learning Problem-to-Suggestion Semantic Mapping for Audit Suggestions Recommendation in Government Audit Reports</a> <br />
