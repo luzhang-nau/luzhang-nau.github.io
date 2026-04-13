@@ -5,14 +5,25 @@ title: "培养风格"
 
 <style>
 
-/* 邮件图标基础样式 */
+/* 邮件图标样式：确保在右侧且不换行 */
 .email-link {
   text-decoration: none !important;
-  margin-left: 6px;
-  display: inline-flex;
+  margin-left: 4px; /* 名字和图标的间距 */
+  display: inline-block;
   vertical-align: middle;
-  color: #999; /* 默认灰色，不抢主视觉 */
+  line-height: 1;
+  color: #999; /* 初始颜色较淡，保持页面整洁 */
   transition: color 0.2s ease;
+}
+
+.email-link:hover {
+  color: #3498db; /* 悬停时变为蓝色 */
+}
+
+.email-icon {
+  width: 14px; /* 图标大小，可根据喜好微调 */
+  height: 14px;
+  fill: currentColor;
 }
 
 /* 鼠标悬停变为课题组的主色调蓝色 */
@@ -255,14 +266,12 @@ title: "培养风格"
       <tbody>
         <tr>
           <td>2025</td>
-          <td>
-            <span class="name-bold">陈梦</span>
-    <a href="mailto:chenmeng@example.com" class="email-link" title="联系陈梦">
+          <td style="white-space: nowrap;"> 陈梦<a href="mailto:chenmeng@example.com" class="email-link" title="联系陈梦">
       <svg class="email-icon" viewBox="0 0 24 24">
         <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
       </svg>
     </a>
-          </td>
+  </td>
           <td>多模态虚假新闻识别</td>
           <td>一等奖学金</td>
         </tr>
