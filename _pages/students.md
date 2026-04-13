@@ -266,55 +266,90 @@ title: "培养风格"
       <tbody>
         <tr>
           <td>2025</td>
-          <td style="white-space: nowrap;"> 陈梦<a href="mailto:chenmeng@example.com" class="email-link" title="联系陈梦">
-      <svg class="email-icon" viewBox="0 0 24 24">
-        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-      </svg>
-    </a>
-  </td>
+          <td style="white-space: nowrap;">陈梦<a href="mailto:2472603533@qq.com" class="email-link" title="联系陈梦">
+            <svg class="email-icon" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            </a>
+          </td>
           <td>多模态虚假新闻识别</td>
           <td>一等奖学金</td>
         </tr>
         <tr>
           <td>2025</td>
-          <td>董闯豪</td>
+          <td style="white-space: nowrap;">董闯豪<a href="mailto:3309685780@qq.com" class="email-link" title="联系董闯豪">
+            <svg class="email-icon" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            </a>
+          </td>
           <td>财务欺诈识别</td>
           <td></td>
         </tr>
         <tr>
           <td>2025</td>
-          <td>姜伟栋</td>
+          <td style="white-space: nowrap;">姜伟栋<a href="mailto:1172653091@qq.com" class="email-link" title="联系姜伟栋">
+            <svg class="email-icon" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            </a>
+          </td>
           <td>谣言早期检测</td>
           <td></td>
         </tr>
         <tr>
           <td>2024</td>
-          <td>骆茜</td>
+          <td style="white-space: nowrap;">骆茜<a href="mailto:2966493624@qq.com" class="email-link" title="联系骆茜">
+            <svg class="email-icon" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            </a>
+          </td>
           <td>基于大模型的虚假评论识别</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2024</td>
-          <td>刘敏</td>
+          <td style="white-space: nowrap;">刘敏<a href="mailto:2557291142@qq.com" class="email-link" title="联系刘敏">
+            <svg class="email-icon" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            </a>
+          </td>
           <td>基于RAG的审计发现结论生成</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
-          <td>陈宇光</td>
-          <td>基于传播预测的社交媒体虚假新闻早期识别研究（开题）</td>
+          <td style="white-space: nowrap;">陈宇光<a href="mailto:792424327@qq.com" class="email-link" title="联系陈宇光">
+            <svg class="email-icon" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            </a>
+          </td>
+          <td>基于传播预测的社交媒体虚假新闻早期识别研究</td>
           <td>Early Detection of Rumors based on Propagation Prediction in Social Media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
-          <td>尹天祺</td>
-          <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究（开题）</td>
+          <td style="white-space: nowrap;">尹天祺<a href="mailto:1143330345@qq.com" class="email-link" title="联系尹天祺">
+            <svg class="email-icon" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            </a>
+          </td>
+          <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究</td>
           <td>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
           <td>2023</td>
-          <td>宋昌昊</td>
-          <td>基于大模型的上市公司财务舞弊识别研究（开题）</td>
+          <td style="white-space: nowrap;">宋昌昊<a href="mailto:1622369820@qq.com" class="email-link" title="联系宋昌昊">
+            <svg class="email-icon" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            </a>
+          </td>
+          <td>基于提示微调与双层注意力的财务舞弊识别研究</td>
           <td>2025江苏省研究生实践创新计划立项<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
