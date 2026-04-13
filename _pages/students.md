@@ -327,7 +327,7 @@ title: "培养风格"
             </svg>
             </a>
           </td>
-          <td>基于传播预测的社交媒体虚假新闻早期识别研究</td>
+          <td>融合传播结构预测与深度语义理解的社交媒体谣言早期检测研究</td>
           <td>Early Detection of Rumors based on Propagation Prediction in Social Media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
         </tr>
         <tr>
