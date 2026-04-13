@@ -233,7 +233,7 @@ title: "培养风格"
       <tbody>
         <tr>
           <td>2025</td>
-          <td>陈梦</td>
+          <td>陈梦<li><a href="mailto:{{ 2472603533@qq.com }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li></td>
           <td>多模态虚假新闻识别</td>
           <td>一等奖学金</td>
         </tr>
