@@ -4,6 +4,28 @@ title: "培养风格"
 ---
 
 <style>
+
+/* 邮件图标基础样式 */
+.email-link {
+  text-decoration: none !important;
+  margin-left: 6px;
+  display: inline-flex;
+  vertical-align: middle;
+  color: #999; /* 默认灰色，不抢主视觉 */
+  transition: color 0.2s ease;
+}
+
+/* 鼠标悬停变为课题组的主色调蓝色 */
+.email-link:hover {
+  color: #3498db; 
+}
+
+.email-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor; /* 随文字颜色改变 */
+}
+  
 .section-container,
 .students-table-section,
 .table-container {
@@ -234,8 +256,12 @@ title: "培养风格"
         <tr>
           <td>2025</td>
           <td>
-            陈梦
-            <a href="mailto:chenmeng@example.com" title="发送邮件给陈梦" style="text-decoration: none;">✉️</a>
+            <span class="name-bold">陈梦</span>
+    <a href="mailto:chenmeng@example.com" class="email-link" title="联系陈梦">
+      <svg class="email-icon" viewBox="0 0 24 24">
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
           </td>
           <td>多模态虚假新闻识别</td>
           <td>一等奖学金</td>
