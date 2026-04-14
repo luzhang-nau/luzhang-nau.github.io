@@ -266,7 +266,7 @@ title: "培养风格"
       <tbody>
         <tr>
           <td>2025</td>
-          <td style="white-space: nowrap;">陈梦<a href="mailto:2472603533@qq.com" class="email-link" title="联系陈梦">
+          <td style="white-space: nowrap;">陈梦<a href="mailto:2472603533@qq.com" class="email-link" title="联系陈梦:2472603533@qq.com">
             <svg class="email-icon" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
@@ -277,7 +277,7 @@ title: "培养风格"
         </tr>
         <tr>
           <td>2025</td>
-          <td style="white-space: nowrap;">董闯豪<a href="mailto:3309685780@qq.com" class="email-link" title="联系董闯豪">
+          <td style="white-space: nowrap;">董闯豪<a href="mailto:3309685780@qq.com" class="email-link" title="联系董闯豪:3309685780@qq.com">
             <svg class="email-icon" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
@@ -288,7 +288,7 @@ title: "培养风格"
         </tr>
         <tr>
           <td>2025</td>
-          <td style="white-space: nowrap;">姜伟栋<a href="mailto:1172653091@qq.com" class="email-link" title="联系姜伟栋">
+          <td style="white-space: nowrap;">姜伟栋<a href="mailto:1172653091@qq.com" class="email-link" title="联系姜伟栋:1172653091@qq.com">
             <svg class="email-icon" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
@@ -299,7 +299,7 @@ title: "培养风格"
         </tr>
         <tr>
           <td>2024</td>
-          <td style="white-space: nowrap;">骆茜<a href="mailto:2966493624@qq.com" class="email-link" title="联系骆茜">
+          <td style="white-space: nowrap;">骆茜<a href="mailto:2966493624@qq.com" class="email-link" title="联系骆茜:2966493624@qq.com">
             <svg class="email-icon" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
@@ -310,7 +310,7 @@ title: "培养风格"
         </tr>
         <tr>
           <td>2024</td>
-          <td style="white-space: nowrap;">刘敏<a href="mailto:2557291142@qq.com" class="email-link" title="联系刘敏">
+          <td style="white-space: nowrap;">刘敏<a href="mailto:2557291142@qq.com" class="email-link" title="联系刘敏:2557291142@qq.com">
             <svg class="email-icon" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
@@ -321,7 +321,7 @@ title: "培养风格"
         </tr>
         <tr>
           <td>2023</td>
-          <td style="white-space: nowrap;">陈宇光<a href="mailto:792424327@qq.com" class="email-link" title="联系陈宇光">
+          <td style="white-space: nowrap;">陈宇光<a href="mailto:792424327@qq.com" class="email-link" title="联系陈宇光:792424327@qq.com">
             <svg class="email-icon" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
@@ -332,7 +332,7 @@ title: "培养风格"
         </tr>
         <tr>
           <td>2023</td>
-          <td style="white-space: nowrap;">尹天祺<a href="mailto:1143330345@qq.com" class="email-link" title="联系尹天祺">
+          <td style="white-space: nowrap;">尹天祺<a href="mailto:1143330345@qq.com" class="email-link" title="联系尹天祺:1143330345@qq.com">
             <svg class="email-icon" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
@@ -343,7 +343,7 @@ title: "培养风格"
         </tr>
         <tr>
           <td>2023</td>
-          <td style="white-space: nowrap;">宋昌昊<a href="mailto:1622369820@qq.com" class="email-link" title="联系宋昌昊">
+          <td style="white-space: nowrap;">宋昌昊<a href="mailto:1622369820@qq.com" class="email-link" title="联系宋昌昊:1622369820@qq.com">
             <svg class="email-icon" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
