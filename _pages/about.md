@@ -56,7 +56,7 @@ redirect_from:
   <h2 class="section-title">最新动态</h2>
 
   <blockquote>课题组关于审计证据鉴伪的研究获得2026年度国家自然科学基金面上项目资助! <span style="color: red; background-color: yellow; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">NEW!</span></blockquote>
-   <blockquote>Our paper titled "Research on Multimodal Fake News Detection in Social Media Considering Missing Modalities"（考虑模态缺失的社交媒体多模态虚假新闻检测研究）has been accepted by CHINESE JOURNAL OF COMPUTERS（计算机学报）. Congratulations to Tianqi Yin! <span style="color: red; background-color: yellow; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">NEW!</span></blockquote>
+   <blockquote>Our paper titled "Research on Multimodal Fake News Detection in Social Media Considering Missing Modalities"（考虑模态缺失的社交媒体多模态虚假新闻检测研究）has been accepted by CHINESE JOURNAL OF COMPUTERS（计算机学报，coming soon）. Congratulations to Tianqi Yin! <span style="color: red; background-color: yellow; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">NEW!</span></blockquote>
 
   <h2 class="section-title">学术兼职与学术服务</h2>
 
