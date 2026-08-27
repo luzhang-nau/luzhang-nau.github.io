@@ -11,7 +11,7 @@ title: "科研项目"
   }
 </style>
 
-1. <span class="project-title">基于证据链逻辑一致性度量的审计证据深度伪造检测机理与方法研究究</span>
+1. <span class="project-title">基于证据链逻辑一致性度量的审计证据深度伪造检测机理与方法研究</span>
    项目负责人，国家自然科学基金面上项目，62672246，2027/01-2030/12，在研
 
 1. <span class="project-title">大模型范式下融合多源异质数据的财务舞弊识别研究</span>
