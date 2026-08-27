@@ -328,7 +328,7 @@ title: "培养风格"
             </a>
           </td>
           <td>融合传播结构预测与深度语义理解的社交媒体谣言早期检测研究</td>
-          <td>Early Detection of Rumors based on Propagation Prediction in Social Media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
+          <td>Early Detection of Rumors based on Propagation Prediction in Social Media，论文，SCI二区<br>2025中国大学生服务外包创新创业大赛，国家级三等奖<br>毕业去向：光轮智能</td>
         </tr>
         <tr>
           <td>2023</td>
@@ -339,7 +339,7 @@ title: "培养风格"
             </a>
           </td>
           <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究</td>
-          <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究，论文，计算机学报（已录用）<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
+          <td>考虑模态缺失的社交媒体多模态虚假新闻检测研究，论文，计算机学报（已录用）<br>2025中国大学生服务外包创新创业大赛，国家级三等奖<br>毕业去向：弋途科技</td>
         </tr>
         <tr>
           <td>2023</td>
@@ -350,19 +350,19 @@ title: "培养风格"
             </a>
           </td>
           <td>基于提示微调与双层注意力的财务舞弊识别研究</td>
-          <td>2025江苏省研究生实践创新计划（已结项）<br>融合大模型提示学习与参数高效微调的财务舞弊识别框架，论文，北核<br>2025中国大学生服务外包创新创业大赛，国家级三等奖</td>
+          <td>2025江苏省研究生实践创新计划（已结项）<br>融合大模型提示学习与参数高效微调的财务舞弊识别框架，论文，北核<br>2025中国大学生服务外包创新创业大赛，国家级三等奖<br>毕业去向：三新供电</td>
         </tr>
         <tr>
           <td>2022</td>
           <td>魏晨阳</td>
           <td>基于异构信息网络的问答社区欺诈信息检测方法研究</td>
-          <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award</td>
+          <td>Enhancing GNN-based CQA Spam Detection: Question-Answer-Pair Perspective with Supervised Neighbor Selection, CBD 2024 Best Student Paper Award<br>毕业去向：九江国泰</td>
         </tr>
         <tr>
           <td>2022</td>
           <td>康钟元</td>
           <td>融合先验知识的科技文献主题识别与演化趋势预测方法研究</td>
-          <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）</td>
+          <td>基于先验生命周期的科技文献研究主题发展趋势预测（已录用，北核）<br>毕业去向：中国石化</td>
         </tr>
         <tr>
           <td>2021</td>
@@ -374,7 +374,7 @@ title: "培养风格"
           <td>2019</td>
           <td>许明铭</td>
           <td>基于异质数据融合学习的在线问答社区欺诈检测研究</td>
-          <td>Collusive Spam Detection from Chinese Community Question Answering Sites: A Collective Classification Framework，论文，SCI一区，CCF B</td>
+          <td>Collusive Spam Detection from Chinese Community Question Answering Sites: A Collective Classification Framework，论文，SCI一区，CCF B<br>毕业去向：扬州网信办</td>
         </tr>
       </tbody>
     </table>
