@@ -368,7 +368,7 @@ title: "培养风格"
           <td>2021</td>
           <td>吴海波</td>
           <td>基于深度学习的审计定性依据和审计建议推荐方法</td>
-          <td>Learning Problem-to-Suggestion Semantic Mapping for Audit Suggestions Recommendation in Government Audit Reports，论文，SCI一区，CCF B</td>
+          <td>Learning Problem-to-Suggestion Semantic Mapping for Audit Suggestions Recommendation in Government Audit Reports，论文，SCI一区，CCF B<br>毕业去向：会计师事务所</td>
         </tr>
         <tr>
           <td>2019</td>
